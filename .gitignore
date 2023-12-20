@@ -40,3 +40,6 @@ bin/
 
 ### Temporary java files ###
 *.java~
+
+### Logs
+!**/logs/
