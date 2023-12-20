@@ -1,0 +1,17 @@
+INFO  14:07:13,391 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  14:07:13,399 - #1 program
+INFO  14:07:13,400 - #18 MJProgram
+INFO  14:07:13,402 - #18 int
+INFO  14:07:13,402 - #18 x
+INFO  14:07:13,404 - #38 ,
+INFO  14:07:13,404 - #18 y
+INFO  14:07:13,404 - #36 ;
+INFO  14:07:13,405 - #44 {
+INFO  14:07:13,405 - #11 void
+INFO  14:07:13,405 - #18 main
+INFO  14:07:13,405 - #40 (
+INFO  14:07:13,405 - #41 )
+INFO  14:07:13,405 - #44 {
+INFO  14:07:13,407 - #20 +
+INFO  14:07:13,407 - #45 }
+INFO  14:07:13,407 - #45 }
