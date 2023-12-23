@@ -1,8 +1,14 @@
 program MJProgram
-	int x, y;
+	int x;
+	int y;
 {
-	void main()
+	int main()
 	{
-	+
+		if x
+			print(1);
+		else
+			if y
+				return;
+			
 	}
 }

@@ -1,0 +1,88 @@
+INFO  19:25:03,873 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:25:03,904 - #2 program
+INFO  19:25:03,904 - #15 MJProgram
+INFO  19:25:03,905 - #15 int
+INFO  19:25:03,906 - #15 x
+INFO  19:25:03,907 - #5 ;
+INFO  19:25:03,907 - #15 int
+INFO  19:25:03,910 - #15 y
+INFO  19:25:03,910 - #5 ;
+INFO  19:25:03,911 - #3 {
+INFO  19:25:03,911 - #15 int
+INFO  19:25:03,913 - #15 main
+INFO  19:25:03,913 - #6 (
+INFO  19:25:03,915 - #7 )
+INFO  19:25:03,916 - #3 {
+INFO  19:25:03,917 - #15 x
+INFO  19:25:03,918 - #8 =
+INFO  19:25:03,940 - #15 y
+INFO  19:25:03,940 - #10 +
+INFO  19:25:03,945 - #14 1
+INFO  19:25:03,960 - #5 ;
+INFO  19:25:03,962 - #4 }
+INFO  19:25:03,964 - #4 }
+INFO  19:25:03,967 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        Assigment(
+          Designator(
+           x
+          ) [Designator]
+          AddExpr(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   y
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+            Addop(
+            ) [Addop]
+            Term(
+              Const(
+               1
+              ) [Const]
+            ) [Term]
+          ) [AddExpr]
+        ) [Assigment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:25:03,969 - ===================================
+INFO  19:25:03,971 -  Print count calls = 0
+INFO  19:25:03,973 -  Deklarisanih promenljivih ima = 2

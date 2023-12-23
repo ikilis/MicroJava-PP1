@@ -1,0 +1,69 @@
+INFO  19:41:36,659 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:41:36,688 - #2 program
+INFO  19:41:36,690 - #15 MJProgram
+INFO  19:41:36,690 - #15 int
+INFO  19:41:36,691 - #15 x
+INFO  19:41:36,692 - #5 ;
+INFO  19:41:36,692 - #15 int
+INFO  19:41:36,696 - #15 y
+INFO  19:41:36,696 - #5 ;
+INFO  19:41:36,699 - #3 {
+INFO  19:41:36,699 - #15 int
+INFO  19:41:36,701 - #15 main
+INFO  19:41:36,702 - #6 (
+INFO  19:41:36,702 - #7 )
+INFO  19:41:36,702 - #3 {
+INFO  19:41:36,704 - #15 x
+INFO  19:41:36,704 - #8 =
+INFO  19:41:36,707 - #15 y
+INFO  19:41:36,707 - #10 +
+INFO  19:41:36,710 - #5 ;
+ERROR 19:41:36,710 - 
+Sintaksna greska na liniji 7
+INFO  19:41:36,711 - #4 }
+INFO  19:41:36,711 - #4 }
+ERROR 19:41:36,715 - OPoravili smo se do ':' u liniji 7
+INFO  19:41:36,717 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        StatementDerived1(
+        ) [StatementDerived1]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:41:36,718 - ===================================
+INFO  19:41:36,720 -  Print count calls = 0
+INFO  19:41:36,720 -  Deklarisanih promenljivih ima = 2

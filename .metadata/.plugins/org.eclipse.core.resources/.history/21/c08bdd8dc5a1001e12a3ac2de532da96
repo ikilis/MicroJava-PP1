@@ -1,0 +1,108 @@
+INFO  20:00:11,278 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:00:11,319 - #2 program
+INFO  20:00:11,325 - #15 MJProgram
+INFO  20:00:11,327 - #15 int
+INFO  20:00:11,329 - #15 x
+INFO  20:00:11,331 - #5 ;
+INFO  20:00:11,331 - #15 int
+INFO  20:00:11,333 - #15 y
+INFO  20:00:11,333 - #5 ;
+INFO  20:00:11,334 - #3 {
+INFO  20:00:11,334 - #15 int
+INFO  20:00:11,334 - #15 main
+INFO  20:00:11,335 - #6 (
+INFO  20:00:11,335 - #7 )
+INFO  20:00:11,335 - #3 {
+INFO  20:00:11,336 - #24 if
+INFO  20:00:11,336 - #15 x
+INFO  20:00:11,337 - #12 print
+INFO  20:00:11,338 - #6 (
+INFO  20:00:11,338 - #14 1
+INFO  20:00:11,338 - #7 )
+INFO  20:00:11,339 - #5 ;
+INFO  20:00:11,339 - #23 else
+INFO  20:00:11,347 - #24 if
+INFO  20:00:11,349 - #15 y
+INFO  20:00:11,349 - #9 return
+INFO  20:00:11,350 - #5 ;
+INFO  20:00:11,351 - #4 }
+INFO  20:00:11,353 - #4 }
+INFO  20:00:11,355 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        UnMatcheddStmt(
+          UnmatchedIfElse(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   x
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+            PrintStmt(
+              TermExpr(
+                Term(
+                  Const(
+                   1
+                  ) [Const]
+                ) [Term]
+              ) [TermExpr]
+            ) [PrintStmt]
+            UnmatchedIf(
+              TermExpr(
+                Term(
+                  Var(
+                    Designator(
+                     y
+                    ) [Designator]
+                  ) [Var]
+                ) [Term]
+              ) [TermExpr]
+              MatchedStmt(
+                NoReturn(
+                ) [NoReturn]
+              ) [MatchedStmt]
+            ) [UnmatchedIf]
+          ) [UnmatchedIfElse]
+        ) [UnMatcheddStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:00:11,357 - ===================================
+INFO  20:00:11,362 -  Print count calls = 1
+INFO  20:00:11,362 -  Deklarisanih promenljivih ima = 2

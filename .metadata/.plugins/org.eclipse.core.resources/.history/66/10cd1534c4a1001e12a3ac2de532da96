@@ -1,0 +1,63 @@
+INFO  19:24:30,433 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:24:30,466 - #2 program
+INFO  19:24:30,469 - #15 MJProgram
+INFO  19:24:30,472 - #15 int
+INFO  19:24:30,475 - #15 x
+INFO  19:24:30,482 - #5 ;
+INFO  19:24:30,483 - #15 int
+INFO  19:24:30,485 - #15 y
+INFO  19:24:30,485 - #5 ;
+INFO  19:24:30,486 - #3 {
+INFO  19:24:30,486 - #15 int
+INFO  19:24:30,487 - #15 main
+INFO  19:24:30,487 - #6 (
+INFO  19:24:30,487 - #7 )
+INFO  19:24:30,488 - #3 {
+INFO  19:24:30,488 - #9 return
+INFO  19:24:30,490 - #5 ;
+INFO  19:24:30,490 - #4 }
+INFO  19:24:30,507 - #4 }
+INFO  19:24:30,522 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        NoReturn(
+        ) [NoReturn]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:24:30,523 - ===================================
+INFO  19:24:30,555 -  Print count calls = 0
+INFO  19:24:30,556 -  Deklarisanih promenljivih ima = 2

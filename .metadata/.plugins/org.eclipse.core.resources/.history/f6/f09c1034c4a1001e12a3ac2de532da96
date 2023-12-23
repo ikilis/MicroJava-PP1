@@ -1,0 +1,68 @@
+INFO  19:17:23,925 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:17:23,969 - #2 program
+INFO  19:17:23,977 - #15 MJProgram
+INFO  19:17:23,980 - #15 int
+INFO  19:17:23,984 - #15 x
+INFO  19:17:23,985 - #5 ;
+INFO  19:17:23,986 - #15 int
+INFO  19:17:23,989 - #15 y
+INFO  19:17:23,989 - #5 ;
+INFO  19:17:23,990 - #15 boolean
+INFO  19:17:23,990 - #15 z
+INFO  19:17:23,990 - #5 ;
+INFO  19:17:23,990 - #3 {
+INFO  19:17:23,990 - #15 int
+INFO  19:17:23,991 - #15 main
+INFO  19:17:23,991 - #6 (
+INFO  19:17:23,991 - #7 )
+INFO  19:17:23,992 - #3 {
+INFO  19:17:23,992 - #4 }
+INFO  19:17:23,992 - #4 }
+INFO  19:17:24,009 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         x
+        ) [VarDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       y
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       boolean
+      ) [Type]
+     z
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:17:24,011 - ===================================
+INFO  19:17:24,017 -  Print count calls = 0
+INFO  19:17:24,017 -  Deklarisanih promenljivih ima = 3

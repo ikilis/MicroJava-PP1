@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+C:\Users\ivant\Desktop\PP1\MicroJava-PP1\.metadata\.plugins\org.eclipse.jdt.core
-267254768.index
 2792787403.index
 570380218.index
 3563839228.index

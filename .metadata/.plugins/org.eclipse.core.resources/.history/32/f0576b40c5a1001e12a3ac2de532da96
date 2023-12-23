@@ -1,0 +1,12 @@
+program MJProgram
+	int x;
+	int y;
+{
+	int main()
+	{
+		if(x)
+			if(1)
+			else
+		else
+	}
+}
