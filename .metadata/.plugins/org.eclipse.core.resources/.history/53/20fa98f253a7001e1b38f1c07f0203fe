@@ -1,0 +1,7 @@
+INFO  21:32:58,401 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  21:32:58,424 - #2 program
+INFO  21:32:58,429 - #15 MJProgram
+INFO  21:32:58,429 - #3 {
+ERROR 21:32:58,429 - 
+Sintaksna greska na liniji 2
+ERROR 21:32:58,430 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

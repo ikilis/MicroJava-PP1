@@ -1,0 +1,105 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, ASSIGN, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Boolean BOOL;
+terminal Character CHARCONST;
+
+terminal COLON, FOR, STATIC, EXTENDS, NEW, GTE, ELSE, IF;
+terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
+terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
+terminal CLASS, NOTEQUALS, CONTINUE, OR;
+
+nonterminal Program, DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl;
+nonterminal SingleConst, ConstList, Type;
+nonterminal SingleVar, VarList, MaybeArray;
+nonterminal MethodDecl, SingleMethodDecl, ReturnType;
+nonterminal MaybeFormPars;
+
+
+
+Program ::= (Program) PROG IDENT DeclarationList LBRACE MethodDecl RBRACE;
+
+Type ::= IDENT;
+
+DeclarationList ::=(GlobalConstants)	DeclarationList ConstDecl 
+				|
+				(GlobalVars) DeclarationList VarDecl
+				|
+				(NoGlobals)/*empty*/;
+
+/* ConstDeclaration */
+ConstDecl ::=(Constants) CONST Type SingleConst ConstList SEMI;
+
+ConstList ::= (ConstantList) ConstList COMMA SingleConst
+			| (NoConsts) /* empty */;
+
+SingleConst ::= (IntConst) IDENT ASSIGN NUMBER | (BoolConst )IDENT ASSIGN BOOL | (CharConst )IDENT ASSIGN CHARCONST;
+
+/* VarDeclatation*/
+VarDecl ::= (Variables) Type SingleVar VarList SEMI;
+		
+SingleVar ::= (SingleVar) IDENT MaybeArray;
+
+VarList ::= (VariableList) VarList COMMA SingleVar
+		|(NoVars)	/*empty*/;
+		
+MaybeArray ::= (Array) LSQUARE RSQUARE
+			|(NotArray) /*empty*/	;
+		
+/*MethodDecl*/
+MethodDecl ::= (Methods) MethodDecl SingleMethodDecl 
+			| (NoMethod) /*empty*/;
+SingleMethodDecl ::= (SingleMethodDecl) ReturnType IDENT LPAREN MaybeFormPars RPAREN VarDecl LBRACE RBRACE;
+
+ReturnType ::= (ReturnVoid) VOID | (ReturnSmt) Type;
+
+/*FormPars*/
+MaybeFormPars ::= (Parameters) FormPars | (NoPars) /*empty*/;
+
+

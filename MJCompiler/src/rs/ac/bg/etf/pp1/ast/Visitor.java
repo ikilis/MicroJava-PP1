@@ -1,60 +1,57 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/11/2023 19:56:20
+// 1/0/2024 13:9:1
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(Factor Factor);
-    public void visit(ActualParamList ActualParamList);
-    public void visit(Expr Expr);
-    public void visit(FormalParamList FormalParamList);
-    public void visit(FormPars FormPars);
-    public void visit(VarDeclList VarDeclList);
-    public void visit(Unmatched Unmatched);
-    public void visit(FormalParamDecl FormalParamDecl);
-    public void visit(MethodDeclList MethodDeclList);
-    public void visit(Statement Statement);
-    public void visit(StatementList StatementList);
-    public void visit(Matched Matched);
-    public void visit(ActualPars ActualPars);
-    public void visit(Addop Addop);
-    public void visit(Designator Designator);
-    public void visit(ActualParam ActualParam);
-    public void visit(ActualParams ActualParams);
-    public void visit(NoActuals NoActuals);
-    public void visit(Actuals Actuals);
-    public void visit(FuncCall FuncCall);
-    public void visit(Var Var);
-    public void visit(Const Const);
-    public void visit(Term Term);
-    public void visit(TermExpr TermExpr);
-    public void visit(AddExpr AddExpr);
-    public void visit(UnmatchedIfElse UnmatchedIfElse);
-    public void visit(UnmatchedIf UnmatchedIf);
-    public void visit(MatchedStatement MatchedStatement);
-    public void visit(NoReturn NoReturn);
-    public void visit(Return Return);
-    public void visit(PrintStmt PrintStmt);
-    public void visit(ErrorStmt ErrorStmt);
-    public void visit(Assigment Assigment);
-    public void visit(UnMatcheddStmt UnMatcheddStmt);
-    public void visit(MatchedStmt MatchedStmt);
-    public void visit(NoStmt NoStmt);
-    public void visit(Statements Statements);
-    public void visit(SingleFormalParamDecl SingleFormalParamDecl);
-    public void visit(FormalParamDecls FormalParamDecls);
-    public void visit(NoFormParam NoFormParam);
-    public void visit(FormParams FormParams);
     public void visit(MethodDecl MethodDecl);
-    public void visit(NoMethodDecl NoMethodDecl);
-    public void visit(MethodDeclarations MethodDeclarations);
+    public void visit(LocalVarDecl LocalVarDecl);
+    public void visit(MaybeFormPars MaybeFormPars);
+    public void visit(ConstDecl ConstDecl);
+    public void visit(MaybeArray MaybeArray);
+    public void visit(VarList VarList);
+    public void visit(SingleConst SingleConst);
+    public void visit(ReturnType ReturnType);
+    public void visit(ClassDecl ClassDecl);
     public void visit(Type Type);
+    public void visit(FormPars FormPars);
+    public void visit(DeclarationList DeclarationList);
     public void visit(VarDecl VarDecl);
-    public void visit(NoVarDecl NoVarDecl);
-    public void visit(VarDeclarations VarDeclarations);
+    public void visit(Namespace Namespace);
+    public void visit(ConstList ConstList);
+    public void visit(MethodDeclarationList MethodDeclarationList);
+    public void visit(SinglePar SinglePar);
+    public void visit(SingleParDerived1 SingleParDerived1);
+    public void visit(OnePar OnePar);
+    public void visit(MultiplePars MultiplePars);
+    public void visit(NoPars NoPars);
+    public void visit(Parameters Parameters);
+    public void visit(ReturnSmt ReturnSmt);
+    public void visit(ReturnVoid ReturnVoid);
+    public void visit(NoLocalVars NoLocalVars);
+    public void visit(LocalVars1 LocalVars1);
+    public void visit(SingleMethodDecl SingleMethodDecl);
+    public void visit(NoMethod NoMethod);
+    public void visit(Methods Methods);
+    public void visit(NotArray NotArray);
+    public void visit(Array Array);
+    public void visit(NoVars NoVars);
+    public void visit(VariableList VariableList);
+    public void visit(SingleVar SingleVar);
+    public void visit(Variables Variables);
+    public void visit(CharConst CharConst);
+    public void visit(BoolConst BoolConst);
+    public void visit(IntConst IntConst);
+    public void visit(NoConsts NoConsts);
+    public void visit(ConstantList ConstantList);
+    public void visit(Constants Constants);
+    public void visit(NoGlobals NoGlobals);
+    public void visit(GlobalVars GlobalVars);
+    public void visit(GlobalConstants GlobalConstants);
+    public void visit(TypeDerived1 TypeDerived1);
     public void visit(Program Program);
 
 }

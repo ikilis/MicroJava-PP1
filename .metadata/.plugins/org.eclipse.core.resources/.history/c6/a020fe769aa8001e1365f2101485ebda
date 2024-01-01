@@ -1,0 +1,9 @@
+program MJProgram
+const int i  = 12;
+int i, j, k[];
+const int i = 12;
+int i,j,k;
+const int i = 12;
+{
+
+}

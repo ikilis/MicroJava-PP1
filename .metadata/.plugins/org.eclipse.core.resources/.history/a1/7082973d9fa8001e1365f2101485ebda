@@ -1,0 +1,24 @@
+INFO  22:03:23,364 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  22:03:23,386 - #2 program
+INFO  22:03:23,391 - #15 MJProgram
+INFO  22:03:23,394 - #29 const
+INFO  22:03:23,395 - #15 int
+INFO  22:03:23,396 - #15 i
+INFO  22:03:23,396 - #8 =
+INFO  22:03:23,396 - #14 1389
+INFO  22:03:23,396 - #5 ;
+INFO  22:03:23,398 - #3 {
+INFO  22:03:23,398 - #4 }
+INFO  22:03:23,432 - Program(
+ MJProgram
+  ConstDeclDerived1(
+    TypeDerived1(
+     int
+    ) [TypeDerived1]
+    SingleConstDerived1(
+     i
+     1389
+    ) [SingleConstDerived1]
+  ) [ConstDeclDerived1]
+) [Program]
+INFO  22:03:23,433 - ===================================

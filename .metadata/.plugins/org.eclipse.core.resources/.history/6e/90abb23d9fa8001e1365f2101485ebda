@@ -1,0 +1,205 @@
+INFO  12:56:55,481 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:56:55,510 - #2 program
+INFO  12:56:55,515 - #15 MJProgram
+INFO  12:56:55,523 - #3 {
+INFO  12:56:55,526 - #13 void
+INFO  12:56:55,530 - #15 funkcija
+INFO  12:56:55,533 - #6 (
+INFO  12:56:55,534 - #7 )
+INFO  12:56:55,547 - #15 int
+INFO  12:56:55,557 - #15 i
+INFO  12:56:55,560 - #11 ,
+INFO  12:56:55,565 - #15 j
+INFO  12:56:55,565 - #11 ,
+INFO  12:56:55,574 - #15 k
+INFO  12:56:55,575 - #32 [
+INFO  12:56:55,575 - #33 ]
+INFO  12:56:55,576 - #5 ;
+INFO  12:56:55,577 - #3 {
+INFO  12:56:55,577 - #4 }
+INFO  12:56:55,577 - #13 void
+INFO  12:56:55,578 - #15 funkcija
+INFO  12:56:55,579 - #6 (
+INFO  12:56:55,587 - #7 )
+INFO  12:56:55,587 - #15 int
+INFO  12:56:55,587 - #15 i
+INFO  12:56:55,587 - #11 ,
+INFO  12:56:55,589 - #15 j
+INFO  12:56:55,589 - #11 ,
+INFO  12:56:55,589 - #15 k
+INFO  12:56:55,589 - #32 [
+INFO  12:56:55,590 - #33 ]
+INFO  12:56:55,590 - #5 ;
+INFO  12:56:55,590 - #3 {
+INFO  12:56:55,590 - #4 }
+INFO  12:56:55,591 - #13 void
+INFO  12:56:55,591 - #15 funkcija
+INFO  12:56:55,591 - #6 (
+INFO  12:56:55,591 - #7 )
+INFO  12:56:55,592 - #15 int
+INFO  12:56:55,592 - #15 i
+INFO  12:56:55,592 - #11 ,
+INFO  12:56:55,592 - #15 j
+INFO  12:56:55,593 - #11 ,
+INFO  12:56:55,594 - #15 k
+INFO  12:56:55,594 - #32 [
+INFO  12:56:55,595 - #33 ]
+INFO  12:56:55,596 - #5 ;
+INFO  12:56:55,596 - #3 {
+INFO  12:56:55,596 - #4 }
+INFO  12:56:55,596 - #13 void
+INFO  12:56:55,596 - #15 funkcija
+INFO  12:56:55,605 - #6 (
+INFO  12:56:55,605 - #7 )
+INFO  12:56:55,605 - #15 int
+INFO  12:56:55,605 - #15 i
+INFO  12:56:55,605 - #11 ,
+INFO  12:56:55,605 - #15 j
+INFO  12:56:55,605 - #11 ,
+INFO  12:56:55,606 - #15 k
+INFO  12:56:55,606 - #32 [
+INFO  12:56:55,606 - #33 ]
+INFO  12:56:55,610 - #5 ;
+INFO  12:56:55,610 - #3 {
+INFO  12:56:55,611 - #4 }
+INFO  12:56:55,611 - #4 }
+INFO  12:56:55,612 - Program(
+ MJProgram
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    Methods(
+      Methods(
+        Methods(
+          NoMethod(
+          ) [NoMethod]
+          SingleMethodDeclDerived1(
+            ReturnVoid(
+            ) [ReturnVoid]
+           funkcija
+            Variables(
+              TypeDerived1(
+               int
+              ) [TypeDerived1]
+              SingleVar(
+               i
+                NotArray(
+                ) [NotArray]
+              ) [SingleVar]
+              VariableList(
+                VariableList(
+                  NoVars(
+                  ) [NoVars]
+                  SingleVar(
+                   j
+                    NotArray(
+                    ) [NotArray]
+                  ) [SingleVar]
+                ) [VariableList]
+                SingleVar(
+                 k
+                  Array(
+                  ) [Array]
+                ) [SingleVar]
+              ) [VariableList]
+            ) [Variables]
+          ) [SingleMethodDeclDerived1]
+        ) [Methods]
+        SingleMethodDeclDerived1(
+          ReturnVoid(
+          ) [ReturnVoid]
+         funkcija
+          Variables(
+            TypeDerived1(
+             int
+            ) [TypeDerived1]
+            SingleVar(
+             i
+              NotArray(
+              ) [NotArray]
+            ) [SingleVar]
+            VariableList(
+              VariableList(
+                NoVars(
+                ) [NoVars]
+                SingleVar(
+                 j
+                  NotArray(
+                  ) [NotArray]
+                ) [SingleVar]
+              ) [VariableList]
+              SingleVar(
+               k
+                Array(
+                ) [Array]
+              ) [SingleVar]
+            ) [VariableList]
+          ) [Variables]
+        ) [SingleMethodDeclDerived1]
+      ) [Methods]
+      SingleMethodDeclDerived1(
+        ReturnVoid(
+        ) [ReturnVoid]
+       funkcija
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          VariableList(
+            VariableList(
+              NoVars(
+              ) [NoVars]
+              SingleVar(
+               j
+                NotArray(
+                ) [NotArray]
+              ) [SingleVar]
+            ) [VariableList]
+            SingleVar(
+             k
+              Array(
+              ) [Array]
+            ) [SingleVar]
+          ) [VariableList]
+        ) [Variables]
+      ) [SingleMethodDeclDerived1]
+    ) [Methods]
+    SingleMethodDeclDerived1(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      Variables(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+        SingleVar(
+         i
+          NotArray(
+          ) [NotArray]
+        ) [SingleVar]
+        VariableList(
+          VariableList(
+            NoVars(
+            ) [NoVars]
+            SingleVar(
+             j
+              NotArray(
+              ) [NotArray]
+            ) [SingleVar]
+          ) [VariableList]
+          SingleVar(
+           k
+            Array(
+            ) [Array]
+          ) [SingleVar]
+        ) [VariableList]
+      ) [Variables]
+    ) [SingleMethodDeclDerived1]
+  ) [Methods]
+) [Program]
+INFO  12:56:55,617 - ===================================

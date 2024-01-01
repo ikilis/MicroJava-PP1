@@ -1,0 +1,59 @@
+INFO  12:30:02,454 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:30:02,476 - #2 program
+INFO  12:30:02,479 - #15 MJProgram
+INFO  12:30:02,479 - #29 const
+INFO  12:30:02,483 - #15 int
+INFO  12:30:02,485 - #15 i
+INFO  12:30:02,487 - #8 =
+INFO  12:30:02,487 - #14 1389
+INFO  12:30:02,487 - #11 ,
+INFO  12:30:02,496 - #15 j
+INFO  12:30:02,511 - #8 =
+INFO  12:30:02,512 - #17 a
+INFO  12:30:02,512 - #5 ;
+INFO  12:30:02,512 - #29 const
+INFO  12:30:02,513 - #15 int
+INFO  12:30:02,514 - #15 a
+INFO  12:30:02,514 - #8 =
+INFO  12:30:02,514 - #14 2
+INFO  12:30:02,514 - #5 ;
+INFO  12:30:02,515 - #3 {
+INFO  12:30:02,515 - #4 }
+INFO  12:30:02,518 - Program(
+ MJProgram
+  DeclarationListDerived1(
+    DeclarationListDerived1(
+      DeclarationListDerived3(
+      ) [DeclarationListDerived3]
+      ConstDeclDerived1(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+        SingleConstDerived1(
+         i
+         1389
+        ) [SingleConstDerived1]
+        ConstListDerived1(
+          ConstListDerived2(
+          ) [ConstListDerived2]
+          SingleConstDerived3(
+           j
+           a
+          ) [SingleConstDerived3]
+        ) [ConstListDerived1]
+      ) [ConstDeclDerived1]
+    ) [DeclarationListDerived1]
+    ConstDeclDerived1(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+      SingleConstDerived1(
+       a
+       2
+      ) [SingleConstDerived1]
+      ConstListDerived2(
+      ) [ConstListDerived2]
+    ) [ConstDeclDerived1]
+  ) [DeclarationListDerived1]
+) [Program]
+INFO  12:30:02,519 - ===================================

@@ -1,0 +1,12 @@
+INFO  13:06:29,557 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  13:06:29,620 - #2 program
+INFO  13:06:29,621 - #15 MJProgram
+INFO  13:06:29,624 - #3 {
+INFO  13:06:29,626 - #13 void
+INFO  13:06:29,627 - #15 funkcija
+INFO  13:06:29,629 - #6 (
+INFO  13:06:29,630 - #7 )
+INFO  13:06:29,631 - #3 {
+ERROR 13:06:29,633 - 
+Sintaksna greska na liniji 3
+ERROR 13:06:29,635 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

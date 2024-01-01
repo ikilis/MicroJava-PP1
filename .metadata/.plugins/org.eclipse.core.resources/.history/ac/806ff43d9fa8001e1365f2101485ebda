@@ -1,0 +1,11 @@
+INFO  12:44:02,808 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:44:02,832 - #2 program
+INFO  12:44:02,833 - #15 MJProgram
+INFO  12:44:02,833 - #3 {
+INFO  12:44:02,835 - #4 }
+INFO  12:44:02,837 - Program(
+ MJProgram
+  NoGlobals(
+  ) [NoGlobals]
+) [Program]
+INFO  12:44:02,839 - ===================================

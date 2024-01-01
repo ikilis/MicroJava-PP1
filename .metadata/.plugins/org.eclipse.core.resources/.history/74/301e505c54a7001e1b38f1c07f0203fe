@@ -1,0 +1,88 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, ASSIGN, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Boolean BOOL;
+terminal Character CHARCONST;
+
+terminal COLON, FOR, STATIC, EXTENDS, NEW, GTE, ELSE, IF;
+terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
+terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
+terminal CLASS, NOTEQUALS, CONTINUE, OR;
+
+nonterminal Program, DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl, SingleConst, ConstList, Type;
+
+
+
+Program ::= (Program) PROG IDENT ConstDecl LBRACE RBRACE;
+
+DeclarationList ::=	DeclarationList ConstDecl
+				/*|
+				DeclarationList VarDecl
+				|
+				DeclarationList ClassDecl
+				| */
+				/* empty */
+				;
+/*
+VarDecl ::= ;
+ClassDecl ::= ;
+Namespace ::= ;
+MethodDeclarationList ::= ;
+*/
+
+Type ::= (Type) IDENT:typeName;
+
+ConstDecl ::= CONST Type SingleConst ConstList SEMI | ;
+
+SingleConst ::= IDENT ASSIGN NUMBER | IDENT ASSIGN CHARCONST | IDENT ASSIGN BOOL;
+
+ConstList ::= ConstList COMMA SingleConst | /*empty*/;
+
+
+
