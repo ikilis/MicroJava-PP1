@@ -60,6 +60,8 @@ nonterminal SingleConst, ConstList, Type;
 nonterminal SingleVar, VarList, MaybeArray;
 nonterminal MethodDecl, SingleMethodDecl, ReturnType, LocalVarDecl;
 nonterminal MaybeFormPars, FormPars, SinglePar;
+nonterminal StatementList, Statement;
+nonterminal Mulop, Addop, Relop, Assignop, Label;
 
 
 
@@ -95,7 +97,7 @@ MaybeArray ::= (Array) LSQUARE RSQUARE
 /*MethodDecl*/
 MethodDecl ::= (Methods) MethodDecl SingleMethodDecl 
 			| (NoMethod) /*empty*/;
-SingleMethodDecl ::= (SingleMethodDecl) ReturnType IDENT LPAREN MaybeFormPars RPAREN LocalVarDecl LBRACE RBRACE;
+SingleMethodDecl ::= (SingleMethodDecl) ReturnType IDENT LPAREN MaybeFormPars RPAREN LocalVarDecl LBRACE StatementList RBRACE;
 
 LocalVarDecl ::= (LocalVars1) VarDecl | (NoLocalVars) /*empty*/;
 
@@ -108,5 +110,20 @@ FormPars ::= (MultiplePars) FormPars COMMA SinglePar
 			|(OnePar) SinglePar;
 			
 SinglePar ::=(OneParameter) Type IDENT MaybeArray;
+
+/*Statement*/
+StatementList ::= (Statements) StatementList Statement
+				| (SingleStatement) Statement;
+
+Statement ::= (BreakStatement) BREAK SEMI
+			| (ContinueStatement) CONTINUE SEMI;
+
+
+
+Assignop ::= ASSIGN;
+Mulop ::= MUL | DIV | MOD;
+Addop ::= PLUS | MINUS;
+Relop ::= EQUALS | NOTEQUALS | GREATER | GTE | LESS | LEQ ;
+Label ::= IDENT;
 
 
