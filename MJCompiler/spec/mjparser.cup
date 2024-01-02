@@ -53,7 +53,7 @@ terminal Character CHARCONST;
 terminal COLON, FOR, STATIC, EXTENDS, NEW, GTE, ELSE, IF;
 terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
 terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
-terminal CLASS, NOTEQUALS, CONTINUE, OR;
+terminal CLASS, NOTEQUALS, CONTINUE, OR, READ;
 
 nonterminal Program, DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl;
 nonterminal SingleConst, ConstList, Type;
@@ -64,7 +64,10 @@ nonterminal StatementList, Statement;
 nonterminal Mulop, Addop, Relop, Assignop, Label;
 nonterminal DesignatorStatement, Designator, AssignOperation;
 nonterminal DesignatorName, MybArrayPosition, Expr, Term;
-nonterminal Factor, ArrayPosition;
+nonterminal Factor, PrintAmmount, ArrayPosition;
+nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
+
+precedence left ELSE;
 
 Program ::= (Program) PROG IDENT DeclarationList LBRACE MethodDecl RBRACE;
 
@@ -100,7 +103,7 @@ MethodDecl ::= (Methods) MethodDecl SingleMethodDecl
 			| (NoMethod) /*empty*/;
 SingleMethodDecl ::= (SingleMethodDecl) ReturnType IDENT LPAREN MaybeFormPars RPAREN LocalVarDecl LBRACE StatementList RBRACE;
 
-LocalVarDecl ::= (LocalVars1) VarDecl | (NoLocalVars) /*empty*/;
+LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl | (NoLocalVars) /*empty*/;
 
 ReturnType ::= (ReturnVoid) VOID | (ReturnSmt) Type;
 
@@ -114,21 +117,27 @@ SinglePar ::=(OneParameter) Type IDENT MaybeArray;
 
 /*Statement*/
 StatementList ::= (Statements) StatementList Statement
-				| (SingleStatement) Statement;
+				| (SingleStatement) /*empty*/;
 
-Statement ::= (DesignatorStmt) DesignatorStatement
+Statement ::= (IfElseStatement) IfHeader Statement MybElse
+			| (DesignatorStmt) DesignatorStatement SEMI
 			| (BreakStatement) BREAK SEMI
 			| (ContinueStatement) CONTINUE SEMI
 			| (ReturnNothing) RETURN SEMI
+			| (ReturnSomething) RETURN Expr SEMI
+			| (ReadStatement) READ LPAREN Designator RPAREN SEMI
+			| (PrintStatement) PRINT LPAREN Expr PrintAmmount RPAREN SEMI
+			| (MoreStatements) LBRACE StatementList RBRACE
 			;
+			
 
-DesignatorStatement ::= AssignOperation SEMI | Designator INCREMENT SEMI | Designator DECREMENT SEMI;
+DesignatorStatement ::= AssignOperation | Designator INCREMENT  | Designator DECREMENT ;
 
-AssignOperation ::= Designator ASSIGN Designator;
+AssignOperation ::= Designator ASSIGN Expr;
 
 Designator ::= DesignatorName MybArrayPosition;
 
-DesignatorName ::= IDENT COLON COLON IDENT| IDENT ;
+DesignatorName ::= IDENT COLON COLON IDENT | IDENT ;
 
 MybArrayPosition ::= ArrayPosition | /*empty*/;
 
@@ -140,6 +149,18 @@ Term ::= Term Mulop Factor | Factor;
 
 Factor ::= Designator | NUMBER | CHARCONST | BOOL | NEW Type ArrayPosition | LPAREN Expr RPAREN;
 
+
+PrintAmmount ::= COMMA NUMBER | /*empty*/;
+
+IfHeader ::= IF LPAREN Condition RPAREN;
+
+MybElse ::= ELSE Statement | /*empty*/;
+
+Condition ::= Condition OR CondTerm | CondTerm;
+
+CondTerm ::= CondTerm AND CondFact | CondFact;
+
+CondFact ::= Expr Relop Expr | Expr ;
 
 Assignop ::= ASSIGN;
 Mulop ::= MUL | DIV | MOD;
