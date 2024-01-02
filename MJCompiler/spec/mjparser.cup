@@ -66,10 +66,16 @@ nonterminal DesignatorStatement, Designator, AssignOperation;
 nonterminal DesignatorName, MybArrayPosition, Expr, Term;
 nonterminal Factor, PrintAmmount, ArrayPosition;
 nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
+nonterminal MybNamespaces;
 
 precedence left ELSE;
 
-Program ::= (Program) PROG IDENT DeclarationList LBRACE MethodDecl RBRACE;
+
+Program ::= (Program) PROG IDENT MybNamespaces DeclarationList LBRACE MethodDecl RBRACE; 
+
+MybNamespaces ::= MybNamespaces Namespace | /*empty*/;
+
+Namespace ::= NAMESPACE IDENT LBRACE DeclarationList LBRACE MethodDecl RBRACE RBRACE;
 
 Type ::= IDENT;
 
