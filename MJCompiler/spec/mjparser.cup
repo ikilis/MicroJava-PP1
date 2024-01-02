@@ -62,8 +62,9 @@ nonterminal MethodDecl, SingleMethodDecl, ReturnType, LocalVarDecl;
 nonterminal MaybeFormPars, FormPars, SinglePar;
 nonterminal StatementList, Statement;
 nonterminal Mulop, Addop, Relop, Assignop, Label;
-
-
+nonterminal DesignatorStatement, Designator, AssignOperation;
+nonterminal DesignatorName, MybArrayPosition, Expr, Term;
+nonterminal Factor, ArrayPosition;
 
 Program ::= (Program) PROG IDENT DeclarationList LBRACE MethodDecl RBRACE;
 
@@ -115,9 +116,29 @@ SinglePar ::=(OneParameter) Type IDENT MaybeArray;
 StatementList ::= (Statements) StatementList Statement
 				| (SingleStatement) Statement;
 
-Statement ::= (BreakStatement) BREAK SEMI
-			| (ContinueStatement) CONTINUE SEMI;
+Statement ::= (DesignatorStmt) DesignatorStatement
+			| (BreakStatement) BREAK SEMI
+			| (ContinueStatement) CONTINUE SEMI
+			| (ReturnNothing) RETURN SEMI
+			;
 
+DesignatorStatement ::= AssignOperation SEMI | Designator INCREMENT SEMI | Designator DECREMENT SEMI;
+
+AssignOperation ::= Designator ASSIGN Designator;
+
+Designator ::= DesignatorName MybArrayPosition;
+
+DesignatorName ::= IDENT COLON COLON IDENT| IDENT ;
+
+MybArrayPosition ::= ArrayPosition | /*empty*/;
+
+ArrayPosition ::= LSQUARE Expr RSQUARE;
+
+Expr ::= Expr Addop Term | MINUS Term | Term;
+
+Term ::= Term Mulop Factor | Factor;
+
+Factor ::= Designator | NUMBER | CHARCONST | BOOL | NEW Type ArrayPosition | LPAREN Expr RPAREN;
 
 
 Assignop ::= ASSIGN;
@@ -127,3 +148,4 @@ Relop ::= EQUALS | NOTEQUALS | GREATER | GTE | LESS | LEQ ;
 Label ::= IDENT;
 
 
+ 
