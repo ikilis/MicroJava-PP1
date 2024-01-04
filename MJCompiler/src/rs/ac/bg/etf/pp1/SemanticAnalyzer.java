@@ -132,6 +132,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(SingleVar singleVar)
 	{
+		if (currentType == Tab.noType) {
+			report_error("Unsuported type " + this.currentType, null);
+			return;
+		}
+		
 		String name = singleVar.getName();
 		MaybeArray isArray = singleVar.getMaybeArray();
 		
@@ -140,7 +145,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Variable " + singleVar.getName() + " already defined!", null);
 			return;
 		}
-		Tab.insert(Obj.Var, name, currentType);
+		if( isArray instanceof NotArray)
+			Tab.insert(Obj.Var, name, currentType);
+		else {
+			Struct arrayStruct = new Struct(Struct.Array, this.currentType);
+			Tab.insert(Obj.Var, name, arrayStruct);
+		}
 		
 		
 	}
