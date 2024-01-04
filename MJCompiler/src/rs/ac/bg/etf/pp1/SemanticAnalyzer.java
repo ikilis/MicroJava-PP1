@@ -13,6 +13,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	boolean errorDetected = false;
 	private Struct currentType = Tab.noType;
 	private int nVars=0;
+	private String currentNamespace = null;
 	
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -23,6 +24,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		log.error(msg.toString());
 	}
 	
+	private String fullName(String name)
+	{
+		String ret = name;
+		if(this.currentNamespace != null)
+			ret = "__" + this.currentNamespace + "__" + name;
+		
+		return ret;
+	}
 	
 
 	public void visit(ProgramName progName)
@@ -48,6 +57,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	{
 		String name = intConst.getName();
 		
+		// Dodaj ostatakImena
+		name = this.fullName(name);
+		
 		// Da li se koristi ime
 		if(Tab.find(name) != Tab.noObj)
 		{
@@ -69,6 +81,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	{
 		String name = boolConst.getName();
 		int value = boolConst.getValue() ? 1: 0;
+		name = this.fullName(name);
+		
 		// Da li se koristi ime
 		if(Tab.find(name) != Tab.noObj)
 		{
@@ -89,6 +103,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(CharConst charConst)
 	{
 		String name = charConst.getName();
+		name = this.fullName(name);
 		
 		// Da li se koristi ime
 		if(Tab.find(name) != Tab.noObj)
@@ -138,6 +153,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		String name = singleVar.getName();
+		name = this.fullName(name);
 		MaybeArray isArray = singleVar.getMaybeArray();
 		
 		if(Tab.currentScope.findSymbol(name) != null)
@@ -151,8 +167,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Struct arrayStruct = new Struct(Struct.Array, this.currentType);
 			Tab.insert(Obj.Var, name, arrayStruct);
 		}
-		
-		
+			
+	}
+
+	public void visit(NamespaceHeader header)
+	{
+		this.currentNamespace = header.getName();
 	}
 	
+	public void visit(Namespace namespace)
+	{
+		this.currentNamespace = null;
+	}
 }

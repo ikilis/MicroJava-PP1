@@ -68,7 +68,7 @@ nonterminal Factor, PrintAmmount, ArrayPosition;
 nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
 nonterminal MybNamespaces;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl, NamespaceHeader;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 precedence left ELSE;
@@ -78,9 +78,11 @@ Program ::= (Program) ProgramName:p MybNamespaces DeclarationList LBRACE MethodD
 
 ProgramName ::= (ProgramName) PROG IDENT:progName;
 
-MybNamespaces ::= MybNamespaces Namespace | /*empty*/;
+MybNamespaces ::= (MybNamespace) MybNamespaces Namespace | /*empty*/;
 
-Namespace ::= NAMESPACE IDENT LBRACE DeclarationList LBRACE MethodDecl RBRACE RBRACE;
+Namespace ::= (Namespace) NamespaceHeader LBRACE DeclarationList LBRACE MethodDecl RBRACE RBRACE;
+
+NamespaceHeader ::= (NamespaceHeader) NAMESPACE IDENT:name;
 
 Type ::= (Type) IDENT:type;
 
