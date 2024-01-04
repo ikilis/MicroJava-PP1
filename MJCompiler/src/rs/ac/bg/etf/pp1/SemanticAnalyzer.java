@@ -130,6 +130,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 	}
 	
-	
+	public void visit(SingleVar singleVar)
+	{
+		String name = singleVar.getName();
+		MaybeArray isArray = singleVar.getMaybeArray();
+		
+		if(Tab.currentScope.findSymbol(name) != null)
+		{
+			report_error("Variable " + singleVar.getName() + " already defined!", null);
+			return;
+		}
+		Tab.insert(Obj.Var, name, currentType);
+		
+		
+	}
 	
 }

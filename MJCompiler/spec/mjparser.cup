@@ -55,7 +55,7 @@ terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
 terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
 terminal CLASS, NOTEQUALS, CONTINUE, OR, READ;
 
-nonterminal DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl;
+nonterminal DeclarationList, Namespace, MethodDeclarationList, ConstDecl, ClassDecl;
 nonterminal ConstList;
 nonterminal SingleVar, VarList, MaybeArray;
 nonterminal MethodDecl, SingleMethodDecl, ReturnType, LocalVarDecl;
@@ -68,7 +68,7 @@ nonterminal Factor, PrintAmmount, ArrayPosition;
 nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
 nonterminal MybNamespaces;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 precedence left ELSE;
@@ -103,7 +103,7 @@ SingleConst ::= (IntConst) IDENT:name ASSIGN NUMBER:value
 /* VarDeclatation*/
 VarDecl ::= (Variables) Type SingleVar VarList SEMI;
 		
-SingleVar ::= (SingleVar) IDENT MaybeArray;
+SingleVar ::= (SingleVar) IDENT:name MaybeArray:maybeArray;
 
 VarList ::= (VariableList) VarList COMMA SingleVar
 		|(NoVars)	/*empty*/;
