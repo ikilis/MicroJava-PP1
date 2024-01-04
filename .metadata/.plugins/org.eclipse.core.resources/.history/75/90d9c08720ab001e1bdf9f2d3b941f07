@@ -1,0 +1,18 @@
+INFO  18:36:09,695 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:36:09,749 - #2 program
+INFO  18:36:09,750 - #15 test301
+INFO  18:36:09,751 - #3 {
+INFO  18:36:09,751 - #13 void
+INFO  18:36:09,752 - #15 funkcija
+INFO  18:36:09,756 - #6 (
+INFO  18:36:09,757 - #7 )
+INFO  18:36:09,758 - #15 int
+INFO  18:36:09,758 - #15 i
+INFO  18:36:09,759 - #5 ;
+INFO  18:36:09,762 - #3 {
+INFO  18:36:09,764 - #47 read
+INFO  18:36:09,765 - #6 (
+INFO  18:36:09,768 - #42 namespace
+ERROR 18:36:09,771 - 
+Sintaksna greska na liniji 5
+ERROR 18:36:09,774 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

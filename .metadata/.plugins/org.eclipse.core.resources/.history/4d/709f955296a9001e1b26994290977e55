@@ -1,0 +1,7 @@
+program test301
+{
+	void funkcija () int i; {
+	
+		print(-5+1389*(-i));
+	}
+}

@@ -1,0 +1,7 @@
+program test301
+{
+	void funkcija () int i; {
+	
+		return -1 * 2 / 3;
+	}
+}

@@ -1,0 +1,8 @@
+INFO  18:19:29,683 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:19:29,716 - #2 program
+INFO  18:19:29,719 - #37 ==
+INFO  18:19:29,723 - ProgramDerived1(
+  RelopDerived1(
+  ) [RelopDerived1]
+) [ProgramDerived1]
+INFO  18:19:29,726 - ===================================

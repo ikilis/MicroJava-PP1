@@ -1,0 +1,176 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, ASSIGN, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Boolean BOOL;
+terminal Character CHARCONST;
+
+terminal COLON, FOR, STATIC, EXTENDS, NEW, GTE, ELSE, IF;
+terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
+terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
+terminal CLASS, NOTEQUALS, CONTINUE, OR, READ;
+
+nonterminal Program, DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl;
+nonterminal SingleConst, ConstList, Type;
+nonterminal SingleVar, VarList, MaybeArray;
+nonterminal MethodDecl, SingleMethodDecl, ReturnType, LocalVarDecl;
+nonterminal MaybeFormPars, FormPars, SinglePar;
+nonterminal StatementList, Statement;
+nonterminal Mulop, Addop, Relop, Assignop, Label;
+nonterminal DesignatorStatement, Designator, AssignOperation;
+nonterminal DesignatorName, MybArrayPosition, Expr, Term;
+nonterminal Factor, PrintAmmount, ArrayPosition;
+nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
+nonterminal MybNamespaces
+
+precedence left ELSE;
+
+
+Program ::= (Program) PROG IDENT MybNamespaces DeclarationList LBRACE MethodDecl RBRACE; 
+
+Namespace ::= NAMESPACE IDENT LBRACE DeclarationList LBRACE MethodDecl RBRACE RBRACE;
+
+Type ::= IDENT;
+
+DeclarationList ::=(GlobalConstants)	DeclarationList ConstDecl 
+				|
+				(GlobalVars) DeclarationList VarDecl
+				|
+				(NoGlobals)/*empty*/;
+
+/* ConstDeclaration */
+ConstDecl ::=(Constants) CONST Type SingleConst ConstList SEMI;
+
+ConstList ::= (ConstantList) ConstList COMMA SingleConst
+			| (NoConsts) /* empty */;
+
+SingleConst ::= (IntConst) IDENT ASSIGN NUMBER | (BoolConst )IDENT ASSIGN BOOL | (CharConst )IDENT ASSIGN CHARCONST;
+
+/* VarDeclatation*/
+VarDecl ::= (Variables) Type SingleVar VarList SEMI;
+		
+SingleVar ::= (SingleVar) IDENT MaybeArray;
+
+VarList ::= (VariableList) VarList COMMA SingleVar
+		|(NoVars)	/*empty*/;
+		
+MaybeArray ::= (Array) LSQUARE RSQUARE
+			|(NotArray) /*empty*/	;
+		
+/*MethodDecl*/
+MethodDecl ::= (Methods) MethodDecl SingleMethodDecl 
+			| (NoMethod) /*empty*/;
+SingleMethodDecl ::= (SingleMethodDecl) ReturnType IDENT LPAREN MaybeFormPars RPAREN LocalVarDecl LBRACE StatementList RBRACE;
+
+LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl | (NoLocalVars) /*empty*/;
+
+ReturnType ::= (ReturnVoid) VOID | (ReturnSmt) Type;
+
+/*FormPars*/
+MaybeFormPars ::= (Parameters) FormPars | (NoPars) /*empty*/;
+
+FormPars ::= (MultiplePars) FormPars COMMA SinglePar
+			|(OnePar) SinglePar;
+			
+SinglePar ::=(OneParameter) Type IDENT MaybeArray;
+
+/*Statement*/
+StatementList ::= (Statements) StatementList Statement
+				| (SingleStatement) /*empty*/;
+
+Statement ::= (IfElseStatement) IfHeader Statement MybElse
+			| (DesignatorStmt) DesignatorStatement SEMI
+			| (BreakStatement) BREAK SEMI
+			| (ContinueStatement) CONTINUE SEMI
+			| (ReturnNothing) RETURN SEMI
+			| (ReturnSomething) RETURN Expr SEMI
+			| (ReadStatement) READ LPAREN Designator RPAREN SEMI
+			| (PrintStatement) PRINT LPAREN Expr PrintAmmount RPAREN SEMI
+			| (MoreStatements) LBRACE StatementList RBRACE
+			;
+			
+
+DesignatorStatement ::= AssignOperation | Designator INCREMENT  | Designator DECREMENT ;
+
+AssignOperation ::= Designator ASSIGN Expr;
+
+Designator ::= DesignatorName MybArrayPosition;
+
+DesignatorName ::= IDENT COLON COLON IDENT | IDENT ;
+
+MybArrayPosition ::= ArrayPosition | /*empty*/;
+
+ArrayPosition ::= LSQUARE Expr RSQUARE;
+
+Expr ::= Expr Addop Term | MINUS Term | Term;
+
+Term ::= Term Mulop Factor | Factor;
+
+Factor ::= Designator | NUMBER | CHARCONST | BOOL | NEW Type ArrayPosition | LPAREN Expr RPAREN;
+
+
+PrintAmmount ::= COMMA NUMBER | /*empty*/;
+
+IfHeader ::= IF LPAREN Condition RPAREN;
+
+MybElse ::= ELSE Statement | /*empty*/;
+
+Condition ::= Condition OR CondTerm | CondTerm;
+
+CondTerm ::= CondTerm AND CondFact | CondFact;
+
+CondFact ::= Expr Relop Expr | Expr ;
+
+Assignop ::= ASSIGN;
+Mulop ::= MUL | DIV | MOD;
+Addop ::= PLUS | MINUS;
+Relop ::= EQUALS | NOTEQUALS | GREATER | GTE | LESS | LEQ ;
+Label ::= IDENT;
+
+
+ 

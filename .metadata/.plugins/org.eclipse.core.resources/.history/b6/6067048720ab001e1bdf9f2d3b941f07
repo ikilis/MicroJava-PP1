@@ -1,0 +1,9 @@
+INFO  18:22:36,641 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:22:36,666 - #2 program
+INFO  18:22:36,669 - #15 labaelica
+INFO  18:22:36,671 - ProgramDerived1(
+  LabelDerived1(
+   labaelica
+  ) [LabelDerived1]
+) [ProgramDerived1]
+INFO  18:22:36,679 - ===================================

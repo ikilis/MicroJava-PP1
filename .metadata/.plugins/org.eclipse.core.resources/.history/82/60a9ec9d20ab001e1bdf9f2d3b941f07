@@ -1,0 +1,76 @@
+INFO  17:35:21,430 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:35:21,507 - #2 program
+INFO  17:35:21,507 - #15 test301
+INFO  17:35:21,510 - #29 const
+INFO  17:35:21,512 - #15 int
+INFO  17:35:21,512 - #15 i
+INFO  17:35:21,513 - #8 =
+INFO  17:35:21,514 - #14 12
+INFO  17:35:21,514 - #5 ;
+INFO  17:35:21,516 - #29 const
+INFO  17:35:21,517 - #15 bool
+INFO  17:35:21,517 - #15 boolean
+INFO  17:35:21,517 - #8 =
+INFO  17:35:21,517 - #16 false
+INFO  17:35:21,519 - #5 ;
+INFO  17:35:21,519 - #29 const
+INFO  17:35:21,519 - #15 char
+INFO  17:35:21,519 - #15 c
+INFO  17:35:21,520 - #8 =
+INFO  17:35:21,520 - #17 a
+INFO  17:35:21,520 - #5 ;
+INFO  17:35:21,521 - #3 {
+INFO  17:35:21,523 - #4 }
+INFO  17:35:21,537 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived2(
+  ) [MybNamespacesDerived2]
+  GlobalConstants(
+    GlobalConstants(
+      GlobalConstants(
+        NoGlobals(
+        ) [NoGlobals]
+        Constants(
+          Type(
+           int
+          ) [Type]
+          IntConst(
+           i
+           12
+          ) [IntConst]
+          NoConsts(
+          ) [NoConsts]
+        ) [Constants]
+      ) [GlobalConstants]
+      Constants(
+        Type(
+         bool
+        ) [Type]
+        BoolConst(
+         boolean
+         false
+        ) [BoolConst]
+        NoConsts(
+        ) [NoConsts]
+      ) [Constants]
+    ) [GlobalConstants]
+    Constants(
+      Type(
+       char
+      ) [Type]
+      CharConst(
+       c
+       a
+      ) [CharConst]
+      NoConsts(
+      ) [NoConsts]
+    ) [Constants]
+  ) [GlobalConstants]
+  NoMethod(
+  ) [NoMethod]
+) [Program]
+INFO  17:35:21,540 - ===================================
+ERROR 17:35:21,543 - Incorrect type for: c
+INFO  17:35:21,545 - ===================================

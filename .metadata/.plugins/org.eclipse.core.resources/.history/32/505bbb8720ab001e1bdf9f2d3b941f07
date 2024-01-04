@@ -1,0 +1,65 @@
+INFO  18:37:24,765 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:37:24,832 - #2 program
+INFO  18:37:24,832 - #15 test301
+INFO  18:37:24,833 - #3 {
+INFO  18:37:24,834 - #13 void
+INFO  18:37:24,835 - #15 funkcija
+INFO  18:37:24,840 - #6 (
+INFO  18:37:24,841 - #7 )
+INFO  18:37:24,849 - #15 int
+INFO  18:37:24,850 - #15 i
+INFO  18:37:24,851 - #5 ;
+INFO  18:37:24,858 - #3 {
+INFO  18:37:24,863 - #47 read
+INFO  18:37:24,864 - #6 (
+INFO  18:37:24,864 - #15 nmsp
+INFO  18:37:24,864 - #18 :
+INFO  18:37:24,864 - #18 :
+INFO  18:37:24,865 - #15 i
+INFO  18:37:24,865 - #7 )
+INFO  18:37:24,867 - #5 ;
+INFO  18:37:24,867 - #4 }
+INFO  18:37:24,871 - #4 }
+INFO  18:37:24,882 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        ReadStatement(
+          DesignatorDerived1(
+            DesignatorNameDerived1(
+             nmsp
+             i
+            ) [DesignatorNameDerived1]
+            MybArrayPositionDerived2(
+            ) [MybArrayPositionDerived2]
+          ) [DesignatorDerived1]
+        ) [ReadStatement]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  18:37:24,886 - ===================================

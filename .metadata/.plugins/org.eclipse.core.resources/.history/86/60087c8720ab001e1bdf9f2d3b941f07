@@ -1,0 +1,14 @@
+INFO  19:16:54,371 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:16:54,459 - #2 program
+INFO  19:16:54,460 - #15 test301
+INFO  19:16:54,460 - #42 namespace
+INFO  19:16:54,460 - #15 imeNejmSpejsa
+INFO  19:16:54,460 - #3 {
+INFO  19:16:54,461 - #4 }
+INFO  19:16:54,461 - ProgramDerived1(
+ test301
+  NamespaceDerived1(
+   imeNejmSpejsa
+  ) [NamespaceDerived1]
+) [ProgramDerived1]
+INFO  19:16:54,463 - ===================================

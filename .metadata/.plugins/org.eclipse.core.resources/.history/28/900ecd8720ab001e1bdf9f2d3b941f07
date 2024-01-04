@@ -1,0 +1,106 @@
+INFO  18:26:25,210 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:26:25,273 - #2 program
+INFO  18:26:25,274 - #15 test301
+INFO  18:26:25,275 - #3 {
+INFO  18:26:25,275 - #13 void
+INFO  18:26:25,276 - #15 funkcija
+INFO  18:26:25,278 - #6 (
+INFO  18:26:25,278 - #7 )
+INFO  18:26:25,281 - #15 int
+INFO  18:26:25,281 - #15 i
+INFO  18:26:25,281 - #5 ;
+INFO  18:26:25,283 - #3 {
+INFO  18:26:25,285 - #9 return
+INFO  18:26:25,285 - #14 8
+INFO  18:26:25,286 - #35 *
+INFO  18:26:25,286 - #14 8
+INFO  18:26:25,289 - #35 *
+INFO  18:26:25,289 - #14 8
+INFO  18:26:25,290 - #35 *
+INFO  18:26:25,292 - #6 (
+INFO  18:26:25,292 - #28 -
+INFO  18:26:25,293 - #14 96
+INFO  18:26:25,293 - #10 +
+INFO  18:26:25,294 - #14 2
+INFO  18:26:25,297 - #7 )
+INFO  18:26:25,299 - #5 ;
+INFO  18:26:25,300 - #4 }
+INFO  18:26:25,301 - #4 }
+INFO  18:26:25,305 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        ReturnSomething(
+          ExprDerived3(
+            TermDerived1(
+              TermDerived1(
+                TermDerived1(
+                  TermDerived2(
+                    FactorDerived2(
+                     8
+                    ) [FactorDerived2]
+                  ) [TermDerived2]
+                  MulopDerived1(
+                  ) [MulopDerived1]
+                  FactorDerived2(
+                   8
+                  ) [FactorDerived2]
+                ) [TermDerived1]
+                MulopDerived1(
+                ) [MulopDerived1]
+                FactorDerived2(
+                 8
+                ) [FactorDerived2]
+              ) [TermDerived1]
+              MulopDerived1(
+              ) [MulopDerived1]
+              FactorDerived6(
+                ExprDerived1(
+                  ExprDerived2(
+                    TermDerived2(
+                      FactorDerived2(
+                       96
+                      ) [FactorDerived2]
+                    ) [TermDerived2]
+                  ) [ExprDerived2]
+                  AddopDerived1(
+                  ) [AddopDerived1]
+                  TermDerived2(
+                    FactorDerived2(
+                     2
+                    ) [FactorDerived2]
+                  ) [TermDerived2]
+                ) [ExprDerived1]
+              ) [FactorDerived6]
+            ) [TermDerived1]
+          ) [ExprDerived3]
+        ) [ReturnSomething]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  18:26:25,308 - ===================================

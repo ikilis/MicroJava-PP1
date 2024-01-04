@@ -1,0 +1,8 @@
+program test301
+{
+	void funkcija () int i; {
+		{
+		{} {}
+		}
+	}
+}

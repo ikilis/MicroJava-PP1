@@ -1,0 +1,113 @@
+INFO  17:55:11,291 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:55:11,350 - #2 program
+INFO  17:55:11,350 - #15 test301
+INFO  17:55:11,351 - #3 {
+INFO  17:55:11,352 - #13 void
+INFO  17:55:11,352 - #15 funkcija
+INFO  17:55:11,353 - #6 (
+INFO  17:55:11,354 - #7 )
+INFO  17:55:11,355 - #15 int
+INFO  17:55:11,358 - #15 i
+INFO  17:55:11,358 - #5 ;
+INFO  17:55:11,362 - #3 {
+INFO  17:55:11,365 - #15 designator
+INFO  17:55:11,366 - #8 =
+INFO  17:55:11,367 - #15 designator
+INFO  17:55:11,367 - #32 [
+INFO  17:55:11,367 - #22 new
+INFO  17:55:11,368 - #15 int
+INFO  17:55:11,368 - #32 [
+INFO  17:55:11,368 - #22 new
+INFO  17:55:11,368 - #15 int
+INFO  17:55:11,369 - #32 [
+INFO  17:55:11,370 - #14 2
+INFO  17:55:11,370 - #33 ]
+INFO  17:55:11,370 - #33 ]
+INFO  17:55:11,371 - #33 ]
+INFO  17:55:11,371 - #5 ;
+INFO  17:55:11,371 - #4 }
+INFO  17:55:11,372 - #4 }
+INFO  17:55:11,383 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        DesignatorStmt(
+          DesignatorStatementDerived1(
+            AssignOperationDerived1(
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 designator
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived2(
+                ) [MybArrayPositionDerived2]
+              ) [DesignatorDerived1]
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 designator
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived1(
+                  ArrayPositionDerived1(
+                    ExprDerived3(
+                      TermDerived2(
+                        FactorDerived5(
+                          TypeDerived1(
+                           int
+                          ) [TypeDerived1]
+                          ArrayPositionDerived1(
+                            ExprDerived3(
+                              TermDerived2(
+                                FactorDerived5(
+                                  TypeDerived1(
+                                   int
+                                  ) [TypeDerived1]
+                                  ArrayPositionDerived1(
+                                    ExprDerived3(
+                                      TermDerived2(
+                                        FactorDerived2(
+                                         2
+                                        ) [FactorDerived2]
+                                      ) [TermDerived2]
+                                    ) [ExprDerived3]
+                                  ) [ArrayPositionDerived1]
+                                ) [FactorDerived5]
+                              ) [TermDerived2]
+                            ) [ExprDerived3]
+                          ) [ArrayPositionDerived1]
+                        ) [FactorDerived5]
+                      ) [TermDerived2]
+                    ) [ExprDerived3]
+                  ) [ArrayPositionDerived1]
+                ) [MybArrayPositionDerived1]
+              ) [DesignatorDerived1]
+            ) [AssignOperationDerived1]
+          ) [DesignatorStatementDerived1]
+        ) [DesignatorStmt]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:55:11,390 - ===================================

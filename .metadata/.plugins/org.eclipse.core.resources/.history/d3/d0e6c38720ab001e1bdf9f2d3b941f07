@@ -1,0 +1,116 @@
+INFO  19:02:58,927 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:02:59,020 - #2 program
+INFO  19:02:59,020 - #15 test301
+INFO  19:02:59,021 - #3 {
+INFO  19:02:59,022 - #13 void
+INFO  19:02:59,024 - #15 funkcija
+INFO  19:02:59,026 - #6 (
+INFO  19:02:59,026 - #7 )
+INFO  19:02:59,027 - #15 int
+INFO  19:02:59,027 - #15 i
+INFO  19:02:59,027 - #5 ;
+INFO  19:02:59,029 - #3 {
+INFO  19:02:59,029 - #25 if
+INFO  19:02:59,030 - #6 (
+INFO  19:02:59,030 - #14 1
+INFO  19:02:59,030 - #37 ==
+INFO  19:02:59,031 - #14 3
+INFO  19:02:59,033 - #7 )
+INFO  19:02:59,034 - #3 {
+INFO  19:02:59,034 - #9 return
+INFO  19:02:59,035 - #5 ;
+INFO  19:02:59,036 - #4 }
+INFO  19:02:59,038 - #24 else
+INFO  19:02:59,039 - #3 {
+INFO  19:02:59,039 - #9 return
+INFO  19:02:59,039 - #14 2
+INFO  19:02:59,039 - #5 ;
+INFO  19:02:59,041 - #4 }
+INFO  19:02:59,043 - #4 }
+INFO  19:02:59,044 - #4 }
+INFO  19:02:59,048 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeaderDerived1(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactDerived1(
+                  ExprDerived3(
+                    TermDerived2(
+                      FactorDerived2(
+                       1
+                      ) [FactorDerived2]
+                    ) [TermDerived2]
+                  ) [ExprDerived3]
+                  RelopDerived1(
+                  ) [RelopDerived1]
+                  ExprDerived3(
+                    TermDerived2(
+                      FactorDerived2(
+                       3
+                      ) [FactorDerived2]
+                    ) [TermDerived2]
+                  ) [ExprDerived3]
+                ) [CondFactDerived1]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeaderDerived1]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          MybElseDerived1(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnSomething(
+                  ExprDerived3(
+                    TermDerived2(
+                      FactorDerived2(
+                       2
+                      ) [FactorDerived2]
+                    ) [TermDerived2]
+                  ) [ExprDerived3]
+                ) [ReturnSomething]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [MybElseDerived1]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:02:59,050 - ===================================

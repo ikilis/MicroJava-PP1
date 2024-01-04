@@ -1,0 +1,13 @@
+program test301
+{
+	void funkcija () int i; {
+		if(1)
+		{
+			return;
+		}
+		else
+		{
+			return 2;
+		}
+	}
+}

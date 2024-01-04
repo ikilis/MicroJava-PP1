@@ -1,0 +1,18 @@
+INFO  16:20:37,550 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  16:20:37,628 - #2 program
+INFO  16:20:37,631 - #15 test301
+INFO  16:20:37,633 - #3 {
+INFO  16:20:37,636 - #4 }
+INFO  16:20:37,647 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived2(
+  ) [MybNamespacesDerived2]
+  NoGlobals(
+  ) [NoGlobals]
+  NoMethod(
+  ) [NoMethod]
+) [Program]
+INFO  16:20:37,647 - ===================================
+INFO  16:20:37,651 - ===================================

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/0/2024 13:9:0
+// 4/0/2024 17:45:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,8 +13,9 @@ public class SingleMethodDecl implements SyntaxNode {
     private String I2;
     private MaybeFormPars MaybeFormPars;
     private LocalVarDecl LocalVarDecl;
+    private StatementList StatementList;
 
-    public SingleMethodDecl (ReturnType ReturnType, String I2, MaybeFormPars MaybeFormPars, LocalVarDecl LocalVarDecl) {
+    public SingleMethodDecl (ReturnType ReturnType, String I2, MaybeFormPars MaybeFormPars, LocalVarDecl LocalVarDecl, StatementList StatementList) {
         this.ReturnType=ReturnType;
         if(ReturnType!=null) ReturnType.setParent(this);
         this.I2=I2;
@@ -22,6 +23,8 @@ public class SingleMethodDecl implements SyntaxNode {
         if(MaybeFormPars!=null) MaybeFormPars.setParent(this);
         this.LocalVarDecl=LocalVarDecl;
         if(LocalVarDecl!=null) LocalVarDecl.setParent(this);
+        this.StatementList=StatementList;
+        if(StatementList!=null) StatementList.setParent(this);
     }
 
     public ReturnType getReturnType() {
@@ -56,6 +59,14 @@ public class SingleMethodDecl implements SyntaxNode {
         this.LocalVarDecl=LocalVarDecl;
     }
 
+    public StatementList getStatementList() {
+        return StatementList;
+    }
+
+    public void setStatementList(StatementList StatementList) {
+        this.StatementList=StatementList;
+    }
+
     public SyntaxNode getParent() {
         return parent;
     }
@@ -80,6 +91,7 @@ public class SingleMethodDecl implements SyntaxNode {
         if(ReturnType!=null) ReturnType.accept(visitor);
         if(MaybeFormPars!=null) MaybeFormPars.accept(visitor);
         if(LocalVarDecl!=null) LocalVarDecl.accept(visitor);
+        if(StatementList!=null) StatementList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
@@ -87,12 +99,14 @@ public class SingleMethodDecl implements SyntaxNode {
         if(ReturnType!=null) ReturnType.traverseTopDown(visitor);
         if(MaybeFormPars!=null) MaybeFormPars.traverseTopDown(visitor);
         if(LocalVarDecl!=null) LocalVarDecl.traverseTopDown(visitor);
+        if(StatementList!=null) StatementList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ReturnType!=null) ReturnType.traverseBottomUp(visitor);
         if(MaybeFormPars!=null) MaybeFormPars.traverseBottomUp(visitor);
         if(LocalVarDecl!=null) LocalVarDecl.traverseBottomUp(visitor);
+        if(StatementList!=null) StatementList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -118,6 +132,12 @@ public class SingleMethodDecl implements SyntaxNode {
 
         if(LocalVarDecl!=null)
             buffer.append(LocalVarDecl.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(StatementList!=null)
+            buffer.append(StatementList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

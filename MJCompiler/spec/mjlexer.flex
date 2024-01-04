@@ -52,6 +52,7 @@ import java_cup.runtime.Symbol;
 "continue" { return new_symbol(sym.CONTINUE, yytext()); }
 "for" { return new_symbol(sym.FOR, yytext()); }
 "static" { return new_symbol(sym.STATIC, yytext()); }
+"read"	{return new_symbol(sym.READ, yytext());}
 
 (true|false)  { return new_symbol(sym.BOOL, Boolean.valueOf(yytext())); }
 
@@ -62,10 +63,10 @@ import java_cup.runtime.Symbol;
 "%"   { return new_symbol(sym.MOD, yytext()); }
 "=="   { return new_symbol(sym.EQUALS, yytext()); }
 "!="   { return new_symbol(sym.NOTEQUALS, yytext()); }
-">"   { return new_symbol(sym.GREATER, yytext()); }
 ">="   { return new_symbol(sym.GTE, yytext()); }
-"<"   { return new_symbol(sym.LESS, yytext()); }
+">"   { return new_symbol(sym.GREATER, yytext()); }
 "<="   { return new_symbol(sym.LEQ, yytext()); }
+"<"   { return new_symbol(sym.LESS, yytext()); }
 "&&"   { return new_symbol(sym.AND, yytext()); }
 "||"   { return new_symbol(sym.OR, yytext()); }
 "="   { return new_symbol(sym.ASSIGN, yytext()); }

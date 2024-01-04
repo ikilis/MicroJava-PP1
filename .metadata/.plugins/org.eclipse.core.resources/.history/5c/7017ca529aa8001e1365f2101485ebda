@@ -1,9 +1,0 @@
-program MJProgram
-const i = 12;
-int i, j, k;
-const i = 12;
-int i,j,k;
-const i = 12;
-{
-
-}

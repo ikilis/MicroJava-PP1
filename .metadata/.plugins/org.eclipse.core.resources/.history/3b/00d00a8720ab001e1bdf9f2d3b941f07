@@ -1,0 +1,71 @@
+INFO  17:39:26,629 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:39:26,678 - #2 program
+INFO  17:39:26,679 - #15 test301
+INFO  17:39:26,682 - #3 {
+INFO  17:39:26,683 - #13 void
+INFO  17:39:26,684 - #15 funkcija
+INFO  17:39:26,687 - #6 (
+INFO  17:39:26,687 - #7 )
+INFO  17:39:26,689 - #15 int
+INFO  17:39:26,689 - #15 i
+INFO  17:39:26,690 - #5 ;
+INFO  17:39:26,691 - #3 {
+INFO  17:39:26,696 - #15 Ident
+INFO  17:39:26,696 - #8 =
+INFO  17:39:26,701 - #15 Ident
+INFO  17:39:26,705 - #5 ;
+INFO  17:39:26,706 - #4 }
+INFO  17:39:26,706 - #4 }
+INFO  17:39:26,711 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        DesignatorStmt(
+          DesignatorStatementDerived1(
+            AssignOperationDerived1(
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 Ident
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived2(
+                ) [MybArrayPositionDerived2]
+              ) [DesignatorDerived1]
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 Ident
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived2(
+                ) [MybArrayPositionDerived2]
+              ) [DesignatorDerived1]
+            ) [AssignOperationDerived1]
+          ) [DesignatorStatementDerived1]
+        ) [DesignatorStmt]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:39:26,712 - ===================================

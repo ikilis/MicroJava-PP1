@@ -1,34 +1,34 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/0/2024 13:9:0
+// 4/0/2024 17:45:25
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class CharConst extends SingleConst {
 
-    private String I1;
-    private Character C2;
+    private String name;
+    private Character value;
 
-    public CharConst (String I1, Character C2) {
-        this.I1=I1;
-        this.C2=C2;
+    public CharConst (String name, Character value) {
+        this.name=name;
+        this.value=value;
     }
 
-    public String getI1() {
-        return I1;
+    public String getName() {
+        return name;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setName(String name) {
+        this.name=name;
     }
 
-    public Character getC2() {
-        return C2;
+    public Character getValue() {
+        return value;
     }
 
-    public void setC2(Character C2) {
-        this.C2=C2;
+    public void setValue(Character value) {
+        this.value=value;
     }
 
     public void accept(Visitor visitor) {
@@ -51,10 +51,10 @@ public class CharConst extends SingleConst {
         buffer.append(tab);
         buffer.append("CharConst(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+name);
         buffer.append("\n");
 
-        buffer.append(" "+tab+C2);
+        buffer.append(" "+tab+value);
         buffer.append("\n");
 
         buffer.append(tab);

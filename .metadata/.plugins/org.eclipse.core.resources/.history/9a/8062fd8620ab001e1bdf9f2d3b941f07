@@ -1,0 +1,70 @@
+INFO  17:15:24,600 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:15:24,636 - #2 program
+INFO  17:15:24,638 - #15 MJProgram
+INFO  17:15:24,641 - #3 {
+INFO  17:15:24,646 - #15 int
+INFO  17:15:24,650 - #15 funkcija
+INFO  17:15:24,653 - #6 (
+INFO  17:15:24,655 - #15 int
+INFO  17:15:24,658 - #15 k
+INFO  17:15:24,661 - #11 ,
+INFO  17:15:24,665 - #15 bool
+INFO  17:15:24,665 - #15 j
+INFO  17:15:24,665 - #7 )
+INFO  17:15:24,666 - #3 {
+INFO  17:15:24,667 - #45 continue
+INFO  17:15:24,667 - #5 ;
+INFO  17:15:24,669 - #36 break
+INFO  17:15:24,671 - #5 ;
+INFO  17:15:24,672 - #4 }
+INFO  17:15:24,673 - #4 }
+INFO  17:15:24,682 - Program(
+ MJProgram
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+      ) [ReturnSmt]
+     funkcija
+      Parameters(
+        MultiplePars(
+          OnePar(
+            OneParameter(
+              TypeDerived1(
+               int
+              ) [TypeDerived1]
+             k
+              NotArray(
+              ) [NotArray]
+            ) [OneParameter]
+          ) [OnePar]
+          OneParameter(
+            TypeDerived1(
+             bool
+            ) [TypeDerived1]
+           j
+            NotArray(
+            ) [NotArray]
+          ) [OneParameter]
+        ) [MultiplePars]
+      ) [Parameters]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+          ContinueStatement(
+          ) [ContinueStatement]
+        ) [SingleStatement]
+        BreakStatement(
+        ) [BreakStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:15:24,682 - ===================================

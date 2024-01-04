@@ -1,34 +1,34 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/0/2024 13:9:0
+// 4/0/2024 17:45:25
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class IntConst extends SingleConst {
 
-    private String I1;
-    private Integer N2;
+    private String name;
+    private Integer value;
 
-    public IntConst (String I1, Integer N2) {
-        this.I1=I1;
-        this.N2=N2;
+    public IntConst (String name, Integer value) {
+        this.name=name;
+        this.value=value;
     }
 
-    public String getI1() {
-        return I1;
+    public String getName() {
+        return name;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setName(String name) {
+        this.name=name;
     }
 
-    public Integer getN2() {
-        return N2;
+    public Integer getValue() {
+        return value;
     }
 
-    public void setN2(Integer N2) {
-        this.N2=N2;
+    public void setValue(Integer value) {
+        this.value=value;
     }
 
     public void accept(Visitor visitor) {
@@ -51,10 +51,10 @@ public class IntConst extends SingleConst {
         buffer.append(tab);
         buffer.append("IntConst(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+name);
         buffer.append("\n");
 
-        buffer.append(" "+tab+N2);
+        buffer.append(" "+tab+value);
         buffer.append("\n");
 
         buffer.append(tab);

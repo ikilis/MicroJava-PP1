@@ -55,8 +55,8 @@ terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
 terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
 terminal CLASS, NOTEQUALS, CONTINUE, OR, READ;
 
-nonterminal Program, DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl;
-nonterminal SingleConst, ConstList, Type;
+nonterminal DeclarationList, Namespace, MethodDeclarationList, ConstDecl, VarDecl, ClassDecl;
+nonterminal ConstList;
 nonterminal SingleVar, VarList, MaybeArray;
 nonterminal MethodDecl, SingleMethodDecl, ReturnType, LocalVarDecl;
 nonterminal MaybeFormPars, FormPars, SinglePar;
@@ -68,16 +68,21 @@ nonterminal Factor, PrintAmmount, ArrayPosition;
 nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
 nonterminal MybNamespaces;
 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
 precedence left ELSE;
 
 
-Program ::= (Program) PROG IDENT MybNamespaces DeclarationList LBRACE MethodDecl RBRACE; 
+Program ::= (Program) ProgramName:p MybNamespaces DeclarationList LBRACE MethodDecl RBRACE; 
+
+ProgramName ::= (ProgramName) PROG IDENT:progName;
 
 MybNamespaces ::= MybNamespaces Namespace | /*empty*/;
 
 Namespace ::= NAMESPACE IDENT LBRACE DeclarationList LBRACE MethodDecl RBRACE RBRACE;
 
-Type ::= IDENT;
+Type ::= (Type) IDENT:type;
 
 DeclarationList ::=(GlobalConstants)	DeclarationList ConstDecl 
 				|
@@ -86,12 +91,14 @@ DeclarationList ::=(GlobalConstants)	DeclarationList ConstDecl
 				(NoGlobals)/*empty*/;
 
 /* ConstDeclaration */
-ConstDecl ::=(Constants) CONST Type SingleConst ConstList SEMI;
+ConstDecl ::=(Constants) CONST Type:type SingleConst ConstList SEMI;
 
 ConstList ::= (ConstantList) ConstList COMMA SingleConst
 			| (NoConsts) /* empty */;
 
-SingleConst ::= (IntConst) IDENT ASSIGN NUMBER | (BoolConst )IDENT ASSIGN BOOL | (CharConst )IDENT ASSIGN CHARCONST;
+SingleConst ::= (IntConst) IDENT:name ASSIGN NUMBER:value
+			 | (BoolConst )IDENT:name ASSIGN BOOL:value
+			 | (CharConst )IDENT:name ASSIGN CHARCONST:value;
 
 /* VarDeclatation*/
 VarDecl ::= (Variables) Type SingleVar VarList SEMI;

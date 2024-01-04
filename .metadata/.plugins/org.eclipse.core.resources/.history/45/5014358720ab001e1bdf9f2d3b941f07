@@ -1,0 +1,71 @@
+INFO  13:12:45,416 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  13:12:45,448 - #2 program
+INFO  13:12:45,448 - #15 MJProgram
+INFO  13:12:45,449 - #3 {
+INFO  13:12:45,450 - #15 int
+INFO  13:12:45,451 - #15 funkcija
+INFO  13:12:45,452 - #6 (
+INFO  13:12:45,452 - #15 int
+INFO  13:12:45,452 - #15 k
+INFO  13:12:45,454 - #11 ,
+INFO  13:12:45,455 - #15 bool
+INFO  13:12:45,455 - #15 j
+INFO  13:12:45,456 - #11 ,
+INFO  13:12:45,456 - #15 char
+INFO  13:12:45,456 - #15 k
+INFO  13:12:45,456 - #7 )
+INFO  13:12:45,457 - #3 {
+INFO  13:12:45,459 - #4 }
+INFO  13:12:45,459 - #4 }
+INFO  13:12:45,462 - Program(
+ MJProgram
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+      ) [ReturnSmt]
+     funkcija
+      Parameters(
+        MultiplePars(
+          MultiplePars(
+            OnePar(
+              SingleParDerived1(
+                TypeDerived1(
+                 int
+                ) [TypeDerived1]
+               k
+                NotArray(
+                ) [NotArray]
+              ) [SingleParDerived1]
+            ) [OnePar]
+            SingleParDerived1(
+              TypeDerived1(
+               bool
+              ) [TypeDerived1]
+             j
+              NotArray(
+              ) [NotArray]
+            ) [SingleParDerived1]
+          ) [MultiplePars]
+          SingleParDerived1(
+            TypeDerived1(
+             char
+            ) [TypeDerived1]
+           k
+            NotArray(
+            ) [NotArray]
+          ) [SingleParDerived1]
+        ) [MultiplePars]
+      ) [Parameters]
+      NoLocalVars(
+      ) [NoLocalVars]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  13:12:45,465 - ===================================

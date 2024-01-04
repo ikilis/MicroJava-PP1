@@ -1,0 +1,37 @@
+INFO  16:53:26,385 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  16:53:26,466 - #2 program
+INFO  16:53:26,468 - #15 test301
+INFO  16:53:26,469 - #29 const
+INFO  16:53:26,472 - #15 int
+INFO  16:53:26,472 - #15 i
+INFO  16:53:26,473 - #8 =
+INFO  16:53:26,473 - #14 1389
+INFO  16:53:26,474 - #5 ;
+INFO  16:53:26,475 - #3 {
+INFO  16:53:26,476 - #4 }
+INFO  16:53:26,482 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived2(
+  ) [MybNamespacesDerived2]
+  GlobalConstants(
+    NoGlobals(
+    ) [NoGlobals]
+    Constants(
+      Type(
+       int
+      ) [Type]
+      IntConst(
+       i
+       1389
+      ) [IntConst]
+      NoConsts(
+      ) [NoConsts]
+    ) [Constants]
+  ) [GlobalConstants]
+  NoMethod(
+  ) [NoMethod]
+) [Program]
+INFO  16:53:26,485 - ===================================
+INFO  16:53:26,494 - ===================================

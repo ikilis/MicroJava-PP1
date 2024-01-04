@@ -1,0 +1,86 @@
+INFO  17:52:48,340 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:52:48,393 - #2 program
+INFO  17:52:48,393 - #15 test301
+INFO  17:52:48,394 - #3 {
+INFO  17:52:48,395 - #13 void
+INFO  17:52:48,396 - #15 funkcija
+INFO  17:52:48,396 - #6 (
+INFO  17:52:48,397 - #7 )
+INFO  17:52:48,398 - #15 int
+INFO  17:52:48,398 - #15 i
+INFO  17:52:48,398 - #5 ;
+INFO  17:52:48,399 - #3 {
+INFO  17:52:48,401 - #15 designator
+INFO  17:52:48,401 - #8 =
+INFO  17:52:48,402 - #15 designator
+INFO  17:52:48,402 - #32 [
+INFO  17:52:48,402 - #22 new
+INFO  17:52:48,402 - #15 int
+INFO  17:52:48,402 - #33 ]
+INFO  17:52:48,406 - #5 ;
+INFO  17:52:48,406 - #4 }
+INFO  17:52:48,406 - #4 }
+INFO  17:52:48,423 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        DesignatorStmt(
+          DesignatorStatementDerived1(
+            AssignOperationDerived1(
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 designator
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived2(
+                ) [MybArrayPositionDerived2]
+              ) [DesignatorDerived1]
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 designator
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived1(
+                  ExprDerived3(
+                    TermDerived2(
+                      FactorDerived5(
+                        TypeDerived1(
+                         int
+                        ) [TypeDerived1]
+                        MybArrayPositionDerived2(
+                        ) [MybArrayPositionDerived2]
+                      ) [FactorDerived5]
+                    ) [TermDerived2]
+                  ) [ExprDerived3]
+                ) [MybArrayPositionDerived1]
+              ) [DesignatorDerived1]
+            ) [AssignOperationDerived1]
+          ) [DesignatorStatementDerived1]
+        ) [DesignatorStmt]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:52:48,425 - ===================================

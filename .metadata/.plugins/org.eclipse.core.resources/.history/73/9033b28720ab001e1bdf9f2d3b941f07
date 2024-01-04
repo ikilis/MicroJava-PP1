@@ -1,0 +1,61 @@
+INFO  17:41:25,361 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:41:25,404 - #2 program
+INFO  17:41:25,408 - #15 test301
+INFO  17:41:25,408 - #3 {
+INFO  17:41:25,410 - #13 void
+INFO  17:41:25,412 - #15 funkcija
+INFO  17:41:25,413 - #6 (
+INFO  17:41:25,414 - #7 )
+INFO  17:41:25,416 - #15 int
+INFO  17:41:25,416 - #15 i
+INFO  17:41:25,416 - #5 ;
+INFO  17:41:25,418 - #3 {
+INFO  17:41:25,420 - #15 ident
+INFO  17:41:25,420 - #38 ++
+INFO  17:41:25,420 - #5 ;
+INFO  17:41:25,420 - #4 }
+INFO  17:41:25,422 - #4 }
+INFO  17:41:25,423 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        DesignatorStmt(
+          DesignatorStatementDerived2(
+            DesignatorDerived1(
+              DesignatorNameDerived2(
+               ident
+              ) [DesignatorNameDerived2]
+              MybArrayPositionDerived2(
+              ) [MybArrayPositionDerived2]
+            ) [DesignatorDerived1]
+          ) [DesignatorStatementDerived2]
+        ) [DesignatorStmt]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:41:25,425 - ===================================

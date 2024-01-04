@@ -1,0 +1,96 @@
+INFO  17:36:56,969 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:36:57,039 - #2 program
+INFO  17:36:57,040 - #15 test301
+INFO  17:36:57,042 - #29 const
+INFO  17:36:57,045 - #15 int
+INFO  17:36:57,047 - #15 i
+INFO  17:36:57,050 - #8 =
+INFO  17:36:57,053 - #14 12
+INFO  17:36:57,054 - #5 ;
+INFO  17:36:57,056 - #29 const
+INFO  17:36:57,058 - #15 bool
+INFO  17:36:57,059 - #15 boolean
+INFO  17:36:57,061 - #8 =
+INFO  17:36:57,063 - #16 false
+INFO  17:36:57,063 - #11 ,
+INFO  17:36:57,063 - #15 tacan
+INFO  17:36:57,063 - #8 =
+INFO  17:36:57,063 - #16 true
+INFO  17:36:57,063 - #11 ,
+INFO  17:36:57,064 - #15 loseNapisan
+INFO  17:36:57,064 - #8 =
+INFO  17:36:57,065 - #17 a
+INFO  17:36:57,067 - #5 ;
+INFO  17:36:57,067 - #29 const
+INFO  17:36:57,070 - #15 char
+INFO  17:36:57,070 - #15 c
+INFO  17:36:57,070 - #8 =
+INFO  17:36:57,071 - #17 a
+INFO  17:36:57,071 - #5 ;
+INFO  17:36:57,073 - #3 {
+INFO  17:36:57,076 - #4 }
+INFO  17:36:57,094 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived2(
+  ) [MybNamespacesDerived2]
+  GlobalConstants(
+    GlobalConstants(
+      GlobalConstants(
+        NoGlobals(
+        ) [NoGlobals]
+        Constants(
+          Type(
+           int
+          ) [Type]
+          IntConst(
+           i
+           12
+          ) [IntConst]
+          NoConsts(
+          ) [NoConsts]
+        ) [Constants]
+      ) [GlobalConstants]
+      Constants(
+        Type(
+         bool
+        ) [Type]
+        BoolConst(
+         boolean
+         false
+        ) [BoolConst]
+        ConstantList(
+          ConstantList(
+            NoConsts(
+            ) [NoConsts]
+            BoolConst(
+             tacan
+             true
+            ) [BoolConst]
+          ) [ConstantList]
+          CharConst(
+           loseNapisan
+           a
+          ) [CharConst]
+        ) [ConstantList]
+      ) [Constants]
+    ) [GlobalConstants]
+    Constants(
+      Type(
+       char
+      ) [Type]
+      CharConst(
+       c
+       a
+      ) [CharConst]
+      NoConsts(
+      ) [NoConsts]
+    ) [Constants]
+  ) [GlobalConstants]
+  NoMethod(
+  ) [NoMethod]
+) [Program]
+INFO  17:36:57,095 - ===================================
+ERROR 17:36:57,099 - Incorrect type for: loseNapisan
+INFO  17:36:57,102 - ===================================

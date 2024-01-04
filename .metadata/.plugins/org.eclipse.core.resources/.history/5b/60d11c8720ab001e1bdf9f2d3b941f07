@@ -1,0 +1,77 @@
+INFO  17:40:21,084 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:40:21,140 - #2 program
+INFO  17:40:21,143 - #15 test301
+INFO  17:40:21,146 - #3 {
+INFO  17:40:21,146 - #13 void
+INFO  17:40:21,148 - #15 funkcija
+INFO  17:40:21,150 - #6 (
+INFO  17:40:21,150 - #7 )
+INFO  17:40:21,150 - #15 int
+INFO  17:40:21,150 - #15 i
+INFO  17:40:21,150 - #5 ;
+INFO  17:40:21,150 - #3 {
+INFO  17:40:21,150 - #15 Ident
+INFO  17:40:21,150 - #32 [
+INFO  17:40:21,155 - #15 f
+INFO  17:40:21,155 - #33 ]
+INFO  17:40:21,155 - #8 =
+INFO  17:40:21,155 - #15 Ident
+INFO  17:40:21,156 - #5 ;
+INFO  17:40:21,157 - #4 }
+INFO  17:40:21,157 - #4 }
+INFO  17:40:21,161 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        DesignatorStmt(
+          DesignatorStatementDerived1(
+            AssignOperationDerived1(
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 Ident
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived1(
+                  ExprDerived1(
+                   f
+                  ) [ExprDerived1]
+                ) [MybArrayPositionDerived1]
+              ) [DesignatorDerived1]
+              DesignatorDerived1(
+                DesignatorNameDerived2(
+                 Ident
+                ) [DesignatorNameDerived2]
+                MybArrayPositionDerived2(
+                ) [MybArrayPositionDerived2]
+              ) [DesignatorDerived1]
+            ) [AssignOperationDerived1]
+          ) [DesignatorStatementDerived1]
+        ) [DesignatorStmt]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:40:21,163 - ===================================

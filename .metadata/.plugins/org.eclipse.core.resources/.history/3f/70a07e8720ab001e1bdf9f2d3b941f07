@@ -1,0 +1,102 @@
+INFO  18:44:29,996 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:44:30,061 - #2 program
+INFO  18:44:30,062 - #15 test301
+INFO  18:44:30,062 - #3 {
+INFO  18:44:30,063 - #13 void
+INFO  18:44:30,063 - #15 funkcija
+INFO  18:44:30,064 - #6 (
+INFO  18:44:30,065 - #7 )
+INFO  18:44:30,065 - #15 int
+INFO  18:44:30,065 - #15 i
+INFO  18:44:30,066 - #5 ;
+INFO  18:44:30,068 - #3 {
+INFO  18:44:30,069 - #12 print
+INFO  18:44:30,070 - #6 (
+INFO  18:44:30,070 - #28 -
+INFO  18:44:30,070 - #14 5
+INFO  18:44:30,070 - #10 +
+INFO  18:44:30,071 - #14 1389
+INFO  18:44:30,079 - #35 *
+INFO  18:44:30,081 - #6 (
+INFO  18:44:30,083 - #28 -
+INFO  18:44:30,083 - #15 i
+INFO  18:44:30,084 - #7 )
+INFO  18:44:30,085 - #11 ,
+INFO  18:44:30,086 - #14 1389
+INFO  18:44:30,088 - #7 )
+INFO  18:44:30,088 - #5 ;
+INFO  18:44:30,088 - #4 }
+INFO  18:44:30,088 - #4 }
+INFO  18:44:30,091 - Program(
+ test301
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+      ) [ReturnVoid]
+     funkcija
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      SingleStatement(
+        PrintStatement(
+          ExprDerived1(
+            ExprDerived2(
+              TermDerived2(
+                FactorDerived2(
+                 5
+                ) [FactorDerived2]
+              ) [TermDerived2]
+            ) [ExprDerived2]
+            AddopDerived1(
+            ) [AddopDerived1]
+            TermDerived1(
+              TermDerived2(
+                FactorDerived2(
+                 1389
+                ) [FactorDerived2]
+              ) [TermDerived2]
+              MulopDerived1(
+              ) [MulopDerived1]
+              FactorDerived6(
+                ExprDerived2(
+                  TermDerived2(
+                    FactorDerived1(
+                      DesignatorDerived1(
+                        DesignatorNameDerived2(
+                         i
+                        ) [DesignatorNameDerived2]
+                        MybArrayPositionDerived2(
+                        ) [MybArrayPositionDerived2]
+                      ) [DesignatorDerived1]
+                    ) [FactorDerived1]
+                  ) [TermDerived2]
+                ) [ExprDerived2]
+              ) [FactorDerived6]
+            ) [TermDerived1]
+          ) [ExprDerived1]
+          PrintAmmountDerived1(
+           1389
+          ) [PrintAmmountDerived1]
+        ) [PrintStatement]
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  18:44:30,093 - ===================================

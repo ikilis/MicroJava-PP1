@@ -1,5 +1,0 @@
-program MJProgram
-{
-	void funkcija() int i,j,k[];{}
-
-}
