@@ -20,6 +20,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public boolean mainFound = false;
 	private String _MAIN_ = "main";
 	
+	private int loopLvl = 0;
+	// TODO: dodaj proveru je li metoda uopste imala return, pa vidi je li joj to odgovara
+	
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
 		StringBuilder msg = new StringBuilder(message);
@@ -242,6 +245,92 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		Tab.find(name).setFpPos(this.formalParCnt++);
 	}
+
+	public void visit(BreakStatement stmt)
+	{
+		if(--this.loopLvl < 0)
+			this.report_error("BREAK can only be used inside loops", stmt);
+	}
+	
+	public void visit(ContinueStatement stmt)
+	{
+		if(--this.loopLvl < 1)
+			this.report_error("CONTINUE can only be used inside loops", stmt);
+	}
+	
+	public void visit(ReturnNothing ret)
+	{
+		if (Tab.noType != this.currentMethod.getType())
+			this.report_error("Function "+ this.currentMethod.getName() + " must have return value", ret);
+	}
+	
+	public void visit(ReturnSomething ret)
+	{
+		Struct expectedType = this.currentMethod.getType();
+		if(expectedType == Tab.noType)
+		{
+			this.report_error("Function "+ this.currentMethod.getName() + " must not have return value", ret);
+		}
+		if(expectedType != ret.getExpr().struct)
+		{
+			{
+				this.report_error("Function "+ this.currentMethod.getName() + " must return "+ expectedType +" not "+ret.getExpr().struct, ret);
+			}
+		}
+	}
+	
+	public void visit(ExprTerm expr)
+	{
+		expr.struct = expr.getTerm().struct;
+	}
+	
+	public void visit(FinalTerm term)
+	{
+		term.struct = term.getFactor().struct;
+	}
+	public void visit(NegativeTerm term)
+	{
+		term.struct = term.getTerm().struct;
+		if(term.getTerm().struct != Tab.intType)
+			this.report_error("Term "+ term.getTerm() + " must be of int value", null);
+	}
+	
+	public void visit(FactorNumber fact)
+	{
+		fact.struct = Tab.intType;
+	}
+	public void visit(FactorChar fact)
+	{
+		fact.struct = Tab.charType;
+	}
+	public void visit(FactorBool fact)
+	{
+		fact.struct = SymbolTable.boolType;
+	}
+	
+	public void visit(FactorDesignator fact)
+	{
+		fact.struct = fact.getDesignator().obj.getType();
+	}
+	
+	public void visit(Designator des)
+	{
+		DesignatorName designatorName = des.getDesignatorName();
+		String name = "";
+		
+		if(designatorName instanceof DesignatorSingle) 
+		{
+			DesignatorSingle ds = (DesignatorSingle) designatorName;
+			name = ds.getName();
+		}
+		else
+		{
+			DesignatorNamespace dn = (DesignatorNamespace) designatorName;
+			name = "__" + dn.getPre() + "__" + dn.getName();
+		}
+		des.obj = Tab.find(name);
+	}
+	
 	
 }
 
