@@ -11,9 +11,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	Logger log =  Logger.getLogger(getClass());
 	boolean errorDetected = false;
+	public int nVars;
 	private Struct currentType = Tab.noType;
-	private int nVars=0;
 	private String currentNamespace = null;
+	
+	private Obj currentMethod = Tab.noObj;
+	private int formalParCnt = 0;
+	public boolean mainFound = false;
+	private String _MAIN_ = "main";
 	
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -167,6 +172,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Struct arrayStruct = new Struct(Struct.Array, this.currentType);
 			Tab.insert(Obj.Var, name, arrayStruct);
 		}
+		
 			
 	}
 
@@ -179,4 +185,94 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	{
 		this.currentNamespace = null;
 	}
+	
+	public void visit(ReturnVoid methodHeader)
+	{
+		Struct retType = Tab.noType;
+		this.currentMethod = Tab.insert(Obj.Meth, methodHeader.getName(), retType);
+		Tab.openScope();
+		
+		if(methodHeader.getName().equals(this._MAIN_))
+			this.mainFound = true;
+	}
+	public void visit(ReturnSmt methodHeader)
+	{
+		Struct retType = this.currentType;
+		this.currentMethod = Tab.insert(Obj.Meth, methodHeader.getName(), retType);
+		Tab.openScope();
+		
+		if(methodHeader.getName().equals(this._MAIN_))
+			this.mainFound = true;
+	}
+	public void visit(SingleMethodDecl methodDecl)
+	{
+		// num of formal paramas 
+		this.currentMethod.setLevel(this.formalParCnt);
+		
+		Tab.chainLocalSymbols(this.currentMethod);
+		Tab.closeScope();
+		
+		
+		// cleanup for future
+		this.currentMethod = null;	
+		this.formalParCnt = 0;
+		
+	}
+	public void visit(SinglePar singlePar)
+	{
+		String name = singlePar.getName();
+		
+		if (currentType == Tab.noType) {
+			report_error("Unsuported type " + this.currentType, null);
+			return;
+		}
+		if(Tab.currentScope.findSymbol(name) != null)
+		{
+			report_error("Variable " + singlePar.getName() + " already a formal parameter here!", null);
+			return;
+		}	
+		
+
+		MaybeArray isArray = singlePar.getMaybeArray();
+		if( isArray instanceof NotArray)
+			Tab.insert(Obj.Var, name, currentType);
+		else {
+			Struct arrayStruct = new Struct(Struct.Array, this.currentType);
+			Tab.insert(Obj.Var, name, arrayStruct);
+		}
+		Tab.find(name).setFpPos(this.formalParCnt++);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

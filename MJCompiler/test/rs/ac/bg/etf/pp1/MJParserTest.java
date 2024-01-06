@@ -55,6 +55,8 @@ public class MJParserTest {
 			
 			log.info("===================================");
 			Tab.dump();
+			if(!v.mainFound)
+				System.out.println("MAIN IS NOT DEFINED");
 			
 		} 
 		finally {

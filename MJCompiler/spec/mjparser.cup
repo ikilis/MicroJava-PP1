@@ -58,8 +58,8 @@ terminal CLASS, NOTEQUALS, CONTINUE, OR, READ;
 nonterminal DeclarationList, Namespace, MethodDeclarationList, ConstDecl, ClassDecl;
 nonterminal ConstList;
 nonterminal SingleVar, VarList, MaybeArray;
-nonterminal MethodDecl, SingleMethodDecl, ReturnType, LocalVarDecl;
-nonterminal MaybeFormPars, FormPars, SinglePar;
+nonterminal MethodDecl, LocalVarDecl;
+nonterminal MaybeFormPars, FormPars;
 nonterminal StatementList, Statement;
 nonterminal Mulop, Addop, Relop, Assignop, Label;
 nonterminal DesignatorStatement, Designator, AssignOperation;
@@ -69,6 +69,7 @@ nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
 nonterminal MybNamespaces;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl, NamespaceHeader;
+nonterminal SingleMethodDecl, SingleLocalVar, MethodHeader, SinglePar;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 precedence left ELSE;
@@ -116,11 +117,15 @@ MaybeArray ::= (Array) LSQUARE RSQUARE
 /*MethodDecl*/
 MethodDecl ::= (Methods) MethodDecl SingleMethodDecl 
 			| (NoMethod) /*empty*/;
-SingleMethodDecl ::= (SingleMethodDecl) ReturnType IDENT LPAREN MaybeFormPars RPAREN LocalVarDecl LBRACE StatementList RBRACE;
+SingleMethodDecl ::= (SingleMethodDecl) MethodHeader:header LPAREN MaybeFormPars:formalParameters RPAREN VarDecl LBRACE StatementList RBRACE;
 
-LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl | (NoLocalVars) /*empty*/;
+/*
+LocalVarDecl ::= (LocalVars1) LocalVarDecl SingleLocalVar | (NoLocalVars) /*empty*/;
 
-ReturnType ::= (ReturnVoid) VOID | (ReturnSmt) Type;
+SingleLocalVar ::= (SingleLocalVar) IDENT:name MaybeArray:maybeArray;
+*/
+
+MethodHeader ::= (ReturnVoid) VOID IDENT:name | (ReturnSmt) Type:returnType IDENT:name;
 
 /*FormPars*/
 MaybeFormPars ::= (Parameters) FormPars | (NoPars) /*empty*/;
@@ -128,7 +133,7 @@ MaybeFormPars ::= (Parameters) FormPars | (NoPars) /*empty*/;
 FormPars ::= (MultiplePars) FormPars COMMA SinglePar
 			|(OnePar) SinglePar;
 			
-SinglePar ::=(OneParameter) Type IDENT MaybeArray;
+SinglePar ::=(SinglePar) Type IDENT:name MaybeArray:mybArray;
 
 /*Statement*/
 StatementList ::= (Statements) StatementList Statement
