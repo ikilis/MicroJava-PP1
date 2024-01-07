@@ -170,7 +170,7 @@ Factor ::= (FactorDesignator) Designator
 		| (FactorChar) CHARCONST 
 		| (FactorBool) BOOL 
 		| NEW Type ArrayPosition 
-		| LPAREN Expr RPAREN;
+		| (FactorExpr) LPAREN Expr RPAREN;
 
 
 PrintAmmount ::= COMMA NUMBER | /*empty*/;

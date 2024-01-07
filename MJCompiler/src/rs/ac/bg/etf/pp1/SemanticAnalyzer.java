@@ -284,6 +284,21 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		expr.struct = expr.getTerm().struct;
 	}
 	
+	public void visit(AddopExpr expr)
+	{
+		Struct left = expr.getTerm().struct ;
+		Struct right = expr.getExpr().struct;
+		Struct integer = Tab.intType;
+		
+		if(left != integer || right != integer)
+		{
+			this.report_error("You canot use mulops on nonintegers", null);
+			return;
+		}
+		
+		expr.struct = Tab.intType;
+	}
+	
 	public void visit(FinalTerm term)
 	{
 		term.struct = term.getFactor().struct;
@@ -292,7 +307,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	{
 		term.struct = term.getTerm().struct;
 		if(term.getTerm().struct != Tab.intType)
-			this.report_error("Term "+ term.getTerm() + " must be of int value", null);
+			this.report_error("Negative term must be of int value", null);
 	}
 	
 	public void visit(FactorNumber fact)
@@ -312,6 +327,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	{
 		fact.struct = fact.getDesignator().obj.getType();
 	}
+	public void visit(FactorExpr fact)
+	{
+		fact.struct = fact.getExpr().struct;
+	}
 	
 	public void visit(Designator des)
 	{
@@ -329,7 +348,41 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			name = "__" + dn.getPre() + "__" + dn.getName();
 		}
 		des.obj = Tab.find(name);
+		
+		// TODO: proveri je li je niz i sve oko toga - da li je stv niz, da li je pozicija integer
 	}
+	
+	public void visit(MulTerm term)
+	{
+		Struct left = term.getTerm().struct ;
+		Struct right = term.getFactor().struct;
+		Struct integer = Tab.intType;
+		
+		if(left != integer || right != integer)
+		{
+			this.report_error("You canot use mulops on nonintegers", null);
+			return;
+		}
+		
+		term.struct = Tab.intType;
+	}
+	
+	
+	public void visit(ReadStatement stmt)
+	{
+		int kind = stmt.getDesignator().obj.getKind();
+		
+		Obj o = Tab.find(stmt.getDesignator().obj.getName());
+		if(o == Tab.noObj)
+		{
+			this.report_error("What you are reading into doesnt exist", null);
+			return;
+		}
+		
+		if(kind != Obj.Var && kind != Obj.Elem && kind != Obj.Fld)
+			this.report_error("You can only use read on CHAR, INT or BOOL", null);
+	}
+	
 	
 	
 }
