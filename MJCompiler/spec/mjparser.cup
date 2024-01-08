@@ -119,7 +119,7 @@ MethodDecl ::= (Methods) MethodDecl SingleMethodDecl
 			| (NoMethod) /*empty*/;
 SingleMethodDecl ::= (SingleMethodDecl) MethodHeader:header LPAREN MaybeFormPars:formalParameters RPAREN LocalVarDecl LBRACE StatementList RBRACE;
 
-LocalVarDecl ::= (LocalVars1) VarDecl | (NoLocalVars) /*empty*/;
+LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl | (NoLocalVars) /*empty*/;
 
 
 MethodHeader ::= (ReturnVoid) VOID IDENT:name | (ReturnSmt) Type:returnType IDENT:name;
@@ -148,18 +148,19 @@ Statement ::= (IfElseStatement) IfHeader Statement MybElse
 			;
 			
 
-DesignatorStatement ::= AssignOperation | Designator INCREMENT  | Designator DECREMENT ;
+DesignatorStatement ::= (DesignatorAssign) AssignOperation 
+						| (DesignatorIncrement) Designator INCREMENT  
+						| (DesignatorDecrement) Designator DECREMENT ;
 
-AssignOperation ::= Designator ASSIGN Expr;
+AssignOperation ::= (AssignOperation) Designator ASSIGN Expr;
 
 Designator ::= (Designator) DesignatorName:name MybArrayPosition:mybArrPos;
 
 DesignatorName ::= (DesignatorNamespace) IDENT:pre COLON COLON IDENT:name
 				| (DesignatorSingle) IDENT:name ;
 
-MybArrayPosition ::= ArrayPosition | /*empty*/;
+MybArrayPosition ::= (IsArray) LSQUARE Expr RSQUARE | /*empty*/;
 
-ArrayPosition ::= LSQUARE Expr RSQUARE;
 
 Expr ::= (AddopExpr) Expr Addop Term | (NegativeTerm) MINUS Term | (ExprTerm) Term;
 
@@ -169,11 +170,13 @@ Factor ::= (FactorDesignator) Designator
 		| (FactorNumber) NUMBER 
 		| (FactorChar) CHARCONST 
 		| (FactorBool) BOOL 
-		| NEW Type ArrayPosition 
+		| (FactorNew) NEW Type ArrayPosition 
 		| (FactorExpr) LPAREN Expr RPAREN;
+		
+ArrayPosition ::= (ArrayPosition) LSQUARE Expr RSQUARE;
 
 
-PrintAmmount ::= COMMA NUMBER | /*empty*/;
+PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER | (NoPrintAmmount) /*empty*/;
 
 IfHeader ::= IF LPAREN Condition RPAREN;
 

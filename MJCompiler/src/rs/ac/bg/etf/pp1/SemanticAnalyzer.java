@@ -20,6 +20,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public boolean mainFound = false;
 	private String _MAIN_ = "main";
 	
+	private boolean returnFound = false;
+	
 	private int loopLvl = 0;
 	// TODO: dodaj proveru je li metoda uopste imala return, pa vidi je li joj to odgovara
 	
@@ -143,6 +145,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(typeNode.getKind() == Obj.Type)
 		{
 			this.currentType = typeNode.getType();
+			type.struct = this.currentType;
 		}
 		else
 		{
@@ -197,6 +200,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		if(methodHeader.getName().equals(this._MAIN_))
 			this.mainFound = true;
+		
 	}
 	public void visit(ReturnSmt methodHeader)
 	{
@@ -215,10 +219,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Tab.chainLocalSymbols(this.currentMethod);
 		Tab.closeScope();
 		
+		if(this.currentMethod.getType() != Tab.noType && !this.returnFound)
+			this.report_error("Non void method has to have a return", null);
 		
 		// cleanup for future
 		this.currentMethod = null;	
 		this.formalParCnt = 0;
+		this.returnFound = false;
 		
 	}
 	public void visit(SinglePar singlePar)
@@ -260,12 +267,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(ReturnNothing ret)
 	{
+		this.returnFound = true;
 		if (Tab.noType != this.currentMethod.getType())
 			this.report_error("Function "+ this.currentMethod.getName() + " must have return value", ret);
 	}
 	
 	public void visit(ReturnSomething ret)
 	{
+		this.returnFound = true;
 		Struct expectedType = this.currentMethod.getType();
 		if(expectedType == Tab.noType)
 		{
@@ -292,7 +301,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		if(left != integer || right != integer)
 		{
-			this.report_error("You canot use mulops on nonintegers", null);
+			this.report_error("You canot use addops on nonintegers", null);
 			return;
 		}
 		
@@ -331,6 +340,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	{
 		fact.struct = fact.getExpr().struct;
 	}
+	public void visit(FactorNew fact)
+	{
+		if(fact.getArrayPosition().getExpr().struct != Tab.intType)
+		{
+			this.report_error("Only integers are allowed to be array indexes", null);
+			return;
+		}
+		// poslednje procitani tip je taj new Type()
+		fact.struct = new Struct(Struct.Array, this.currentType);
+	}
+	
 	
 	public void visit(Designator des)
 	{
@@ -349,7 +369,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		des.obj = Tab.find(name);
 		
-		// TODO: proveri je li je niz i sve oko toga - da li je stv niz, da li je pozicija integer
+		MybArrayPosition arr = des.getMybArrayPosition();
+		
+		if(arr instanceof IsArray)
+		{
+			if(des.obj.getType().getKind() != Struct.Array)
+			{
+				this.report_error("CAnnot use index on a non-array", null);
+			}
+			Struct elemType = des.obj.getType().getElemType();
+			
+			IsArray a = (IsArray) arr;
+			Struct s = a.getExpr().struct;
+			if(s != Tab.intType)
+			{
+				this.report_error("Only integers are allowed to be array indexes", null);
+				return;
+			}
+			des.obj = new Obj(Obj.Elem, name, elemType);
+		}
+		
 	}
 	
 	public void visit(MulTerm term)
@@ -383,7 +422,34 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			this.report_error("You can only use read on CHAR, INT or BOOL", null);
 	}
 	
+	public void visit(PrintStatement stmt)
+	{
+		Struct s = stmt.getExpr().struct;
+		
+		if(s != Tab.intType && s!=Tab.charType && s!=SymbolTable.boolType)
+			this.report_error("You can only use read on CHAR, INT or BOOL", null);
+	}
 	
+	public void visit(DesignatorIncrement des)
+	{
+		if(des.getDesignator().obj.getType() != Tab.intType)
+			this.report_error("You can only increment INT type", null);
+	}
+	public void visit(DesignatorDecrement des)
+	{
+		if(des.getDesignator().obj.getType() != Tab.intType)
+			this.report_error("You can only increment INT type", null);
+	}
+	public void visit(AssignOperation assign)
+	{
+		Struct dst = assign.getDesignator().obj.getType();
+		Struct src = assign.getExpr().struct;
+		
+		if(!src.assignableTo(dst))
+		{
+			this.report_error("Assigment operation operands aren't compatibile with eachother", null);
+		}
+	}
 	
 }
 
