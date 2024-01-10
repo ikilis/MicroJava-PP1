@@ -117,15 +117,19 @@ MaybeArray ::= (Array) LSQUARE RSQUARE
 /*MethodDecl*/
 MethodDecl ::= (Methods) MethodDecl SingleMethodDecl 
 			| (NoMethod) /*empty*/;
+			
 SingleMethodDecl ::= (SingleMethodDecl) MethodHeader:header LPAREN MaybeFormPars:formalParameters RPAREN LocalVarDecl LBRACE StatementList RBRACE;
 
-LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl | (NoLocalVars) /*empty*/;
+LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl 
+				| (NoLocalVars) /*empty*/;
 
 
-MethodHeader ::= (ReturnVoid) VOID IDENT:name | (ReturnSmt) Type:returnType IDENT:name;
+MethodHeader ::= (ReturnVoid) VOID IDENT:name 
+				| (ReturnSmt) Type:returnType IDENT:name;
 
 /*FormPars*/
-MaybeFormPars ::= (Parameters) FormPars | (NoPars) /*empty*/;
+MaybeFormPars ::= (Parameters) FormPars 
+				| (NoPars) /*empty*/;
 
 FormPars ::= (MultiplePars) FormPars COMMA SinglePar
 			|(OnePar) SinglePar;
@@ -162,7 +166,9 @@ DesignatorName ::= (DesignatorNamespace) IDENT:pre COLON COLON IDENT:name
 MybArrayPosition ::= (IsArray) LSQUARE Expr RSQUARE | /*empty*/;
 
 
-Expr ::= (AddopExpr) Expr Addop Term | (NegativeTerm) MINUS Term | (ExprTerm) Term;
+Expr ::= (AddopExpr) Expr Addop Term 
+		| (NegativeTerm) MINUS Term 
+		| (ExprTerm) Term;
 
 Term ::= (MulTerm) Term Mulop Factor | (FinalTerm) Factor;
 
@@ -176,24 +182,36 @@ Factor ::= (FactorDesignator) Designator
 ArrayPosition ::= (ArrayPosition) LSQUARE Expr RSQUARE;
 
 
-PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER | (NoPrintAmmount) /*empty*/;
+PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER 
+				| (NoPrintAmmount) /*empty*/;
 
 IfHeader ::=(IfHeader) IF LPAREN Condition RPAREN;
 
-MybElse ::= (ElseStatement) ELSE Statement | (NoELseStatement) /*empty*/;
+MybElse ::= (ElseStatement) ELSE Statement 
+		| (NoELseStatement) /*empty*/;
 
-Condition ::=  Condition OR CondTerm | CondTerm;
+Condition ::= (ConditionOr) Condition OR CondTerm 
+			| (ConditionSingle) CondTerm;
 
-CondTerm ::= CondTerm AND CondFact | CondFact;
+CondTerm ::= (CondTermAnd) CondTerm AND CondFact 
+			| (CondTermSingle) CondFact;
 
-CondFact ::= (CondFactRelop) Expr Relop Expr | (CondFactBool) Expr ;
+CondFact ::= (CondFactRelop) Expr Relop Expr 
+			| (CondFactBool) Expr ;
 
-Assignop ::= ASSIGN;
-Mulop ::= MUL | DIV | MOD;
-Addop ::= PLUS | MINUS;
-Relop ::= (RelopEqual) EQUALS | (RelopNotEqual) NOTEQUALS | (RelopGT) GREATER 
-		|(RelopGTE) GTE | (RelopLess) LESS | (RelopLEQ) LEQ ;
-Label ::= IDENT;
+Assignop ::= (Assignop) ASSIGN;
+Mulop ::= (Multipli) MUL 
+		| (Divide) DIV 
+		| (Moduo) MOD;
+Addop ::= (Plus) PLUS 
+		| (Minus) MINUS;
+Relop ::= (RelopEqual) EQUALS 
+		| (RelopNotEqual) NOTEQUALS 
+		| (RelopGT) GREATER 
+		|(RelopGTE) GTE 
+		| (RelopLess) LESS 
+		| (RelopLEQ) LEQ ;
+Label ::= (Label) IDENT;
 
 
  
