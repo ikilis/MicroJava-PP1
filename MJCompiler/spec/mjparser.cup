@@ -178,20 +178,21 @@ ArrayPosition ::= (ArrayPosition) LSQUARE Expr RSQUARE;
 
 PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER | (NoPrintAmmount) /*empty*/;
 
-IfHeader ::= IF LPAREN Condition RPAREN;
+IfHeader ::=(IfHeader) IF LPAREN Condition RPAREN;
 
-MybElse ::= ELSE Statement | /*empty*/;
+MybElse ::= (ElseStatement) ELSE Statement | (NoELseStatement) /*empty*/;
 
-Condition ::= Condition OR CondTerm | CondTerm;
+Condition ::=  Condition OR CondTerm | CondTerm;
 
 CondTerm ::= CondTerm AND CondFact | CondFact;
 
-CondFact ::= Expr Relop Expr | Expr ;
+CondFact ::= (CondFactRelop) Expr Relop Expr | (CondFactBool) Expr ;
 
 Assignop ::= ASSIGN;
 Mulop ::= MUL | DIV | MOD;
 Addop ::= PLUS | MINUS;
-Relop ::= EQUALS | NOTEQUALS | GREATER | GTE | LESS | LEQ ;
+Relop ::= (RelopEqual) EQUALS | (RelopNotEqual) NOTEQUALS | (RelopGT) GREATER 
+		|(RelopGTE) GTE | (RelopLess) LESS | (RelopLEQ) LEQ ;
 Label ::= IDENT;
 
 

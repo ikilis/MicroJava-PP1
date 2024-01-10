@@ -450,6 +450,29 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			this.report_error("Assigment operation operands aren't compatibile with eachother", null);
 		}
 	}
+	public void visit(CondFactRelop condRelop)
+	{
+		Struct left = condRelop.getExpr().struct;
+		Struct right = condRelop.getExpr1().struct;
+		
+		if(!left.compatibleWith(right))
+		{
+			this.report_error("Comparison arguments aren't compatibile", null);
+			return;
+		}
+		if ((left.getKind() == Struct.Class || left.getKind() == Struct.Array) && !(condRelop.getRelop() instanceof RelopEqual || condRelop.getRelop() instanceof RelopNotEqual)) {
+			report_error("Arrays or classes (not supported) can only use '==' and '!=',", null);
+		}
+	}
+	public void visit(CondFactBool condBool)
+	{
+		Struct left = condBool.getExpr().struct;
+		
+		if(left != SymbolTable.boolType)
+		{
+			this.report_error("Condition is not a bool", null);
+		}
+	}
 	
 }
 
