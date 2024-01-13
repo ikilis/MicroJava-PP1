@@ -67,9 +67,9 @@ nonterminal MybArrayPosition;
 nonterminal PrintAmmount, ArrayPosition;
 nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
 nonterminal MybNamespaces;
-nonterminal SingleMethodDecl, MethodHeader, SinglePar,  DesignatorName;
+nonterminal SingleMethodDecl, SinglePar,  DesignatorName;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl, NamespaceHeader, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl, NamespaceHeader, Designator, MethodHeader;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor;
 
 precedence left ELSE;
@@ -182,7 +182,7 @@ Factor ::= (FactorDesignator) Designator
 ArrayPosition ::= (ArrayPosition) LSQUARE Expr RSQUARE;
 
 
-PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER 
+PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER:ammount
 				| (NoPrintAmmount) /*empty*/;
 
 IfHeader ::=(IfHeader) IF LPAREN Condition RPAREN;

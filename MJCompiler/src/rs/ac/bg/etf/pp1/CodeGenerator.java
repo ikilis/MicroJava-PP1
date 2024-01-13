@@ -16,14 +16,22 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(PrintStatement print)
 	{
-		if(print.getExpr().struct == Tab.intType)
-		{
-			Code.loadConst(5);
-			Code.put(Code.print);
-		}else	// char grana
+		
+		int printAmmount = 5;
+		if(print.getExpr().struct == Tab.charType)
 		{
 			Code.loadConst(1);
 			Code.put(Code.bprint);
+		}else
+		{
+			if (print.getPrintAmmount() instanceof HasPrintAmmount) 
+			{
+				HasPrintAmmount p = (HasPrintAmmount) print.getPrintAmmount();
+				printAmmount = p.getAmmount();
+			}
+			Code.loadConst(printAmmount);
+			Code.put(Code.print);
+				
 		}
 	}
 	
@@ -43,14 +51,30 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		Code.load(con);
 	}
-//	public void visit(FactorBool fact)
-//	{
-//		Obj con = Tab.insert(Obj.Con,  "$", fact.struct);
-//		con.setLevel(0);
-//		con.setAdr(fact.getB1());
-//		
-//		Code.load(con);
-//	}
+	public void visit(FactorBool fact)
+	{
+		Obj con = Tab.insert(Obj.Con,  "$", fact.struct);
+		con.setLevel(0);
+		final int constValue = fact.getB1() ? 1 : 0;
+		con.setAdr(constValue);
+		
+		Code.load(con);
+	}
+	// TODO: uradi za nizove
+	public void visit(FactorDesignator fact)
+	{
+		Obj obj = fact.getDesignator().obj;
+		Code.load(obj);
+	}
+	public void visit(FactorNew fact)
+	{
+		Code.put(Code.newarray);
+		if(fact.getType().struct == Tab.charType)
+			Code.put(0);
+		else
+			Code.put(1);
+	}
+	
 	
 	public void visit(ReturnVoid met)
 	{
@@ -67,7 +91,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		FormParamCounter parCnt = new FormParamCounter();
 		methodNode.traverseTopDown(parCnt);
 		
-		// Generate enrty
+		// Generate entry
 		Code.put(Code.enter);
 		Code.put(parCnt.getCount());
 		Code.put(parCnt.getCount() + varCnt.getCount());
@@ -82,23 +106,50 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(AssignOperation assign)
 	{
-		// na exprStack je vec taj broj - obradjeno u toku Expr
-		
 		Obj o = assign.getDesignator().obj;
 		Code.store(o);
 	}
-	
-	public void visit(FactorDesignator fact)
+	// TODO: uradi za nizove
+	public void visit(DesignatorIncrement des)
 	{
-		SyntaxNode parent = fact.getParent();
+		Obj obj = des.getDesignator().obj;
 		
-		// za ime bez namespacea
-		DesignatorSingle ds = (DesignatorSingle)fact.getDesignator().getDesignatorName();
-//		Code.load(Tab.find(ds.getName()));
-		Code.load(fact.getDesignator().obj);
-		
+		Code.load(obj);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(obj);
+	}
+	// TODO: uradi za nizove
+	public void visit(DesignatorDecrement des)
+	{
+		Obj obj = des.getDesignator().obj;
+		Code.load(obj);
+		Code.loadConst(1);
+		Code.put(Code.sub);
+		Code.store(obj);
 	}
 	
+	
+	public void visit(AddopExpr expr)
+	{
+		if(expr.getAddop() instanceof Plus)
+			Code.put(Code.add);
+		else
+			Code.put(Code.sub);
+	}
+	public void visit(NegativeTerm expr)
+	{
+		Code.put(Code.neg);
+	}
+	
+	public void visit(MulTerm mul)
+	{
+		Mulop m = mul.getMulop();
+		
+		if(m instanceof Multipli) Code.put(Code.mul);
+		if(m instanceof Divide) Code.put(Code.div);
+		if(m instanceof Moduo) Code.put(Code.rem);
+	}
 }
 
 
