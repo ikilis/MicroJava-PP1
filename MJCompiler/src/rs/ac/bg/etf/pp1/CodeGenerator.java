@@ -5,6 +5,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
 
 
 public class CodeGenerator extends VisitorAdaptor {
@@ -67,7 +68,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(FactorNew fact)
 	{
 		Code.put(Code.newarray);
-		if(fact.getType().struct == Tab.charType)
+		if(fact.getType().struct.getKind() == Struct.Char)
 			Code.put(0);
 		else
 			Code.put(1);
@@ -165,8 +166,15 @@ public class CodeGenerator extends VisitorAdaptor {
 	{
 //		Obj o = des.obj
 //		System.out.println(des.obj.getName());
-		if(des.getParent() instanceof AssignOperation)return;
-		Code.load(des.obj);
+		if(des.getParent() instanceof DesignatorIndex)
+			Code.load(des.obj);
+	}
+	public void visit(DesignatorNamespace des)
+	{
+//		Obj o = des.obj
+//		System.out.println(des.obj.getName());
+		if(des.getParent() instanceof DesignatorIndex)
+			Code.load(des.obj);
 	}
 	
 	public void visit(ReadStatement read)
