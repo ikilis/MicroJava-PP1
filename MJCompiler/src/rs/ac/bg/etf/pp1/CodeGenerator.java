@@ -61,10 +61,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.load(con);
 	}
 	// TODO: uradi za nizove
-	public void visit(FactorDesignator fact)
-	{
-		Obj obj = fact.getDesignator().obj;
-		Code.load(obj);
+	public void visit(FactorDesignator factorDesignator) {
+		Code.load(factorDesignator.getDesignator().obj);
 	}
 	public void visit(FactorNew fact)
 	{
@@ -114,6 +112,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	{
 		Obj obj = des.getDesignator().obj;
 		
+		if(obj.getKind() == Obj.Elem)
+		{
+			Code.put(Code.dup2);
+			
+		}
+		
 		Code.load(obj);
 		Code.loadConst(1);
 		Code.put(Code.add);
@@ -122,7 +126,14 @@ public class CodeGenerator extends VisitorAdaptor {
 	// TODO: uradi za nizove
 	public void visit(DesignatorDecrement des)
 	{
+		
 		Obj obj = des.getDesignator().obj;
+		
+		if(obj.getKind() == Obj.Elem)
+		{
+			Code.put(Code.dup2);
+			
+		}
 		Code.load(obj);
 		Code.loadConst(1);
 		Code.put(Code.sub);
@@ -150,6 +161,31 @@ public class CodeGenerator extends VisitorAdaptor {
 		if(m instanceof Divide) Code.put(Code.div);
 		if(m instanceof Moduo) Code.put(Code.rem);
 	}
+	public void visit(DesignatorIdent des)
+	{
+//		Obj o = des.obj
+//		System.out.println(des.obj.getName());
+		if(des.getParent() instanceof AssignOperation)return;
+		Code.load(des.obj);
+	}
+	
+	public void visit(ReadStatement read)
+	{
+		if (read.getDesignator().obj.getType() == Tab.charType) {
+			Code.put(Code.bread);
+			Code.store(read.getDesignator().obj);
+		}
+		else {
+			Code.put(Code.read);
+			Code.store(read.getDesignator().obj);
+		}
+	}
+	
+	
+
+	
+	
+	
 }
 
 

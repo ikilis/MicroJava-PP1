@@ -1,10 +1,17 @@
 // Test301
 
 program test301
-const int i = 12;
-const bool boolean = false, tacan = true, loseNapisan = 1389;
-const char c = 'a';
+int niz[];
+int i;
 {
+
+	void main()
+	int k;
+	{
+		niz = new int[2];
+		read(niz[1]);
+		print(niz[1]);
+	}
 }
 
 

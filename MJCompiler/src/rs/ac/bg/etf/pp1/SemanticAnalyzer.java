@@ -352,43 +352,35 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	
-	public void visit(Designator des)
+	public void visit(DesignatorIdent des)
 	{
-		DesignatorName designatorName = des.getDesignatorName();
-		String name = "";
-		
-		if(designatorName instanceof DesignatorSingle) 
+		String name = des.getName();
+		if(Tab.find(name) == Tab.noObj)
 		{
-			DesignatorSingle ds = (DesignatorSingle) designatorName;
-			name = ds.getName();
-		}
-		else
-		{
-			DesignatorNamespace dn = (DesignatorNamespace) designatorName;
-			name = "__" + dn.getPre() + "__" + dn.getName();
+			report_error(" Symbol is undefined " + name, null);
+			return;
 		}
 		des.obj = Tab.find(name);
+	}
+	public void visit(DesignatorNamespace des)
+	{
+		String name = "__" + des.getNamespace() + "__" + des.getName();
 		
-		MybArrayPosition arr = des.getMybArrayPosition();
-		
-		if(arr instanceof IsArray)
+		if(Tab.find(name) == Tab.noObj)
 		{
-			if(des.obj.getType().getKind() != Struct.Array)
-			{
-				this.report_error("CAnnot use index on a non-array", null);
-			}
-			Struct elemType = des.obj.getType().getElemType();
-			
-			IsArray a = (IsArray) arr;
-			Struct s = a.getExpr().struct;
-			if(s != Tab.intType)
-			{
-				this.report_error("Only integers are allowed to be array indexes", null);
-				return;
-			}
-			des.obj = new Obj(Obj.Elem, name, elemType);
+			report_error(" Symbol is undefined " + name, null);
+			return;
 		}
+		des.obj = Tab.find(name);
+	}
+	
+	public void visit(DesignatorIndex des)
+	{
+		Struct type = des.getDesignator().obj.getType().getElemType();
 		
+		String name = des.getDesignator().obj.getName();
+		
+		des.obj = new Obj(Obj.Elem, name, type);
 	}
 	
 	public void visit(MulTerm term)

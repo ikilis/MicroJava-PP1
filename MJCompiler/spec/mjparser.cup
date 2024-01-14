@@ -158,10 +158,10 @@ DesignatorStatement ::= (DesignatorAssign) AssignOperation
 
 AssignOperation ::= (AssignOperation) Designator ASSIGN Expr;
 
-Designator ::= (Designator) DesignatorName:name MybArrayPosition:mybArrPos;
+Designator ::= (DesignatorIdent) IDENT:name
+			| (DesignatorNamespace) IDENT:namespace COLON COLON IDENT:name
+			| (DesignatorIndex) Designator LSQUARE Expr RSQUARE;
 
-DesignatorName ::= (DesignatorNamespace) IDENT:pre COLON COLON IDENT:name
-				| (DesignatorSingle) IDENT:name ;
 
 MybArrayPosition ::= (IsArray) LSQUARE Expr RSQUARE | /*empty*/;
 
