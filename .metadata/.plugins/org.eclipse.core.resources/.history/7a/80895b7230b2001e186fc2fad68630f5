@@ -1,0 +1,79 @@
+INFO  20:16:20,502 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:16:20,576 - #2 program
+INFO  20:16:20,577 - #15 test301
+INFO  20:16:20,577 - #3 {
+INFO  20:16:20,580 - #13 void
+INFO  20:16:20,581 - #15 main
+INFO  20:16:20,581 - #6 (
+INFO  20:16:20,583 - #7 )
+INFO  20:16:20,583 - #15 int
+INFO  20:16:20,583 - #15 niz
+INFO  20:16:20,585 - #5 ;
+INFO  20:16:20,589 - #3 {
+INFO  20:16:20,589 - #15 niz
+INFO  20:16:20,591 - #8 =
+INFO  20:16:20,595 - #14 1
+INFO  20:16:20,595 - #5 ;
+INFO  20:16:20,596 - #4 }
+INFO  20:16:20,597 - #4 }
+INFO  20:16:20,610 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           niz
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:16:20,617 - ===================================
+ERROR 20:16:20,620 - Assigment operation operands aren't compatibile with eachother
+INFO  20:16:20,621 - ===================================

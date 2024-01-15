@@ -1,0 +1,97 @@
+INFO  20:13:59,737 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:13:59,820 - #2 program
+INFO  20:13:59,821 - #15 test301
+INFO  20:13:59,821 - #42 namespace
+INFO  20:13:59,830 - #15 nejm
+INFO  20:13:59,830 - #3 {
+INFO  20:13:59,833 - #15 int
+INFO  20:13:59,833 - #15 x
+INFO  20:13:59,833 - #5 ;
+INFO  20:13:59,840 - #3 {
+INFO  20:13:59,840 - #4 }
+INFO  20:13:59,893 - #4 }
+INFO  20:13:59,895 - #3 {
+INFO  20:13:59,905 - #13 void
+INFO  20:13:59,920 - #15 main
+INFO  20:13:59,921 - #6 (
+INFO  20:13:59,923 - #7 )
+INFO  20:13:59,934 - #3 {
+INFO  20:13:59,971 - #12 print
+INFO  20:13:59,988 - #6 (
+INFO  20:13:59,988 - #15 x
+INFO  20:13:59,994 - #7 )
+INFO  20:14:00,057 - #5 ;
+INFO  20:14:00,059 - #4 }
+INFO  20:14:00,063 - #4 }
+INFO  20:14:00,133 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespace(
+    MybNamespacesDerived1(
+    ) [MybNamespacesDerived1]
+    Namespace(
+      NamespaceHeader(
+       nejm
+      ) [NamespaceHeader]
+      GlobalVars(
+        NoGlobals(
+        ) [NoGlobals]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           x
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [GlobalVars]
+      NoMethod(
+      ) [NoMethod]
+    ) [Namespace]
+  ) [MybNamespace]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   x
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:14:00,134 - ===================================
+ERROR 20:14:00,209 - You can only use read on CHAR, INT or BOOL
+INFO  20:14:00,210 - ===================================
+ERROR 20:14:00,210 - Neuspesno parsiranje

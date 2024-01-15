@@ -1,0 +1,136 @@
+INFO  20:29:42,272 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:29:42,330 - #2 program
+INFO  20:29:42,330 - #15 test301
+INFO  20:29:42,331 - #3 {
+INFO  20:29:42,334 - #13 void
+INFO  20:29:42,335 - #15 main
+INFO  20:29:42,335 - #6 (
+INFO  20:29:42,337 - #7 )
+INFO  20:29:42,339 - #15 int
+INFO  20:29:42,340 - #15 i
+INFO  20:29:42,342 - #5 ;
+INFO  20:29:42,347 - #3 {
+INFO  20:29:42,349 - #25 if
+INFO  20:29:42,354 - #6 (
+INFO  20:29:42,355 - #15 i
+INFO  20:29:42,355 - #41 >
+INFO  20:29:42,362 - #14 1389
+INFO  20:29:42,365 - #46 ||
+INFO  20:29:42,371 - #16 false
+INFO  20:29:42,376 - #7 )
+INFO  20:29:42,376 - #3 {
+INFO  20:29:42,378 - #9 return
+INFO  20:29:42,379 - #5 ;
+INFO  20:29:42,380 - #4 }
+INFO  20:29:42,381 - #24 else
+INFO  20:29:42,386 - #3 {
+INFO  20:29:42,386 - #9 return
+INFO  20:29:42,392 - #5 ;
+INFO  20:29:42,393 - #4 }
+INFO  20:29:42,396 - #4 }
+INFO  20:29:42,399 - #4 }
+INFO  20:29:42,410 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        NoLocalVars(
+        ) [NoLocalVars]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeader(
+            ConditionDerived1(
+              ConditionDerived2(
+                CondTermDerived2(
+                  CondFactRelop(
+                    ExprTerm(
+                      FinalTerm(
+                        FactorDesignator(
+                          Designator(
+                            DesignatorSingle(
+                             i
+                            ) [DesignatorSingle]
+                            MybArrayPositionDerived1(
+                            ) [MybArrayPositionDerived1]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                    RelopDerived3(
+                    ) [RelopDerived3]
+                    ExprTerm(
+                      FinalTerm(
+                        FactorNumber(
+                         1389
+                        ) [FactorNumber]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                  ) [CondFactRelop]
+                ) [CondTermDerived2]
+              ) [ConditionDerived2]
+              CondTermDerived2(
+                CondFactBool(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorBool(
+                       false
+                      ) [FactorBool]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactBool]
+              ) [CondTermDerived2]
+            ) [ConditionDerived1]
+          ) [IfHeader]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          ElseStatement(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [ElseStatement]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:29:42,411 - ===================================
+INFO  20:29:42,416 - ===================================

@@ -1,0 +1,111 @@
+INFO  15:02:44,871 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  15:02:44,951 - #2 program
+INFO  15:02:44,953 - #15 MJTEST
+INFO  15:02:44,953 - #15 int
+INFO  15:02:44,956 - #15 niz
+INFO  15:02:44,956 - #32 [
+INFO  15:02:44,956 - #33 ]
+INFO  15:02:44,956 - #5 ;
+INFO  15:02:44,968 - #15 int
+INFO  15:02:44,968 - #15 i
+INFO  15:02:44,968 - #5 ;
+INFO  15:02:44,969 - #3 {
+INFO  15:02:44,970 - #13 void
+INFO  15:02:44,983 - #15 main
+INFO  15:02:44,985 - #6 (
+INFO  15:02:44,988 - #7 )
+INFO  15:02:44,995 - #3 {
+INFO  15:02:44,998 - #15 niz
+INFO  15:02:45,000 - #32 [
+INFO  15:02:45,002 - #14 0
+INFO  15:02:45,003 - #33 ]
+INFO  15:02:45,004 - #8 =
+INFO  15:02:45,010 - #14 1
+INFO  15:02:45,011 - #5 ;
+INFO  15:02:45,012 - #4 }
+INFO  15:02:45,014 - #4 }
+INFO  15:02:45,026 - Program(
+  ProgramName(
+   MJTEST
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         niz
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                IsArray(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       0
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [IsArray]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  15:02:45,029 - ===================================
+ERROR 15:02:45,035 - Assigment operation operands aren't compatibile with eachother
+INFO  15:02:45,036 - ===================================
+ERROR 15:02:45,041 - Neuspesno parsiranje

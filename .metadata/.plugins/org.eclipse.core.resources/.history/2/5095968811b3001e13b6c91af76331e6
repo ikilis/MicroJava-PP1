@@ -1,0 +1,177 @@
+INFO  19:46:14,521 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:46:14,590 - #2 program
+INFO  19:46:14,590 - #15 test301
+INFO  19:46:14,591 - #15 int
+INFO  19:46:14,593 - #15 niz
+INFO  19:46:14,595 - #32 [
+INFO  19:46:14,596 - #33 ]
+INFO  19:46:14,597 - #5 ;
+INFO  19:46:14,599 - #15 int
+INFO  19:46:14,601 - #15 i
+INFO  19:46:14,602 - #5 ;
+INFO  19:46:14,603 - #3 {
+INFO  19:46:14,606 - #13 void
+INFO  19:46:14,606 - #15 main
+INFO  19:46:14,606 - #6 (
+INFO  19:46:14,615 - #7 )
+INFO  19:46:14,615 - #3 {
+INFO  19:46:14,623 - #15 niz
+INFO  19:46:14,625 - #8 =
+INFO  19:46:14,626 - #22 new
+INFO  19:46:14,626 - #15 int
+INFO  19:46:14,627 - #32 [
+INFO  19:46:14,627 - #14 2
+INFO  19:46:14,629 - #33 ]
+INFO  19:46:14,631 - #5 ;
+INFO  19:46:14,633 - #15 niz
+INFO  19:46:14,633 - #32 [
+INFO  19:46:14,633 - #14 1
+INFO  19:46:14,635 - #33 ]
+INFO  19:46:14,635 - #8 =
+INFO  19:46:14,636 - #14 6
+INFO  19:46:14,643 - #5 ;
+INFO  19:46:14,647 - #12 print
+INFO  19:46:14,647 - #6 (
+INFO  19:46:14,647 - #15 niz
+INFO  19:46:14,647 - #32 [
+INFO  19:46:14,647 - #14 1
+INFO  19:46:14,647 - #33 ]
+INFO  19:46:14,647 - #7 )
+INFO  19:46:14,647 - #5 ;
+INFO  19:46:14,647 - #4 }
+INFO  19:46:14,651 - #4 }
+INFO  19:46:14,665 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         niz
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        Statements(
+          Statements(
+            SingleStatement(
+            ) [SingleStatement]
+            DesignatorStmt(
+              DesignatorAssign(
+                AssignOperation(
+                  DesignatorIdent(
+                   niz
+                  ) [DesignatorIdent]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNew(
+                        Type(
+                         int
+                        ) [Type]
+                        ArrayPosition(
+                          ExprTerm(
+                            FinalTerm(
+                              FactorNumber(
+                               2
+                              ) [FactorNumber]
+                            ) [FinalTerm]
+                          ) [ExprTerm]
+                        ) [ArrayPosition]
+                      ) [FactorNew]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [AssignOperation]
+              ) [DesignatorAssign]
+            ) [DesignatorStmt]
+          ) [Statements]
+          DesignatorStmt(
+            DesignatorAssign(
+              AssignOperation(
+                DesignatorIndex(
+                  DesignatorIdent(
+                   niz
+                  ) [DesignatorIdent]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [DesignatorIndex]
+                ExprTerm(
+                  FinalTerm(
+                    FactorNumber(
+                     6
+                    ) [FactorNumber]
+                  ) [FinalTerm]
+                ) [ExprTerm]
+              ) [AssignOperation]
+            ) [DesignatorAssign]
+          ) [DesignatorStmt]
+        ) [Statements]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                DesignatorIndex(
+                  DesignatorIdent(
+                   niz
+                  ) [DesignatorIdent]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [DesignatorIndex]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:46:14,667 - ===================================
+INFO  19:46:14,670 - ===================================
+INFO  19:46:14,675 - Uspesno parsiranje

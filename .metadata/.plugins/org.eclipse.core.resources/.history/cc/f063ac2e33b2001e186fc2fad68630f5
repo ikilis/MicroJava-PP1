@@ -1,0 +1,56 @@
+INFO  16:38:42,961 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  16:38:43,181 - #2 program
+INFO  16:38:43,183 - #15 test301
+INFO  16:38:43,185 - #3 {
+INFO  16:38:43,188 - #13 void
+INFO  16:38:43,190 - #15 main
+INFO  16:38:43,190 - #6 (
+INFO  16:38:43,192 - #7 )
+INFO  16:38:43,192 - #3 {
+INFO  16:38:43,193 - #12 print
+INFO  16:38:43,193 - #6 (
+INFO  16:38:43,193 - #14 2
+INFO  16:38:43,194 - #7 )
+INFO  16:38:43,196 - #5 ;
+INFO  16:38:43,196 - #4 }
+INFO  16:38:43,196 - #4 }
+INFO  16:38:43,209 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorNumber(
+               2
+              ) [FactorNumber]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  16:38:43,212 - ===================================
+INFO  16:38:43,222 - ===================================
+INFO  16:38:43,225 - Uspesno parsiranje

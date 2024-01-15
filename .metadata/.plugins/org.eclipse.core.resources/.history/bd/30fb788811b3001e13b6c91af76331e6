@@ -1,0 +1,135 @@
+INFO  19:55:07,828 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:55:07,916 - #2 program
+INFO  19:55:07,917 - #15 test301
+INFO  19:55:07,917 - #15 int
+INFO  19:55:07,920 - #15 niz
+INFO  19:55:07,921 - #32 [
+INFO  19:55:07,921 - #33 ]
+INFO  19:55:07,921 - #5 ;
+INFO  19:55:07,923 - #15 int
+INFO  19:55:07,923 - #15 i
+INFO  19:55:07,923 - #5 ;
+INFO  19:55:07,925 - #3 {
+INFO  19:55:07,926 - #13 void
+INFO  19:55:07,927 - #15 main
+INFO  19:55:07,927 - #6 (
+INFO  19:55:07,927 - #7 )
+INFO  19:55:07,928 - #3 {
+INFO  19:55:07,934 - #15 niz
+INFO  19:55:07,934 - #8 =
+INFO  19:55:07,938 - #22 new
+INFO  19:55:07,938 - #15 int
+INFO  19:55:07,938 - #32 [
+INFO  19:55:07,938 - #14 2
+INFO  19:55:07,946 - #33 ]
+INFO  19:55:07,946 - #5 ;
+INFO  19:55:07,955 - #15 niz
+INFO  19:55:07,955 - #32 [
+INFO  19:55:07,956 - #14 0
+INFO  19:55:07,956 - #33 ]
+INFO  19:55:07,956 - #38 ++
+INFO  19:55:07,959 - #5 ;
+INFO  19:55:07,961 - #4 }
+INFO  19:55:07,964 - #4 }
+INFO  19:55:07,976 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         niz
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        Statements(
+          SingleStatement(
+          ) [SingleStatement]
+          DesignatorStmt(
+            DesignatorAssign(
+              AssignOperation(
+                DesignatorIdent(
+                 niz
+                ) [DesignatorIdent]
+                ExprTerm(
+                  FinalTerm(
+                    FactorNew(
+                      Type(
+                       int
+                      ) [Type]
+                      ArrayPosition(
+                        ExprTerm(
+                          FinalTerm(
+                            FactorNumber(
+                             2
+                            ) [FactorNumber]
+                          ) [FinalTerm]
+                        ) [ExprTerm]
+                      ) [ArrayPosition]
+                    ) [FactorNew]
+                  ) [FinalTerm]
+                ) [ExprTerm]
+              ) [AssignOperation]
+            ) [DesignatorAssign]
+          ) [DesignatorStmt]
+        ) [Statements]
+        DesignatorStmt(
+          DesignatorIncrement(
+            DesignatorIndex(
+              DesignatorIdent(
+               niz
+              ) [DesignatorIdent]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   0
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [DesignatorIndex]
+          ) [DesignatorIncrement]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:55:07,976 - ===================================
+INFO  19:55:07,978 - ===================================
+INFO  19:55:07,982 - Uspesno parsiranje

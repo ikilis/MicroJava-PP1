@@ -1,0 +1,87 @@
+INFO  20:29:06,872 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:29:06,949 - #2 program
+INFO  20:29:06,950 - #15 test301
+INFO  20:29:06,950 - #3 {
+INFO  20:29:06,953 - #13 void
+INFO  20:29:06,955 - #15 main
+INFO  20:29:06,958 - #6 (
+INFO  20:29:06,958 - #7 )
+INFO  20:29:06,960 - #3 {
+INFO  20:29:06,961 - #25 if
+INFO  20:29:06,963 - #6 (
+INFO  20:29:06,963 - #16 true
+INFO  20:29:06,963 - #7 )
+INFO  20:29:06,965 - #3 {
+INFO  20:29:06,966 - #9 return
+INFO  20:29:06,966 - #5 ;
+INFO  20:29:06,966 - #4 }
+INFO  20:29:06,976 - #24 else
+INFO  20:29:06,979 - #3 {
+INFO  20:29:06,980 - #9 return
+INFO  20:29:06,982 - #5 ;
+INFO  20:29:06,992 - #4 }
+INFO  20:29:06,992 - #4 }
+INFO  20:29:06,997 - #4 }
+INFO  20:29:07,029 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeader(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactBool(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorBool(
+                       true
+                      ) [FactorBool]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactBool]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeader]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          ElseStatement(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [ElseStatement]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:29:07,045 - ===================================
+INFO  20:29:07,053 - ===================================

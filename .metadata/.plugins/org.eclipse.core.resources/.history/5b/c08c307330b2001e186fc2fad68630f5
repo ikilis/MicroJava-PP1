@@ -1,0 +1,55 @@
+INFO  19:47:33,867 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:47:33,955 - #2 program
+INFO  19:47:33,957 - #15 test301
+INFO  19:47:33,957 - #3 {
+INFO  19:47:33,959 - #15 int
+INFO  19:47:33,959 - #15 main
+INFO  19:47:33,961 - #6 (
+INFO  19:47:33,963 - #7 )
+INFO  19:47:33,963 - #3 {
+INFO  19:47:33,966 - #9 return
+INFO  19:47:33,967 - #17 a
+INFO  19:47:33,970 - #5 ;
+INFO  19:47:33,970 - #4 }
+INFO  19:47:33,970 - #4 }
+INFO  19:47:33,986 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorChar(
+               a
+              ) [FactorChar]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:47:33,993 - ===================================
+ERROR 19:47:33,999 - Function main must return rs.etf.pp1.symboltable.concepts.Struct@1ee807c6 not rs.etf.pp1.symboltable.concepts.Struct@76a4d6c on line 7
+INFO  19:47:33,999 - ===================================

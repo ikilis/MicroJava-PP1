@@ -1,0 +1,98 @@
+INFO  19:42:54,999 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:42:55,086 - #2 program
+INFO  19:42:55,087 - #15 test301
+INFO  19:42:55,087 - #15 int
+INFO  19:42:55,090 - #15 i
+INFO  19:42:55,091 - #32 [
+INFO  19:42:55,092 - #33 ]
+INFO  19:42:55,092 - #11 ,
+INFO  19:42:55,096 - #15 elem
+INFO  19:42:55,097 - #11 ,
+INFO  19:42:55,100 - #15 niz
+INFO  19:42:55,100 - #32 [
+INFO  19:42:55,100 - #33 ]
+INFO  19:42:55,100 - #5 ;
+INFO  19:42:55,100 - #15 char
+INFO  19:42:55,101 - #15 c
+INFO  19:42:55,102 - #32 [
+INFO  19:42:55,102 - #33 ]
+INFO  19:42:55,102 - #5 ;
+INFO  19:42:55,102 - #3 {
+INFO  19:42:55,108 - #15 int
+INFO  19:42:55,108 - #15 main
+INFO  19:42:55,108 - #6 (
+INFO  19:42:55,110 - #7 )
+INFO  19:42:55,110 - #3 {
+INFO  19:42:55,110 - #4 }
+INFO  19:42:55,112 - #4 }
+INFO  19:42:55,129 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         i
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        VariableList(
+          VariableList(
+            NoVars(
+            ) [NoVars]
+            SingleVar(
+             elem
+              NotArray(
+              ) [NotArray]
+            ) [SingleVar]
+          ) [VariableList]
+          SingleVar(
+           niz
+            Array(
+            ) [Array]
+          ) [SingleVar]
+        ) [VariableList]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       char
+      ) [Type]
+      SingleVar(
+       c
+        Array(
+        ) [Array]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      SingleStatement(
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:42:55,130 - ===================================
+INFO  19:42:55,134 - ===================================

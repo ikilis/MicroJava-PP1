@@ -1,0 +1,125 @@
+INFO  20:02:19,671 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:02:19,749 - #2 program
+INFO  20:02:19,749 - #15 test301
+INFO  20:02:19,750 - #3 {
+INFO  20:02:19,752 - #13 void
+INFO  20:02:19,753 - #15 main
+INFO  20:02:19,753 - #6 (
+INFO  20:02:19,753 - #7 )
+INFO  20:02:19,753 - #15 int
+INFO  20:02:19,754 - #15 niz
+INFO  20:02:19,754 - #32 [
+INFO  20:02:19,754 - #33 ]
+INFO  20:02:19,754 - #5 ;
+INFO  20:02:19,756 - #15 char
+INFO  20:02:19,758 - #15 n2
+INFO  20:02:19,758 - #32 [
+INFO  20:02:19,758 - #33 ]
+INFO  20:02:19,758 - #5 ;
+INFO  20:02:19,760 - #3 {
+INFO  20:02:19,760 - #25 if
+INFO  20:02:19,760 - #6 (
+INFO  20:02:19,761 - #16 true
+INFO  20:02:19,761 - #7 )
+INFO  20:02:19,763 - #3 {
+INFO  20:02:19,763 - #9 return
+INFO  20:02:19,763 - #5 ;
+INFO  20:02:19,763 - #4 }
+INFO  20:02:19,763 - #24 else
+INFO  20:02:19,763 - #3 {
+INFO  20:02:19,763 - #9 return
+INFO  20:02:19,765 - #5 ;
+INFO  20:02:19,765 - #4 }
+INFO  20:02:19,765 - #4 }
+INFO  20:02:19,765 - #4 }
+INFO  20:02:19,788 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             niz
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+           n2
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeaderDerived1(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactDerived2(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorBool(
+                       true
+                      ) [FactorBool]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactDerived2]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeaderDerived1]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          MybElseDerived1(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [MybElseDerived1]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:02:19,788 - ===================================
+INFO  20:02:19,792 - ===================================

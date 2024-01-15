@@ -1,0 +1,90 @@
+INFO  20:16:55,257 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:16:55,325 - #2 program
+INFO  20:16:55,326 - #15 test301
+INFO  20:16:55,326 - #3 {
+INFO  20:16:55,329 - #13 void
+INFO  20:16:55,330 - #15 main
+INFO  20:16:55,331 - #6 (
+INFO  20:16:55,331 - #7 )
+INFO  20:16:55,332 - #15 int
+INFO  20:16:55,332 - #15 niz
+INFO  20:16:55,333 - #32 [
+INFO  20:16:55,334 - #33 ]
+INFO  20:16:55,334 - #5 ;
+INFO  20:16:55,335 - #3 {
+INFO  20:16:55,340 - #15 niz
+INFO  20:16:55,340 - #32 [
+INFO  20:16:55,340 - #14 1
+INFO  20:16:55,341 - #33 ]
+INFO  20:16:55,341 - #8 =
+INFO  20:16:55,343 - #14 1
+INFO  20:16:55,343 - #5 ;
+INFO  20:16:55,345 - #4 }
+INFO  20:16:55,346 - #4 }
+INFO  20:16:55,361 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           niz
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                IsArray(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [IsArray]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:16:55,366 - ===================================
+INFO  20:16:55,375 - ===================================

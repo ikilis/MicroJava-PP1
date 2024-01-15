@@ -1,0 +1,81 @@
+INFO  20:06:27,829 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:06:27,894 - #2 program
+INFO  20:06:27,895 - #15 test301
+INFO  20:06:27,895 - #3 {
+INFO  20:06:27,901 - #13 void
+INFO  20:06:27,901 - #15 main
+INFO  20:06:27,902 - #6 (
+INFO  20:06:27,902 - #7 )
+INFO  20:06:27,904 - #15 char
+INFO  20:06:27,904 - #15 niz
+INFO  20:06:27,905 - #32 [
+INFO  20:06:27,905 - #33 ]
+INFO  20:06:27,905 - #5 ;
+INFO  20:06:27,907 - #3 {
+INFO  20:06:27,911 - #15 niz
+INFO  20:06:27,912 - #32 [
+INFO  20:06:27,913 - #14 1
+INFO  20:06:27,914 - #33 ]
+INFO  20:06:27,914 - #38 ++
+INFO  20:06:27,916 - #5 ;
+INFO  20:06:27,916 - #4 }
+INFO  20:06:27,917 - #4 }
+INFO  20:06:27,936 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+           niz
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorIncrement(
+            Designator(
+              DesignatorSingle(
+               niz
+              ) [DesignatorSingle]
+              IsArray(
+                ExprTerm(
+                  FinalTerm(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [FinalTerm]
+                ) [ExprTerm]
+              ) [IsArray]
+            ) [Designator]
+          ) [DesignatorIncrement]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:06:27,938 - ===================================
+ERROR 20:06:27,943 - You can only increment INT type
+INFO  20:06:27,943 - ===================================

@@ -1,0 +1,97 @@
+INFO  12:47:32,552 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:47:32,633 - #2 program
+INFO  12:47:32,633 - #15 test301
+INFO  12:47:32,634 - #15 int
+INFO  12:47:32,636 - #15 i
+INFO  12:47:32,638 - #5 ;
+INFO  12:47:32,642 - #3 {
+INFO  12:47:32,644 - #13 void
+INFO  12:47:32,645 - #15 main
+INFO  12:47:32,645 - #6 (
+INFO  12:47:32,645 - #7 )
+INFO  12:47:32,647 - #3 {
+INFO  12:47:32,651 - #15 i
+INFO  12:47:32,657 - #8 =
+INFO  12:47:32,658 - #22 new
+INFO  12:47:32,658 - #15 int
+INFO  12:47:32,658 - #32 [
+INFO  12:47:32,658 - #14 2
+INFO  12:47:32,679 - #33 ]
+INFO  12:47:32,685 - #5 ;
+INFO  12:47:32,703 - #4 }
+INFO  12:47:32,707 - #4 }
+INFO  12:47:32,728 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 i
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNew(
+                    Type(
+                     int
+                    ) [Type]
+                    ArrayPosition(
+                      ExprTerm(
+                        FinalTerm(
+                          FactorNumber(
+                           2
+                          ) [FactorNumber]
+                        ) [FinalTerm]
+                      ) [ExprTerm]
+                    ) [ArrayPosition]
+                  ) [FactorNew]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  12:47:32,735 - ===================================
+ERROR 12:47:32,736 - Assigment operation operands aren't compatibile with eachother
+INFO  12:47:32,742 - ===================================
+ERROR 12:47:32,747 - Neuspesno parsiranje

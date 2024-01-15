@@ -1,0 +1,63 @@
+INFO  16:39:05,066 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  16:39:05,112 - #2 program
+INFO  16:39:05,114 - #15 test301
+INFO  16:39:05,114 - #3 {
+INFO  16:39:05,118 - #13 void
+INFO  16:39:05,119 - #15 main
+INFO  16:39:05,119 - #6 (
+INFO  16:39:05,119 - #7 )
+INFO  16:39:05,122 - #3 {
+INFO  16:39:05,123 - #12 print
+INFO  16:39:05,124 - #6 (
+INFO  16:39:05,124 - #15 f
+INFO  16:39:05,124 - #7 )
+INFO  16:39:05,129 - #5 ;
+INFO  16:39:05,135 - #4 }
+INFO  16:39:05,137 - #4 }
+INFO  16:39:05,161 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   f
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  16:39:05,172 - ===================================
+ERROR 16:39:05,177 - You can only use read on CHAR, INT or BOOL
+INFO  16:39:05,188 - ===================================
+ERROR 16:39:05,188 - Neuspesno parsiranje

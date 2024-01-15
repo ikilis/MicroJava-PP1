@@ -1,8 +1,0 @@
-INFO  18:12:58,276 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
-INFO  18:12:58,311 - #2 program
-INFO  18:12:58,316 - #35 *
-INFO  18:12:58,318 - ProgramDerived1(
-  MulopDerived1(
-  ) [MulopDerived1]
-) [ProgramDerived1]
-INFO  18:12:58,319 - ===================================

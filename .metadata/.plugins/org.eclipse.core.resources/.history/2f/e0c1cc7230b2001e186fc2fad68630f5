@@ -1,0 +1,133 @@
+INFO  19:08:23,201 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:08:23,271 - #2 program
+INFO  19:08:23,272 - #15 test301
+INFO  19:08:23,272 - #15 int
+INFO  19:08:23,276 - #15 i
+INFO  19:08:23,277 - #32 [
+INFO  19:08:23,277 - #33 ]
+INFO  19:08:23,279 - #11 ,
+INFO  19:08:23,282 - #15 elem
+INFO  19:08:23,283 - #11 ,
+INFO  19:08:23,286 - #15 niz
+INFO  19:08:23,286 - #32 [
+INFO  19:08:23,286 - #33 ]
+INFO  19:08:23,286 - #5 ;
+INFO  19:08:23,286 - #15 char
+INFO  19:08:23,288 - #15 c
+INFO  19:08:23,288 - #5 ;
+INFO  19:08:23,288 - #3 {
+INFO  19:08:23,288 - #15 int
+INFO  19:08:23,292 - #15 main
+INFO  19:08:23,292 - #6 (
+INFO  19:08:23,293 - #7 )
+INFO  19:08:23,293 - #3 {
+INFO  19:08:23,296 - #9 return
+INFO  19:08:23,298 - #15 i
+INFO  19:08:23,298 - #32 [
+INFO  19:08:23,298 - #15 c
+INFO  19:08:23,298 - #33 ]
+INFO  19:08:23,302 - #5 ;
+INFO  19:08:23,302 - #4 }
+INFO  19:08:23,302 - #4 }
+INFO  19:08:23,325 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         i
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        VariableList(
+          VariableList(
+            NoVars(
+            ) [NoVars]
+            SingleVar(
+             elem
+              NotArray(
+              ) [NotArray]
+            ) [SingleVar]
+          ) [VariableList]
+          SingleVar(
+           niz
+            Array(
+            ) [Array]
+          ) [SingleVar]
+        ) [VariableList]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       char
+      ) [Type]
+      SingleVar(
+       c
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   i
+                  ) [DesignatorSingle]
+                  IsArray(
+                    ExprTerm(
+                      FinalTerm(
+                        FactorDesignator(
+                          Designator(
+                            DesignatorSingle(
+                             c
+                            ) [DesignatorSingle]
+                            MybArrayPositionDerived1(
+                            ) [MybArrayPositionDerived1]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                  ) [IsArray]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:08:23,326 - ===================================
+ERROR 19:08:23,327 - Only integers are allowed to be array indexes
+INFO  19:08:23,327 - ===================================

@@ -1,0 +1,21 @@
+// Test301
+
+program MJTest
+
+	int a[];
+	
+{
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+		a = new int[3];
+		a[1] = 0;
+		//print(a[1]);
+		
+		
+			
+	}
+}
+
+

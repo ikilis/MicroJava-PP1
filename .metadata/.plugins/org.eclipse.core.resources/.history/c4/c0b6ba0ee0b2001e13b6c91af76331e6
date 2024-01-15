@@ -1,0 +1,36 @@
+INFO  21:06:32,113 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  21:06:32,199 - #2 program
+INFO  21:06:32,200 - #15 test301
+INFO  21:06:32,200 - #15 int
+INFO  21:06:32,203 - #15 x
+INFO  21:06:32,205 - #5 ;
+INFO  21:06:32,208 - #3 {
+INFO  21:06:32,209 - #13 void
+INFO  21:06:32,210 - #15 main
+INFO  21:06:32,210 - #6 (
+INFO  21:06:32,210 - #7 )
+INFO  21:06:32,211 - #15 int
+INFO  21:06:32,213 - #15 y
+INFO  21:06:32,214 - #5 ;
+INFO  21:06:32,214 - #3 {
+INFO  21:06:32,218 - #15 x
+INFO  21:06:32,221 - #8 =
+INFO  21:06:32,225 - #14 12
+INFO  21:06:32,225 - #5 ;
+INFO  21:06:32,229 - #15 y
+INFO  21:06:32,230 - #8 =
+INFO  21:06:32,235 - #15 x
+INFO  21:06:32,235 - #5 ;
+INFO  21:06:32,235 - #12 print
+INFO  21:06:32,235 - #6 (
+INFO  21:06:32,235 - #15 x
+INFO  21:06:32,236 - #7 )
+INFO  21:06:32,238 - #5 ;
+INFO  21:06:32,238 - #12 print
+INFO  21:06:32,239 - #6 (
+INFO  21:06:32,240 - #15 y
+INFO  21:06:32,242 - #7 )
+INFO  21:06:32,244 - #4 }
+ERROR 21:06:32,248 - 
+Sintaksna greska na liniji 17
+ERROR 21:06:32,251 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 17

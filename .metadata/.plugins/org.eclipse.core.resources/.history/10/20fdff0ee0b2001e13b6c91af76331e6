@@ -1,0 +1,105 @@
+INFO  20:26:09,415 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:26:09,478 - #2 program
+INFO  20:26:09,479 - #15 test301
+INFO  20:26:09,479 - #42 namespace
+INFO  20:26:09,482 - #15 nejm
+INFO  20:26:09,482 - #3 {
+INFO  20:26:09,483 - #29 const
+INFO  20:26:09,485 - #15 in
+INFO  20:26:09,489 - #15 x
+INFO  20:26:09,489 - #8 =
+INFO  20:26:09,495 - #14 1389
+INFO  20:26:09,495 - #5 ;
+INFO  20:26:09,500 - #3 {
+INFO  20:26:09,501 - #4 }
+INFO  20:26:09,502 - #4 }
+INFO  20:26:09,502 - #3 {
+INFO  20:26:09,504 - #13 void
+INFO  20:26:09,504 - #15 main
+INFO  20:26:09,504 - #6 (
+INFO  20:26:09,504 - #7 )
+INFO  20:26:09,505 - #3 {
+INFO  20:26:09,525 - #12 print
+INFO  20:26:09,525 - #6 (
+INFO  20:26:09,525 - #15 nejm
+INFO  20:26:09,525 - #18 :
+INFO  20:26:09,525 - #18 :
+INFO  20:26:09,525 - #15 x
+INFO  20:26:09,525 - #7 )
+INFO  20:26:09,525 - #5 ;
+INFO  20:26:09,525 - #4 }
+INFO  20:26:09,525 - #4 }
+INFO  20:26:09,549 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespace(
+    MybNamespacesDerived1(
+    ) [MybNamespacesDerived1]
+    Namespace(
+      NamespaceHeader(
+       nejm
+      ) [NamespaceHeader]
+      GlobalConstants(
+        NoGlobals(
+        ) [NoGlobals]
+        Constants(
+          Type(
+           in
+          ) [Type]
+          IntConst(
+           x
+           1389
+          ) [IntConst]
+          NoConsts(
+          ) [NoConsts]
+        ) [Constants]
+      ) [GlobalConstants]
+      NoMethod(
+      ) [NoMethod]
+    ) [Namespace]
+  ) [MybNamespace]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorNamespace(
+                   nejm
+                   x
+                  ) [DesignatorNamespace]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:26:09,549 - ===================================
+ERROR 20:26:09,555 - Not supported in
+ERROR 20:26:09,556 - Incorrect type for: __nejm__x
+ERROR 20:26:09,556 - You can only use read on CHAR, INT or BOOL
+INFO  20:26:09,556 - ===================================
+ERROR 20:26:09,559 - Neuspesno parsiranje

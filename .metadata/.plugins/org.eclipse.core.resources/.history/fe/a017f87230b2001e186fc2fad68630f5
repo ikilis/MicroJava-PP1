@@ -1,0 +1,90 @@
+INFO  19:07:59,438 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:07:59,523 - #2 program
+INFO  19:07:59,523 - #15 test301
+INFO  19:07:59,524 - #15 int
+INFO  19:07:59,526 - #15 i
+INFO  19:07:59,528 - #32 [
+INFO  19:07:59,528 - #33 ]
+INFO  19:07:59,528 - #5 ;
+INFO  19:07:59,530 - #3 {
+INFO  19:07:59,532 - #15 int
+INFO  19:07:59,532 - #15 main
+INFO  19:07:59,532 - #6 (
+INFO  19:07:59,532 - #7 )
+INFO  19:07:59,539 - #3 {
+INFO  19:07:59,540 - #9 return
+INFO  19:07:59,541 - #15 i
+INFO  19:07:59,541 - #32 [
+INFO  19:07:59,543 - #17 a
+INFO  19:07:59,543 - #33 ]
+INFO  19:07:59,544 - #5 ;
+INFO  19:07:59,545 - #4 }
+INFO  19:07:59,545 - #4 }
+INFO  19:07:59,563 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        Array(
+        ) [Array]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   i
+                  ) [DesignatorSingle]
+                  IsArray(
+                    ExprTerm(
+                      FinalTerm(
+                        FactorChar(
+                         a
+                        ) [FactorChar]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                  ) [IsArray]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:07:59,564 - ===================================
+ERROR 19:07:59,572 - Only integers are allowed to be array indexes
+INFO  19:07:59,573 - ===================================

@@ -1,0 +1,100 @@
+INFO  20:18:33,772 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:18:33,834 - #2 program
+INFO  20:18:33,834 - #15 test301
+INFO  20:18:33,835 - #42 namespace
+INFO  20:18:33,838 - #15 nejm
+INFO  20:18:33,840 - #3 {
+INFO  20:18:33,850 - #15 int
+INFO  20:18:33,854 - #15 x
+INFO  20:18:33,856 - #5 ;
+INFO  20:18:33,859 - #3 {
+INFO  20:18:33,860 - #4 }
+INFO  20:18:33,861 - #4 }
+INFO  20:18:33,861 - #3 {
+INFO  20:18:33,863 - #13 void
+INFO  20:18:33,863 - #15 main
+INFO  20:18:33,863 - #6 (
+INFO  20:18:33,884 - #7 )
+INFO  20:18:33,886 - #3 {
+INFO  20:18:33,890 - #12 print
+INFO  20:18:33,890 - #6 (
+INFO  20:18:33,891 - #15 nejm
+INFO  20:18:33,892 - #18 :
+INFO  20:18:33,892 - #18 :
+INFO  20:18:33,894 - #15 x
+INFO  20:18:33,894 - #7 )
+INFO  20:18:33,900 - #5 ;
+INFO  20:18:33,905 - #4 }
+INFO  20:18:33,907 - #4 }
+INFO  20:18:33,928 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespace(
+    MybNamespacesDerived1(
+    ) [MybNamespacesDerived1]
+    Namespace(
+      NamespaceHeader(
+       nejm
+      ) [NamespaceHeader]
+      GlobalVars(
+        NoGlobals(
+        ) [NoGlobals]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           x
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [GlobalVars]
+      NoMethod(
+      ) [NoMethod]
+    ) [Namespace]
+  ) [MybNamespace]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorNamespace(
+                   nejm
+                   x
+                  ) [DesignatorNamespace]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:18:33,928 - ===================================
+INFO  20:18:33,934 - ===================================
+INFO  20:18:33,945 - Uspesno parsiranje

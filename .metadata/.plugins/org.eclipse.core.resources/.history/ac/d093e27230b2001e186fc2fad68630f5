@@ -1,0 +1,71 @@
+INFO  20:06:06,681 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:06:06,749 - #2 program
+INFO  20:06:06,750 - #15 test301
+INFO  20:06:06,750 - #3 {
+INFO  20:06:06,753 - #13 void
+INFO  20:06:06,754 - #15 main
+INFO  20:06:06,755 - #6 (
+INFO  20:06:06,755 - #7 )
+INFO  20:06:06,756 - #15 int
+INFO  20:06:06,757 - #15 niz
+INFO  20:06:06,758 - #32 [
+INFO  20:06:06,758 - #33 ]
+INFO  20:06:06,758 - #5 ;
+INFO  20:06:06,762 - #3 {
+INFO  20:06:06,763 - #15 niz
+INFO  20:06:06,764 - #38 ++
+INFO  20:06:06,766 - #5 ;
+INFO  20:06:06,766 - #4 }
+INFO  20:06:06,767 - #4 }
+INFO  20:06:06,780 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           niz
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorIncrement(
+            Designator(
+              DesignatorSingle(
+               niz
+              ) [DesignatorSingle]
+              MybArrayPositionDerived1(
+              ) [MybArrayPositionDerived1]
+            ) [Designator]
+          ) [DesignatorIncrement]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:06:06,784 - ===================================
+ERROR 20:06:06,794 - You can only increment INT type
+INFO  20:06:06,795 - ===================================

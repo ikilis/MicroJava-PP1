@@ -1,0 +1,74 @@
+INFO  18:19:38,318 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  18:19:38,397 - #2 program
+INFO  18:19:38,399 - #15 test301
+INFO  18:19:38,400 - #15 int
+INFO  18:19:38,403 - #15 niz
+INFO  18:19:38,405 - #32 [
+INFO  18:19:38,405 - #33 ]
+INFO  18:19:38,405 - #5 ;
+INFO  18:19:38,410 - #15 int
+INFO  18:19:38,411 - #15 i
+INFO  18:19:38,411 - #5 ;
+INFO  18:19:38,413 - #3 {
+INFO  18:19:38,413 - #13 void
+INFO  18:19:38,417 - #15 main
+INFO  18:19:38,417 - #6 (
+INFO  18:19:38,418 - #7 )
+INFO  18:19:38,419 - #3 {
+INFO  18:19:38,437 - #4 }
+INFO  18:19:38,446 - #4 }
+INFO  18:19:38,471 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         niz
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      SingleStatement(
+      ) [SingleStatement]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  18:19:38,481 - ===================================
+INFO  18:19:38,483 - ===================================
+INFO  18:19:38,491 - Uspesno parsiranje

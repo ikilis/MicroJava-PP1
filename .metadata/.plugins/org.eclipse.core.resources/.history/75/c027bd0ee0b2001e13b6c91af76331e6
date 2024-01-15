@@ -1,0 +1,98 @@
+INFO  21:31:00,517 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  21:31:00,581 - #2 program
+INFO  21:31:00,583 - #15 test301
+INFO  21:31:00,583 - #15 char
+INFO  21:31:00,585 - #15 x
+INFO  21:31:00,586 - #32 [
+INFO  21:31:00,587 - #33 ]
+INFO  21:31:00,587 - #5 ;
+INFO  21:31:00,590 - #3 {
+INFO  21:31:00,591 - #13 void
+INFO  21:31:00,592 - #15 main
+INFO  21:31:00,592 - #6 (
+INFO  21:31:00,592 - #7 )
+INFO  21:31:00,596 - #3 {
+INFO  21:31:00,596 - #15 x
+INFO  21:31:00,604 - #8 =
+INFO  21:31:00,609 - #22 new
+INFO  21:31:00,612 - #15 char
+INFO  21:31:00,616 - #32 [
+INFO  21:31:00,621 - #14 3
+INFO  21:31:00,621 - #33 ]
+INFO  21:31:00,622 - #5 ;
+INFO  21:31:00,630 - #4 }
+INFO  21:31:00,632 - #4 }
+INFO  21:31:00,643 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       char
+      ) [Type]
+      SingleVar(
+       x
+        Array(
+        ) [Array]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 x
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNew(
+                    Type(
+                     char
+                    ) [Type]
+                    ArrayPosition(
+                      ExprTerm(
+                        FinalTerm(
+                          FactorNumber(
+                           3
+                          ) [FactorNumber]
+                        ) [FinalTerm]
+                      ) [ExprTerm]
+                    ) [ArrayPosition]
+                  ) [FactorNew]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  21:31:00,654 - ===================================
+INFO  21:31:00,661 - ===================================
+INFO  21:31:00,663 - Uspesno parsiranje

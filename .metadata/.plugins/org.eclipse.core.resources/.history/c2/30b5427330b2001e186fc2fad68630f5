@@ -1,0 +1,75 @@
+INFO  19:54:05,478 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:54:05,551 - #2 program
+INFO  19:54:05,552 - #15 test301
+INFO  19:54:05,552 - #3 {
+INFO  19:54:05,555 - #15 int
+INFO  19:54:05,556 - #15 main
+INFO  19:54:05,557 - #6 (
+INFO  19:54:05,558 - #7 )
+INFO  19:54:05,559 - #3 {
+INFO  19:54:05,562 - #12 print
+INFO  19:54:05,564 - #6 (
+INFO  19:54:05,565 - #14 1
+INFO  19:54:05,565 - #11 ,
+INFO  19:54:05,566 - #14 1
+INFO  19:54:05,566 - #7 )
+INFO  19:54:05,566 - #5 ;
+INFO  19:54:05,567 - #9 return
+INFO  19:54:05,567 - #14 1
+INFO  19:54:05,567 - #5 ;
+INFO  19:54:05,568 - #4 }
+INFO  19:54:05,568 - #4 }
+INFO  19:54:05,582 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        Statements(
+          SingleStatement(
+          ) [SingleStatement]
+          PrintStatement(
+            ExprTerm(
+              FinalTerm(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [FinalTerm]
+            ) [ExprTerm]
+            HasPrintAmmount(
+             1
+            ) [HasPrintAmmount]
+          ) [PrintStatement]
+        ) [Statements]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorNumber(
+               1
+              ) [FactorNumber]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:54:05,588 - ===================================
+INFO  19:54:05,594 - ===================================

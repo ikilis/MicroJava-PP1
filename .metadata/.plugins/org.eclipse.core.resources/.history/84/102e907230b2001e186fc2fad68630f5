@@ -1,0 +1,34 @@
+INFO  19:24:42,213 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:24:42,278 - #2 program
+INFO  19:24:42,278 - #15 test301
+INFO  19:24:42,279 - #15 int
+INFO  19:24:42,281 - #15 i
+INFO  19:24:42,283 - #32 [
+INFO  19:24:42,285 - #33 ]
+INFO  19:24:42,286 - #11 ,
+INFO  19:24:42,290 - #15 elem
+INFO  19:24:42,292 - #11 ,
+INFO  19:24:42,294 - #15 niz
+INFO  19:24:42,294 - #32 [
+INFO  19:24:42,294 - #33 ]
+INFO  19:24:42,294 - #5 ;
+INFO  19:24:42,294 - #15 char
+INFO  19:24:42,302 - #15 c
+INFO  19:24:42,302 - #32 [
+INFO  19:24:42,303 - #33 ]
+INFO  19:24:42,303 - #5 ;
+INFO  19:24:42,303 - #3 {
+INFO  19:24:42,305 - #15 int
+INFO  19:24:42,305 - #15 main
+INFO  19:24:42,307 - #6 (
+INFO  19:24:42,310 - #7 )
+INFO  19:24:42,313 - #3 {
+INFO  19:24:42,316 - #9 return
+INFO  19:24:42,317 - #15 elem
+INFO  19:24:42,317 - #32 [
+INFO  19:24:42,317 - #14 123
+INFO  19:24:42,337 - #33 ]
+INFO  19:24:42,339 - #4 }
+ERROR 19:24:42,341 - 
+Sintaksna greska na liniji 11
+ERROR 19:24:42,341 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

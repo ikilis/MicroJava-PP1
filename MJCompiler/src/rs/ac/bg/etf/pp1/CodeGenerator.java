@@ -97,6 +97,28 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 	}
 	
+	public void visit(ReturnSmt met)
+	{
+		if("main".equalsIgnoreCase(met.getName()))
+			this.mainPC = Code.pc;
+		// met.obj.setAdr(Code.pc);
+		
+		// Collect args and local vars
+		SyntaxNode methodNode = met.getParent();
+		
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		
+		FormParamCounter parCnt = new FormParamCounter();
+		methodNode.traverseTopDown(parCnt);
+		
+		// Generate entry
+		Code.put(Code.enter);
+		Code.put(parCnt.getCount());
+		Code.put(parCnt.getCount() + varCnt.getCount());
+		
+	}
+	
 	public void visit(SingleMethodDecl methodDecl)
 	{
 		Code.put(Code.exit);

@@ -1,0 +1,17 @@
+// Test301
+
+program test301
+int niz[];
+int i;
+{
+
+	void main()
+	int k;
+	{
+		niz = new int[2];
+		read(niz[1]);
+		print(niz[1]);
+	}
+}
+
+

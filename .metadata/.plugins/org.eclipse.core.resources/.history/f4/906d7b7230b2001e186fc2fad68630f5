@@ -1,0 +1,102 @@
+INFO  20:21:06,854 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:21:06,919 - #2 program
+INFO  20:21:06,921 - #15 test301
+INFO  20:21:06,921 - #3 {
+INFO  20:21:06,922 - #13 void
+INFO  20:21:06,924 - #15 main
+INFO  20:21:06,925 - #6 (
+INFO  20:21:06,925 - #7 )
+INFO  20:21:06,926 - #15 int
+INFO  20:21:06,928 - #15 niz
+INFO  20:21:06,930 - #32 [
+INFO  20:21:06,933 - #33 ]
+INFO  20:21:06,939 - #5 ;
+INFO  20:21:06,944 - #15 int
+INFO  20:21:06,947 - #15 n2
+INFO  20:21:06,947 - #32 [
+INFO  20:21:06,949 - #33 ]
+INFO  20:21:06,949 - #5 ;
+INFO  20:21:06,949 - #3 {
+INFO  20:21:06,949 - #15 niz
+INFO  20:21:06,951 - #8 =
+INFO  20:21:06,955 - #14 1
+INFO  20:21:06,955 - #5 ;
+INFO  20:21:06,956 - #4 }
+INFO  20:21:06,958 - #4 }
+INFO  20:21:06,973 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             niz
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           n2
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:21:06,975 - ===================================
+ERROR 20:21:06,980 - Assigment operation operands aren't compatibile with eachother
+INFO  20:21:06,983 - ===================================

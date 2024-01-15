@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="42"/>
+		<item key="selection" value="new"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="42"/>
-			<item value="namespace"/>
-			<item value="exprderived2"/>
-			<item value="-"/>
-			<item value="15"/>
-			<item value="8"/>
-			<item value="14"/>
-			<item value="bool"/>
-			<item value="boo"/>
-			<item value="condFact"/>
-			<item value="if"/>
-			<item value="conditionDerived1"/>
-			<item value="conditionDerived2"/>
-			<item value="Condition"/>
-			<item value="mybelse"/>
+			<item value="new"/>
+			<item value="bodovi"/>
+			<item value="elem"/>
+			<item value="factorNum"/>
+			<item value="factorDes"/>
+			<item value="returnvoid"/>
+			<item value="designator"/>
+			<item value="assign"/>
+			<item value="DesignatorIdent"/>
+			<item value="factordes"/>
+			<item value="code.load"/>
+			<item value="singleVar"/>
+			<item value="de"/>
+			<item value="load"/>
+			<item value="designator d"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="866"/>
-		<item key="DIALOG_Y_ORIGIN" value="491"/>
-		<item key="DIALOG_WIDTH" value="322"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_X_ORIGIN" value="1995"/>
+		<item key="DIALOG_Y_ORIGIN" value="230"/>
+		<item key="DIALOG_WIDTH" value="418"/>
+		<item key="DIALOG_HEIGHT" value="379"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

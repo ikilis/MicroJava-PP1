@@ -1,0 +1,141 @@
+INFO  20:39:16,018 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:39:16,101 - #2 program
+INFO  20:39:16,102 - #15 test301
+INFO  20:39:16,103 - #3 {
+INFO  20:39:16,105 - #13 void
+INFO  20:39:16,107 - #15 main
+INFO  20:39:16,107 - #6 (
+INFO  20:39:16,107 - #7 )
+INFO  20:39:16,109 - #15 int
+INFO  20:39:16,112 - #15 i
+INFO  20:39:16,113 - #32 [
+INFO  20:39:16,113 - #33 ]
+INFO  20:39:16,114 - #5 ;
+INFO  20:39:16,118 - #15 bool
+INFO  20:39:16,121 - #15 b
+INFO  20:39:16,121 - #5 ;
+INFO  20:39:16,123 - #3 {
+INFO  20:39:16,123 - #25 if
+INFO  20:39:16,123 - #6 (
+INFO  20:39:16,123 - #15 i
+INFO  20:39:16,123 - #41 >
+INFO  20:39:16,128 - #14 2
+INFO  20:39:16,138 - #7 )
+INFO  20:39:16,139 - #3 {
+INFO  20:39:16,140 - #9 return
+INFO  20:39:16,140 - #5 ;
+INFO  20:39:16,140 - #4 }
+INFO  20:39:16,148 - #24 else
+INFO  20:39:16,150 - #3 {
+INFO  20:39:16,152 - #9 return
+INFO  20:39:16,154 - #5 ;
+INFO  20:39:16,156 - #4 }
+INFO  20:39:16,156 - #4 }
+INFO  20:39:16,156 - #4 }
+INFO  20:39:16,170 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             i
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           bool
+          ) [Type]
+          SingleVar(
+           b
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeader(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactRelop(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           i
+                          ) [DesignatorSingle]
+                          MybArrayPositionDerived1(
+                          ) [MybArrayPositionDerived1]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                  RelopGT(
+                  ) [RelopGT]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       2
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactRelop]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeader]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          ElseStatement(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [ElseStatement]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:39:16,171 - ===================================
+ERROR 20:39:16,173 - Comparison arguments aren't compatibile
+INFO  20:39:16,176 - ===================================

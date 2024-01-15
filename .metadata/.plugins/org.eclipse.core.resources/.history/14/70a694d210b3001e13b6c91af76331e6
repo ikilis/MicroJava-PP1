@@ -1,0 +1,25 @@
+// Test301
+
+program test301
+int niz[];
+int i;
+{
+
+	void main()
+	int k;
+	{
+		niz = new int[2];
+		niz[1] = 1234;
+		niz[1]++;
+		print(niz[1]);
+		niz[1]--;
+		print(niz[1]);
+		niz[0] = niz[1] / 12;
+		print(niz[0]);
+		k = 2+4*4;
+		k++;
+		print(k);
+	}
+}
+
+

@@ -1,0 +1,158 @@
+INFO  20:39:28,894 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:39:28,979 - #2 program
+INFO  20:39:28,980 - #15 test301
+INFO  20:39:28,980 - #3 {
+INFO  20:39:28,983 - #13 void
+INFO  20:39:28,984 - #15 main
+INFO  20:39:28,985 - #6 (
+INFO  20:39:28,985 - #7 )
+INFO  20:39:28,987 - #15 int
+INFO  20:39:28,988 - #15 i
+INFO  20:39:28,988 - #32 [
+INFO  20:39:28,988 - #33 ]
+INFO  20:39:28,989 - #11 ,
+INFO  20:39:28,992 - #15 j
+INFO  20:39:28,992 - #32 [
+INFO  20:39:28,992 - #33 ]
+INFO  20:39:28,992 - #5 ;
+INFO  20:39:28,993 - #15 bool
+INFO  20:39:28,993 - #15 b
+INFO  20:39:28,993 - #5 ;
+INFO  20:39:28,993 - #3 {
+INFO  20:39:28,993 - #25 if
+INFO  20:39:28,993 - #6 (
+INFO  20:39:28,996 - #15 i
+INFO  20:39:28,996 - #41 >
+INFO  20:39:28,999 - #15 j
+INFO  20:39:29,001 - #7 )
+INFO  20:39:29,002 - #3 {
+INFO  20:39:29,004 - #9 return
+INFO  20:39:29,004 - #5 ;
+INFO  20:39:29,004 - #4 }
+INFO  20:39:29,010 - #24 else
+INFO  20:39:29,010 - #3 {
+INFO  20:39:29,010 - #9 return
+INFO  20:39:29,010 - #5 ;
+INFO  20:39:29,010 - #4 }
+INFO  20:39:29,010 - #4 }
+INFO  20:39:29,010 - #4 }
+INFO  20:39:29,024 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             i
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            VariableList(
+              NoVars(
+              ) [NoVars]
+              SingleVar(
+               j
+                Array(
+                ) [Array]
+              ) [SingleVar]
+            ) [VariableList]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           bool
+          ) [Type]
+          SingleVar(
+           b
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeader(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactRelop(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           i
+                          ) [DesignatorSingle]
+                          MybArrayPositionDerived1(
+                          ) [MybArrayPositionDerived1]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                  RelopGT(
+                  ) [RelopGT]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           j
+                          ) [DesignatorSingle]
+                          MybArrayPositionDerived1(
+                          ) [MybArrayPositionDerived1]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactRelop]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeader]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          ElseStatement(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [ElseStatement]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:39:29,024 - ===================================
+ERROR 20:39:29,032 - Arrays or classes (not supported) can only use '==' and '!=',
+INFO  20:39:29,034 - ===================================

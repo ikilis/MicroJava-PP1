@@ -1,0 +1,160 @@
+INFO  20:40:05,346 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:40:05,427 - #2 program
+INFO  20:40:05,428 - #15 test301
+INFO  20:40:05,428 - #3 {
+INFO  20:40:05,431 - #13 void
+INFO  20:40:05,432 - #15 main
+INFO  20:40:05,432 - #6 (
+INFO  20:40:05,433 - #7 )
+INFO  20:40:05,435 - #15 int
+INFO  20:40:05,436 - #15 i
+INFO  20:40:05,437 - #32 [
+INFO  20:40:05,438 - #33 ]
+INFO  20:40:05,438 - #11 ,
+INFO  20:40:05,443 - #15 j
+INFO  20:40:05,444 - #32 [
+INFO  20:40:05,447 - #33 ]
+INFO  20:40:05,448 - #5 ;
+INFO  20:40:05,449 - #3 {
+INFO  20:40:05,450 - #25 if
+INFO  20:40:05,452 - #6 (
+INFO  20:40:05,452 - #15 i
+INFO  20:40:05,452 - #32 [
+INFO  20:40:05,453 - #14 2
+INFO  20:40:05,454 - #33 ]
+INFO  20:40:05,455 - #23 >=
+INFO  20:40:05,456 - #15 j
+INFO  20:40:05,466 - #32 [
+INFO  20:40:05,467 - #14 231
+INFO  20:40:05,467 - #33 ]
+INFO  20:40:05,467 - #7 )
+INFO  20:40:05,468 - #3 {
+INFO  20:40:05,473 - #9 return
+INFO  20:40:05,473 - #5 ;
+INFO  20:40:05,473 - #4 }
+INFO  20:40:05,473 - #24 else
+INFO  20:40:05,480 - #3 {
+INFO  20:40:05,480 - #9 return
+INFO  20:40:05,480 - #5 ;
+INFO  20:40:05,482 - #4 }
+INFO  20:40:05,483 - #4 }
+INFO  20:40:05,484 - #4 }
+INFO  20:40:05,500 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        NoLocalVars(
+        ) [NoLocalVars]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           i
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          VariableList(
+            NoVars(
+            ) [NoVars]
+            SingleVar(
+             j
+              Array(
+              ) [Array]
+            ) [SingleVar]
+          ) [VariableList]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeader(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactRelop(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           i
+                          ) [DesignatorSingle]
+                          IsArray(
+                            ExprTerm(
+                              FinalTerm(
+                                FactorNumber(
+                                 2
+                                ) [FactorNumber]
+                              ) [FinalTerm]
+                            ) [ExprTerm]
+                          ) [IsArray]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                  RelopGTE(
+                  ) [RelopGTE]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           j
+                          ) [DesignatorSingle]
+                          IsArray(
+                            ExprTerm(
+                              FinalTerm(
+                                FactorNumber(
+                                 231
+                                ) [FactorNumber]
+                              ) [FinalTerm]
+                            ) [ExprTerm]
+                          ) [IsArray]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactRelop]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeader]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          ElseStatement(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [ElseStatement]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:40:05,501 - ===================================
+INFO  20:40:05,515 - ===================================

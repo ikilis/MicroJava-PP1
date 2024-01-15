@@ -1,0 +1,74 @@
+INFO  17:25:46,534 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  17:25:46,603 - #2 program
+INFO  17:25:46,604 - #15 test301
+INFO  17:25:46,604 - #3 {
+INFO  17:25:46,608 - #13 void
+INFO  17:25:46,610 - #15 main
+INFO  17:25:46,612 - #6 (
+INFO  17:25:46,613 - #7 )
+INFO  17:25:46,615 - #3 {
+INFO  17:25:46,616 - #12 print
+INFO  17:25:46,617 - #6 (
+INFO  17:25:46,617 - #14 12
+INFO  17:25:46,617 - #7 )
+INFO  17:25:46,619 - #5 ;
+INFO  17:25:46,619 - #12 print
+INFO  17:25:46,619 - #6 (
+INFO  17:25:46,619 - #17 a
+INFO  17:25:46,619 - #7 )
+INFO  17:25:46,619 - #5 ;
+INFO  17:25:46,619 - #4 }
+INFO  17:25:46,621 - #4 }
+INFO  17:25:46,645 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        Statements(
+          SingleStatement(
+          ) [SingleStatement]
+          PrintStatement(
+            ExprTerm(
+              FinalTerm(
+                FactorNumber(
+                 12
+                ) [FactorNumber]
+              ) [FinalTerm]
+            ) [ExprTerm]
+            NoPrintAmmount(
+            ) [NoPrintAmmount]
+          ) [PrintStatement]
+        ) [Statements]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorChar(
+               a
+              ) [FactorChar]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  17:25:46,650 - ===================================
+INFO  17:25:46,656 - ===================================
+INFO  17:25:46,660 - Uspesno parsiranje

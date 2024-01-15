@@ -1,0 +1,116 @@
+INFO  20:22:49,694 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:22:49,763 - #2 program
+INFO  20:22:49,764 - #15 test301
+INFO  20:22:49,764 - #3 {
+INFO  20:22:49,767 - #13 void
+INFO  20:22:49,769 - #15 main
+INFO  20:22:49,769 - #6 (
+INFO  20:22:49,771 - #7 )
+INFO  20:22:49,771 - #15 int
+INFO  20:22:49,773 - #15 niz
+INFO  20:22:49,773 - #32 [
+INFO  20:22:49,774 - #33 ]
+INFO  20:22:49,774 - #5 ;
+INFO  20:22:49,779 - #15 char
+INFO  20:22:49,779 - #15 n2
+INFO  20:22:49,779 - #32 [
+INFO  20:22:49,779 - #33 ]
+INFO  20:22:49,780 - #5 ;
+INFO  20:22:49,780 - #3 {
+INFO  20:22:49,780 - #15 niz
+INFO  20:22:49,781 - #8 =
+INFO  20:22:49,783 - #22 new
+INFO  20:22:49,783 - #15 int
+INFO  20:22:49,789 - #32 [
+INFO  20:22:49,789 - #14 23
+INFO  20:22:49,789 - #33 ]
+INFO  20:22:49,789 - #5 ;
+INFO  20:22:49,795 - #4 }
+INFO  20:22:49,804 - #4 }
+INFO  20:22:49,821 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             niz
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+           n2
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNew(
+                    Type(
+                     int
+                    ) [Type]
+                    ArrayPosition(
+                      ExprTerm(
+                        FinalTerm(
+                          FactorNumber(
+                           23
+                          ) [FactorNumber]
+                        ) [FinalTerm]
+                      ) [ExprTerm]
+                    ) [ArrayPosition]
+                  ) [FactorNew]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:22:49,821 - ===================================
+INFO  20:22:49,828 - ===================================

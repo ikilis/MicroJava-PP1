@@ -1,0 +1,136 @@
+INFO  12:32:40,922 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:32:40,979 - #2 program
+INFO  12:32:40,980 - #15 test301
+INFO  12:32:40,980 - #15 int
+INFO  12:32:40,982 - #15 i
+INFO  12:32:40,984 - #32 [
+INFO  12:32:40,984 - #33 ]
+INFO  12:32:40,985 - #5 ;
+INFO  12:32:40,987 - #3 {
+INFO  12:32:40,987 - #13 void
+INFO  12:32:40,988 - #15 main
+INFO  12:32:40,988 - #6 (
+INFO  12:32:40,988 - #7 )
+INFO  12:32:40,993 - #3 {
+INFO  12:32:40,996 - #15 i
+INFO  12:32:41,006 - #8 =
+INFO  12:32:41,010 - #22 new
+INFO  12:32:41,010 - #15 int
+INFO  12:32:41,010 - #32 [
+INFO  12:32:41,010 - #14 2
+INFO  12:32:41,010 - #33 ]
+INFO  12:32:41,012 - #5 ;
+INFO  12:32:41,020 - #15 niz
+INFO  12:32:41,021 - #32 [
+INFO  12:32:41,022 - #14 0
+INFO  12:32:41,023 - #33 ]
+INFO  12:32:41,023 - #8 =
+INFO  12:32:41,023 - #14 5
+INFO  12:32:41,023 - #5 ;
+INFO  12:32:41,023 - #4 }
+INFO  12:32:41,026 - #4 }
+INFO  12:32:41,043 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        Array(
+        ) [Array]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        Statements(
+          SingleStatement(
+          ) [SingleStatement]
+          DesignatorStmt(
+            DesignatorAssign(
+              AssignOperation(
+                Designator(
+                  DesignatorSingle(
+                   i
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+                ExprTerm(
+                  FinalTerm(
+                    FactorNew(
+                      Type(
+                       int
+                      ) [Type]
+                      ArrayPosition(
+                        ExprTerm(
+                          FinalTerm(
+                            FactorNumber(
+                             2
+                            ) [FactorNumber]
+                          ) [FinalTerm]
+                        ) [ExprTerm]
+                      ) [ArrayPosition]
+                    ) [FactorNew]
+                  ) [FinalTerm]
+                ) [ExprTerm]
+              ) [AssignOperation]
+            ) [DesignatorAssign]
+          ) [DesignatorStmt]
+        ) [Statements]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                IsArray(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       0
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [IsArray]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   5
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  12:32:41,043 - ===================================
+ERROR 12:32:41,053 - CAnnot use index on a non-array
+ERROR 12:32:41,055 - Assigment operation operands aren't compatibile with eachother
+INFO  12:32:41,058 - ===================================
+ERROR 12:32:41,068 - Neuspesno parsiranje

@@ -1,0 +1,202 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, ASSIGN, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Boolean BOOL;
+terminal Character CHARCONST;
+
+terminal COLON, FOR, STATIC, EXTENDS, NEW, GTE, ELSE, IF;
+terminal  DOT, DIV, MINUS, CONST, AND, LESS, LSQUARE, RSQUARE;
+terminal MOD, MUL, BREAK, EQUALS, INCREMENT, DECREMENT, LEQ, GREATER, NAMESPACE;
+terminal CLASS, NOTEQUALS, CONTINUE, OR, READ;
+
+nonterminal DeclarationList, Namespace, MethodDeclarationList, ConstDecl, ClassDecl;
+nonterminal ConstList;
+nonterminal SingleVar, VarList, MaybeArray;
+nonterminal MethodDecl, LocalVarDecl;
+nonterminal MaybeFormPars, FormPars;
+nonterminal StatementList, Statement;
+nonterminal Mulop, Addop, Relop, Assignop, Label;
+nonterminal DesignatorStatement, AssignOperation;
+nonterminal MybArrayPosition;
+nonterminal PrintAmmount, ArrayPosition;
+nonterminal  IfHeader, MybElse, Condition, CondTerm, CondFact;
+nonterminal MybNamespaces;
+nonterminal SingleMethodDecl, MethodHeader, SinglePar,  DesignatorName;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, SingleConst, VarDecl, NamespaceHeader, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor;
+
+precedence left ELSE;
+
+
+Program ::= (Program) ProgramName:p MybNamespaces DeclarationList LBRACE MethodDecl RBRACE; 
+
+ProgramName ::= (ProgramName) PROG IDENT:progName;
+
+MybNamespaces ::= (MybNamespace) MybNamespaces Namespace | /*empty*/;
+
+Namespace ::= (Namespace) NamespaceHeader LBRACE DeclarationList LBRACE MethodDecl RBRACE RBRACE;
+
+NamespaceHeader ::= (NamespaceHeader) NAMESPACE IDENT:name;
+
+Type ::= (Type) IDENT:type;
+
+DeclarationList ::=(GlobalConstants)	DeclarationList ConstDecl 
+				|
+				(GlobalVars) DeclarationList VarDecl
+				|
+				(NoGlobals)/*empty*/;
+
+/* ConstDeclaration */
+ConstDecl ::=(Constants) CONST Type:type SingleConst ConstList SEMI;
+
+ConstList ::= (ConstantList) ConstList COMMA SingleConst
+			| (NoConsts) /* empty */;
+
+SingleConst ::= (IntConst) IDENT:name ASSIGN NUMBER:value
+			 | (BoolConst )IDENT:name ASSIGN BOOL:value
+			 | (CharConst )IDENT:name ASSIGN CHARCONST:value;
+
+/* VarDeclatation*/
+VarDecl ::= (Variables) Type SingleVar VarList SEMI;
+		
+SingleVar ::= (SingleVar) IDENT:name MaybeArray:maybeArray;
+
+VarList ::= (VariableList) VarList COMMA SingleVar
+		|(NoVars)	/*empty*/;
+		
+MaybeArray ::= (Array) LSQUARE RSQUARE
+			|(NotArray) /*empty*/	;
+		
+/*MethodDecl*/
+MethodDecl ::= (Methods) MethodDecl SingleMethodDecl 
+			| (NoMethod) /*empty*/;
+			
+SingleMethodDecl ::= (SingleMethodDecl) MethodHeader:header LPAREN MaybeFormPars:formalParameters RPAREN LocalVarDecl LBRACE StatementList RBRACE;
+
+LocalVarDecl ::= (LocalVars1) LocalVarDecl VarDecl 
+			| (NoLocalVars) /*empty*/;
+
+
+MethodHeader ::= (ReturnVoid) VOID IDENT:name 
+				| (ReturnSmt) Type:returnType IDENT:name;
+
+/*FormPars*/
+MaybeFormPars ::= (Parameters) FormPars | (NoPars) /*empty*/;
+
+FormPars ::= (MultiplePars) FormPars COMMA SinglePar
+			|(OnePar) SinglePar;
+			
+SinglePar ::=(SinglePar) Type IDENT:name MaybeArray:mybArray;
+
+/*Statement*/
+StatementList ::= (Statements) StatementList Statement
+				| (SingleStatement) /*empty*/;
+
+Statement ::= (IfElseStatement) IfHeader Statement MybElse
+			| (DesignatorStmt) DesignatorStatement SEMI
+			| (BreakStatement) BREAK SEMI
+			| (ContinueStatement) CONTINUE SEMI
+			| (ReturnNothing) RETURN SEMI
+			| (ReturnSomething) RETURN Expr:retVal SEMI
+			| (ReadStatement) READ LPAREN Designator RPAREN SEMI
+			| (PrintStatement) PRINT LPAREN Expr PrintAmmount RPAREN SEMI
+			| (MoreStatements) LBRACE StatementList RBRACE
+			;
+			
+
+DesignatorStatement ::= (DesignatorAssign) AssignOperation 
+						| (DesignatorIncrement) Designator INCREMENT  
+						| (DesignatorDecrement) Designator DECREMENT ;
+
+AssignOperation ::= (AssignOperation) Designator ASSIGN Expr;
+
+Designator ::= (Designator) DesignatorName:name MybArrayPosition:mybArrPos;
+
+DesignatorName ::= (DesignatorNamespace) IDENT:pre COLON COLON IDENT:name
+				| (DesignatorSingle) IDENT:name ;
+
+MybArrayPosition ::= (IsArray) LSQUARE Expr RSQUARE | /*empty*/;
+
+
+Expr ::= (AddopExpr) Expr Addop Term | (NegativeTerm) MINUS Term | (ExprTerm) Term;
+
+Term ::= (MulTerm) Term Mulop Factor | (FinalTerm) Factor;
+
+Factor ::= (FactorDesignator) Designator 
+		| (FactorNumber) NUMBER 
+		| (FactorChar) CHARCONST 
+		| (FactorBool) BOOL 
+		| (FactorNew) NEW Type ArrayPosition 
+		| (FactorExpr) LPAREN Expr RPAREN;
+		
+ArrayPosition ::= (ArrayPosition) LSQUARE Expr RSQUARE;
+
+
+PrintAmmount ::= (HasPrintAmmount) COMMA NUMBER | (NoPrintAmmount) /*empty*/;
+
+IfHeader ::=(IfHeader) IF LPAREN Condition RPAREN;
+
+MybElse ::= (ElseStatement) ELSE Statement | (NoELseStatement) /*empty*/;
+
+Condition ::=  Condition OR CondTerm | CondTerm;
+
+CondTerm ::= CondTerm AND CondFact | CondFact;
+
+CondFact ::= (CondFactRelop) Expr Relop Expr | (CondFactBool) Expr ;
+
+Assignop ::= ASSIGN;
+Mulop ::= MUL | DIV | MOD;
+Addop ::= PLUS | MINUS;
+Relop ::= (RelopEqual) EQUALS | (RelopNotEqual) NOTEQUALS | (RelopGT) GREATER 
+		|(RelopGTE) GTE | (RelopLess) LESS | (RelopLEQ) LEQ ;
+Label ::= IDENT;
+
+
+ 

@@ -1,0 +1,111 @@
+INFO  20:29:19,040 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:29:19,118 - #2 program
+INFO  20:29:19,118 - #15 test301
+INFO  20:29:19,119 - #3 {
+INFO  20:29:19,122 - #13 void
+INFO  20:29:19,124 - #15 main
+INFO  20:29:19,125 - #6 (
+INFO  20:29:19,125 - #7 )
+INFO  20:29:19,127 - #15 int
+INFO  20:29:19,129 - #15 i
+INFO  20:29:19,131 - #5 ;
+INFO  20:29:19,138 - #3 {
+INFO  20:29:19,141 - #25 if
+INFO  20:29:19,147 - #6 (
+INFO  20:29:19,149 - #15 i
+INFO  20:29:19,151 - #7 )
+INFO  20:29:19,182 - #3 {
+INFO  20:29:19,184 - #9 return
+INFO  20:29:19,187 - #5 ;
+INFO  20:29:19,187 - #4 }
+INFO  20:29:19,197 - #24 else
+INFO  20:29:19,200 - #3 {
+INFO  20:29:19,201 - #9 return
+INFO  20:29:19,203 - #5 ;
+INFO  20:29:19,203 - #4 }
+INFO  20:29:19,203 - #4 }
+INFO  20:29:19,211 - #4 }
+INFO  20:29:19,261 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        NoLocalVars(
+        ) [NoLocalVars]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           i
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeader(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactBool(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           i
+                          ) [DesignatorSingle]
+                          MybArrayPositionDerived1(
+                          ) [MybArrayPositionDerived1]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactBool]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeader]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          ElseStatement(
+            MoreStatements(
+              Statements(
+                SingleStatement(
+                ) [SingleStatement]
+                ReturnNothing(
+                ) [ReturnNothing]
+              ) [Statements]
+            ) [MoreStatements]
+          ) [ElseStatement]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:29:19,262 - ===================================
+ERROR 20:29:19,276 - Condition is not a bool
+INFO  20:29:19,279 - ===================================

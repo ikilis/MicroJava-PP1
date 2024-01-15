@@ -1,0 +1,95 @@
+INFO  12:37:40,581 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:37:40,663 - #2 program
+INFO  12:37:40,663 - #15 test301
+INFO  12:37:40,664 - #15 int
+INFO  12:37:40,671 - #15 i
+INFO  12:37:40,676 - #32 [
+INFO  12:37:40,679 - #33 ]
+INFO  12:37:40,682 - #5 ;
+INFO  12:37:40,689 - #3 {
+INFO  12:37:40,689 - #13 void
+INFO  12:37:40,689 - #15 main
+INFO  12:37:40,696 - #6 (
+INFO  12:37:40,696 - #7 )
+INFO  12:37:40,707 - #3 {
+INFO  12:37:40,710 - #15 niz
+INFO  12:37:40,712 - #32 [
+INFO  12:37:40,719 - #14 0
+INFO  12:37:40,721 - #33 ]
+INFO  12:37:40,721 - #8 =
+INFO  12:37:40,747 - #14 5
+INFO  12:37:40,758 - #5 ;
+INFO  12:37:40,763 - #4 }
+INFO  12:37:40,768 - #4 }
+INFO  12:37:40,789 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        Array(
+        ) [Array]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                IsArray(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       0
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [IsArray]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   5
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  12:37:40,792 - ===================================
+ERROR 12:37:40,808 - CAnnot use index on a non-array
+ERROR 12:37:40,815 - Assigment operation operands aren't compatibile with eachother
+INFO  12:37:40,820 - ===================================
+ERROR 12:37:40,827 - Neuspesno parsiranje

@@ -1,0 +1,118 @@
+INFO  20:01:32,259 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:01:34,106 - #2 program
+INFO  20:01:34,106 - #15 test301
+INFO  20:01:34,106 - #3 {
+INFO  20:01:34,180 - #13 void
+INFO  20:01:34,196 - #15 main
+INFO  20:01:34,196 - #6 (
+INFO  20:01:34,197 - #7 )
+INFO  20:01:34,209 - #15 int
+INFO  20:01:34,226 - #15 niz
+INFO  20:01:34,240 - #32 [
+INFO  20:01:34,241 - #33 ]
+INFO  20:01:34,241 - #5 ;
+INFO  20:01:34,285 - #15 char
+INFO  20:01:34,286 - #15 n2
+INFO  20:01:34,286 - #32 [
+INFO  20:01:34,286 - #33 ]
+INFO  20:01:34,286 - #5 ;
+INFO  20:01:34,287 - #3 {
+INFO  20:01:34,287 - #25 if
+INFO  20:01:34,299 - #6 (
+INFO  20:01:34,300 - #15 niz
+INFO  20:01:34,300 - #7 )
+INFO  20:01:34,331 - #3 {
+INFO  20:01:34,331 - #9 return
+INFO  20:01:34,331 - #5 ;
+INFO  20:01:34,331 - #4 }
+INFO  20:01:34,344 - #4 }
+INFO  20:01:34,368 - #4 }
+INFO  20:01:34,433 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             niz
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+           n2
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        IfElseStatement(
+          IfHeaderDerived1(
+            ConditionDerived2(
+              CondTermDerived2(
+                CondFactDerived2(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           niz
+                          ) [DesignatorSingle]
+                          MybArrayPositionDerived1(
+                          ) [MybArrayPositionDerived1]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [CondFactDerived2]
+              ) [CondTermDerived2]
+            ) [ConditionDerived2]
+          ) [IfHeaderDerived1]
+          MoreStatements(
+            Statements(
+              SingleStatement(
+              ) [SingleStatement]
+              ReturnNothing(
+              ) [ReturnNothing]
+            ) [Statements]
+          ) [MoreStatements]
+          MybElseDerived2(
+          ) [MybElseDerived2]
+        ) [IfElseStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:01:34,433 - ===================================
+INFO  20:01:34,500 - ===================================

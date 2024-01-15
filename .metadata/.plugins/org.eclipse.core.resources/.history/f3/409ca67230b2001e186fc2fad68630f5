@@ -1,0 +1,54 @@
+INFO  19:49:51,487 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:49:51,550 - #2 program
+INFO  19:49:51,552 - #15 test301
+INFO  19:49:51,552 - #3 {
+INFO  19:49:51,553 - #15 int
+INFO  19:49:51,558 - #15 main
+INFO  19:49:51,559 - #6 (
+INFO  19:49:51,562 - #7 )
+INFO  19:49:51,564 - #3 {
+INFO  19:49:51,569 - #9 return
+INFO  19:49:51,571 - #14 2
+INFO  19:49:51,574 - #5 ;
+INFO  19:49:51,577 - #4 }
+INFO  19:49:51,580 - #4 }
+INFO  19:49:51,608 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorNumber(
+               2
+              ) [FactorNumber]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:49:51,618 - ===================================
+INFO  19:49:51,623 - ===================================

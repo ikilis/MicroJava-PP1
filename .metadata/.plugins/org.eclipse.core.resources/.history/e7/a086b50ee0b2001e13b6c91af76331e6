@@ -1,0 +1,12 @@
+INFO  20:25:21,156 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:25:21,220 - #2 program
+INFO  20:25:21,220 - #15 test301
+INFO  20:25:21,221 - #42 namespace
+INFO  20:25:21,223 - #15 nejm
+INFO  20:25:21,223 - #3 {
+INFO  20:25:21,224 - #15 char
+INFO  20:25:21,225 - #15 x
+INFO  20:25:21,225 - #8 =
+ERROR 20:25:21,226 - 
+Sintaksna greska na liniji 7
+ERROR 20:25:21,228 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

@@ -1,0 +1,127 @@
+INFO  21:40:16,645 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  21:40:16,702 - #2 program
+INFO  21:40:16,703 - #15 test301
+INFO  21:40:16,704 - #15 int
+INFO  21:40:16,706 - #15 x
+INFO  21:40:16,707 - #5 ;
+INFO  21:40:16,710 - #3 {
+INFO  21:40:16,710 - #13 void
+INFO  21:40:16,710 - #15 main
+INFO  21:40:16,711 - #6 (
+INFO  21:40:16,711 - #7 )
+INFO  21:40:16,713 - #3 {
+INFO  21:40:16,715 - #15 x
+INFO  21:40:16,718 - #8 =
+INFO  21:40:16,723 - #14 12
+INFO  21:40:16,726 - #10 +
+INFO  21:40:16,729 - #14 1
+INFO  21:40:16,733 - #28 -
+INFO  21:40:16,737 - #14 1
+INFO  21:40:16,740 - #5 ;
+INFO  21:40:16,744 - #12 print
+INFO  21:40:16,745 - #6 (
+INFO  21:40:16,745 - #15 x
+INFO  21:40:16,747 - #7 )
+INFO  21:40:16,749 - #5 ;
+INFO  21:40:16,749 - #4 }
+INFO  21:40:16,749 - #4 }
+INFO  21:40:16,764 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       x
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        Statements(
+          SingleStatement(
+          ) [SingleStatement]
+          DesignatorStmt(
+            DesignatorAssign(
+              AssignOperation(
+                Designator(
+                  DesignatorSingle(
+                   x
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+                AddopExpr(
+                  AddopExpr(
+                    ExprTerm(
+                      FinalTerm(
+                        FactorNumber(
+                         12
+                        ) [FactorNumber]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                    Plus(
+                    ) [Plus]
+                    FinalTerm(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [AddopExpr]
+                  Minus(
+                  ) [Minus]
+                  FinalTerm(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [FinalTerm]
+                ) [AddopExpr]
+              ) [AssignOperation]
+            ) [DesignatorAssign]
+          ) [DesignatorStmt]
+        ) [Statements]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   x
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  21:40:16,769 - ===================================
+INFO  21:40:16,773 - ===================================
+INFO  21:40:16,776 - Uspesno parsiranje

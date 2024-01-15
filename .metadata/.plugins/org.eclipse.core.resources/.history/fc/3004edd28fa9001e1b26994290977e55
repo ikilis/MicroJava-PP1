@@ -1,7 +1,0 @@
-program test301
-{
-	void funkcija () int i; {
-	
-		designator = designator[-3];
-	}
-}

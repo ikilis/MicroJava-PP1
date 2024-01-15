@@ -1,0 +1,72 @@
+INFO  20:05:41,008 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:05:41,094 - #2 program
+INFO  20:05:41,094 - #15 test301
+INFO  20:05:41,094 - #3 {
+INFO  20:05:41,097 - #15 int
+INFO  20:05:41,098 - #15 main
+INFO  20:05:41,099 - #6 (
+INFO  20:05:41,099 - #7 )
+INFO  20:05:41,101 - #15 int
+INFO  20:05:41,101 - #15 niz
+INFO  20:05:41,102 - #5 ;
+INFO  20:05:41,105 - #3 {
+INFO  20:05:41,106 - #15 niz
+INFO  20:05:41,108 - #38 ++
+INFO  20:05:41,111 - #5 ;
+INFO  20:05:41,112 - #4 }
+INFO  20:05:41,113 - #4 }
+INFO  20:05:41,124 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           niz
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorIncrement(
+            Designator(
+              DesignatorSingle(
+               niz
+              ) [DesignatorSingle]
+              MybArrayPositionDerived1(
+              ) [MybArrayPositionDerived1]
+            ) [Designator]
+          ) [DesignatorIncrement]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:05:41,130 - ===================================
+ERROR 20:05:41,135 - Non void method has to have a return
+INFO  20:05:41,137 - ===================================

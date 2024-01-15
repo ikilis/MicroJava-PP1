@@ -1,0 +1,27 @@
+// Test301
+
+program MJTest
+
+namespace Konstante{
+	const int jedan = 1;
+	const int pet = 5;
+{}
+}
+	int bodovi;
+	
+{
+	void main()	
+	{
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + Konstante::jedan;
+		bodovi = bodovi * Konstante::pet;
+		bodovi--;
+		print(bodovi);
+		
+		
+			
+	}
+}
+
+

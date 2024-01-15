@@ -1,0 +1,78 @@
+INFO  20:18:43,009 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:18:43,075 - #2 program
+INFO  20:18:43,076 - #15 test301
+INFO  20:18:43,076 - #3 {
+INFO  20:18:43,079 - #13 void
+INFO  20:18:43,080 - #15 main
+INFO  20:18:43,081 - #6 (
+INFO  20:18:43,082 - #7 )
+INFO  20:18:43,083 - #15 int
+INFO  20:18:43,083 - #15 niz
+INFO  20:18:43,083 - #5 ;
+INFO  20:18:43,088 - #3 {
+INFO  20:18:43,089 - #15 niz
+INFO  20:18:43,090 - #8 =
+INFO  20:18:43,093 - #14 1
+INFO  20:18:43,093 - #5 ;
+INFO  20:18:43,095 - #4 }
+INFO  20:18:43,095 - #4 }
+INFO  20:18:43,113 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           niz
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 niz
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:18:43,114 - ===================================
+INFO  20:18:43,118 - ===================================

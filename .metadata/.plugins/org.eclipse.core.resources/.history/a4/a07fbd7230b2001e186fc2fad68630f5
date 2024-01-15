@@ -1,0 +1,17 @@
+INFO  20:17:36,410 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:17:36,479 - #2 program
+INFO  20:17:36,479 - #15 test301
+INFO  20:17:36,480 - #3 {
+INFO  20:17:36,482 - #13 void
+INFO  20:17:36,484 - #15 main
+INFO  20:17:36,484 - #6 (
+INFO  20:17:36,484 - #7 )
+INFO  20:17:36,486 - #15 int
+INFO  20:17:36,486 - #15 niz
+INFO  20:17:36,487 - #32 [
+INFO  20:17:36,487 - #33 ]
+INFO  20:17:36,488 - #5 ;
+INFO  20:17:36,492 - #5 ;
+ERROR 20:17:36,492 - 
+Sintaksna greska na liniji 6
+ERROR 20:17:36,494 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

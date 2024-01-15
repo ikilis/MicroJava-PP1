@@ -1,0 +1,47 @@
+INFO  19:48:20,432 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:48:20,498 - #2 program
+INFO  19:48:20,499 - #15 test301
+INFO  19:48:20,499 - #3 {
+INFO  19:48:20,502 - #15 int
+INFO  19:48:20,503 - #15 main
+INFO  19:48:20,503 - #6 (
+INFO  19:48:20,505 - #7 )
+INFO  19:48:20,505 - #3 {
+INFO  19:48:20,507 - #9 return
+INFO  19:48:20,507 - #5 ;
+INFO  19:48:20,507 - #4 }
+INFO  19:48:20,507 - #4 }
+INFO  19:48:20,534 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        ReturnNothing(
+        ) [ReturnNothing]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:48:20,535 - ===================================
+ERROR 19:48:20,546 - Function main must have return value
+INFO  19:48:20,547 - ===================================

@@ -1,0 +1,89 @@
+INFO  19:07:22,724 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:07:22,790 - #2 program
+INFO  19:07:22,792 - #15 test301
+INFO  19:07:22,792 - #15 int
+INFO  19:07:22,794 - #15 i
+INFO  19:07:22,795 - #32 [
+INFO  19:07:22,795 - #33 ]
+INFO  19:07:22,796 - #5 ;
+INFO  19:07:22,800 - #3 {
+INFO  19:07:22,801 - #15 int
+INFO  19:07:22,801 - #15 main
+INFO  19:07:22,808 - #6 (
+INFO  19:07:22,815 - #7 )
+INFO  19:07:22,815 - #3 {
+INFO  19:07:22,817 - #9 return
+INFO  19:07:22,817 - #15 i
+INFO  19:07:22,819 - #32 [
+INFO  19:07:22,819 - #14 2
+INFO  19:07:22,819 - #33 ]
+INFO  19:07:22,820 - #5 ;
+INFO  19:07:22,822 - #4 }
+INFO  19:07:22,823 - #4 }
+INFO  19:07:22,841 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        Array(
+        ) [Array]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   i
+                  ) [DesignatorSingle]
+                  IsArray(
+                    ExprTerm(
+                      FinalTerm(
+                        FactorNumber(
+                         2
+                        ) [FactorNumber]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                  ) [IsArray]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:07:22,844 - ===================================
+INFO  19:07:22,848 - ===================================

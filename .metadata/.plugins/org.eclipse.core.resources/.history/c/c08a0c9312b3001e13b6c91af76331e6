@@ -1,0 +1,24 @@
+// Test301
+
+program MJTest
+
+	int a[];
+	
+{
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+		bodovi = 0;
+//		bodovi++;
+//		bodovi = bodovi + Konstante::jedan;
+//		bodovi = bodovi * Konstante::pet;
+//		bodovi--;
+		print(bodovi);
+		
+		
+			
+	}
+}
+
+

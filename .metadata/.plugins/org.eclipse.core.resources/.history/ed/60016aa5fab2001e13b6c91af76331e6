@@ -1,0 +1,101 @@
+INFO  15:04:35,879 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  15:04:35,952 - #2 program
+INFO  15:04:35,954 - #15 MJTEST
+INFO  15:04:35,954 - #15 int
+INFO  15:04:35,957 - #15 niz
+INFO  15:04:35,960 - #32 [
+INFO  15:04:35,960 - #33 ]
+INFO  15:04:35,960 - #5 ;
+INFO  15:04:35,965 - #15 int
+INFO  15:04:35,966 - #15 i
+INFO  15:04:35,966 - #5 ;
+INFO  15:04:35,967 - #3 {
+INFO  15:04:35,967 - #13 void
+INFO  15:04:35,979 - #15 main
+INFO  15:04:35,984 - #6 (
+INFO  15:04:35,985 - #7 )
+INFO  15:04:35,986 - #3 {
+INFO  15:04:35,992 - #15 niz
+INFO  15:04:35,996 - #32 [
+INFO  15:04:35,998 - #14 1
+INFO  15:04:35,998 - #33 ]
+INFO  15:04:36,000 - #38 ++
+INFO  15:04:36,002 - #5 ;
+INFO  15:04:36,003 - #4 }
+INFO  15:04:36,003 - #4 }
+INFO  15:04:36,018 - Program(
+  ProgramName(
+   MJTEST
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         niz
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorIncrement(
+            Designator(
+              DesignatorSingle(
+               niz
+              ) [DesignatorSingle]
+              IsArray(
+                ExprTerm(
+                  FinalTerm(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [FinalTerm]
+                ) [ExprTerm]
+              ) [IsArray]
+            ) [Designator]
+          ) [DesignatorIncrement]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  15:04:36,031 - ===================================
+ERROR 15:04:36,031 - You can only increment INT type
+INFO  15:04:36,031 - ===================================
+ERROR 15:04:36,043 - Neuspesno parsiranje

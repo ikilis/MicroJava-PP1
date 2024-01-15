@@ -1,0 +1,154 @@
+INFO  21:00:54,797 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  21:00:54,873 - #2 program
+INFO  21:00:54,873 - #15 test301
+INFO  21:00:54,873 - #15 int
+INFO  21:00:54,879 - #15 x
+INFO  21:00:54,881 - #5 ;
+INFO  21:00:54,884 - #3 {
+INFO  21:00:54,885 - #13 void
+INFO  21:00:54,887 - #15 main
+INFO  21:00:54,887 - #6 (
+INFO  21:00:54,887 - #7 )
+INFO  21:00:54,890 - #15 int
+INFO  21:00:54,892 - #15 y
+INFO  21:00:54,895 - #5 ;
+INFO  21:00:54,898 - #3 {
+INFO  21:00:54,901 - #15 y
+INFO  21:00:54,920 - #8 =
+INFO  21:00:54,923 - #14 1389
+INFO  21:00:54,925 - #5 ;
+INFO  21:00:54,927 - #15 x
+INFO  21:00:54,928 - #8 =
+INFO  21:00:54,934 - #15 y
+INFO  21:00:54,934 - #5 ;
+INFO  21:00:54,937 - #12 print
+INFO  21:00:54,937 - #6 (
+INFO  21:00:54,937 - #15 y
+INFO  21:00:54,937 - #7 )
+INFO  21:00:54,943 - #5 ;
+INFO  21:00:54,949 - #4 }
+INFO  21:00:54,953 - #4 }
+INFO  21:00:54,974 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       x
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        NoLocalVars(
+        ) [NoLocalVars]
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           y
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        Statements(
+          Statements(
+            SingleStatement(
+            ) [SingleStatement]
+            DesignatorStmt(
+              DesignatorAssign(
+                AssignOperation(
+                  Designator(
+                    DesignatorSingle(
+                     y
+                    ) [DesignatorSingle]
+                    MybArrayPositionDerived1(
+                    ) [MybArrayPositionDerived1]
+                  ) [Designator]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       1389
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [AssignOperation]
+              ) [DesignatorAssign]
+            ) [DesignatorStmt]
+          ) [Statements]
+          DesignatorStmt(
+            DesignatorAssign(
+              AssignOperation(
+                Designator(
+                  DesignatorSingle(
+                   x
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+                ExprTerm(
+                  FinalTerm(
+                    FactorDesignator(
+                      Designator(
+                        DesignatorSingle(
+                         y
+                        ) [DesignatorSingle]
+                        MybArrayPositionDerived1(
+                        ) [MybArrayPositionDerived1]
+                      ) [Designator]
+                    ) [FactorDesignator]
+                  ) [FinalTerm]
+                ) [ExprTerm]
+              ) [AssignOperation]
+            ) [DesignatorAssign]
+          ) [DesignatorStmt]
+        ) [Statements]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   y
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  21:00:54,976 - ===================================
+INFO  21:00:54,983 - ===================================
+INFO  21:00:54,998 - Uspesno parsiranje

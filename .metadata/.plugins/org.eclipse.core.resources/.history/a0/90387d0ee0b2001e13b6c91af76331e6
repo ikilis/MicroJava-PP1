@@ -1,0 +1,81 @@
+INFO  20:46:32,835 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  20:46:32,911 - #2 program
+INFO  20:46:32,913 - #15 test301
+INFO  20:46:32,913 - #15 int
+INFO  20:46:32,915 - #15 x
+INFO  20:46:32,917 - #5 ;
+INFO  20:46:32,921 - #3 {
+INFO  20:46:32,922 - #13 void
+INFO  20:46:32,923 - #15 main
+INFO  20:46:32,923 - #6 (
+INFO  20:46:32,924 - #7 )
+INFO  20:46:32,926 - #3 {
+INFO  20:46:32,929 - #15 x
+INFO  20:46:32,934 - #8 =
+INFO  20:46:32,960 - #14 1389
+INFO  20:46:32,960 - #5 ;
+INFO  20:46:32,962 - #4 }
+INFO  20:46:32,962 - #4 }
+INFO  20:46:32,973 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       x
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 x
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNumber(
+                   1389
+                  ) [FactorNumber]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:46:32,985 - ===================================
+INFO  20:46:32,990 - ===================================
+INFO  20:46:32,992 - Uspesno parsiranje

@@ -1,0 +1,1342 @@
+INFO  20:30:57,161 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\test301.mj
+INFO  20:30:57,231 - #2 program
+INFO  20:30:57,232 - #15 test301
+INFO  20:30:57,233 - #42 namespace
+INFO  20:30:57,235 - #15 Konstante
+INFO  20:30:57,235 - #3 {
+INFO  20:30:57,236 - #29 const
+INFO  20:30:57,238 - #15 int
+INFO  20:30:57,240 - #15 nula
+INFO  20:30:57,240 - #8 =
+INFO  20:30:57,241 - #14 0
+INFO  20:30:57,241 - #5 ;
+INFO  20:30:57,242 - #29 const
+INFO  20:30:57,244 - #15 int
+INFO  20:30:57,244 - #15 jedan
+INFO  20:30:57,244 - #8 =
+INFO  20:30:57,244 - #14 1
+INFO  20:30:57,244 - #5 ;
+INFO  20:30:57,245 - #29 const
+INFO  20:30:57,245 - #15 int
+INFO  20:30:57,245 - #15 pet
+INFO  20:30:57,246 - #8 =
+INFO  20:30:57,247 - #14 5
+INFO  20:30:57,248 - #5 ;
+INFO  20:30:57,248 - #3 {
+INFO  20:30:57,251 - #4 }
+INFO  20:30:57,256 - #4 }
+INFO  20:30:57,256 - #42 namespace
+INFO  20:30:57,256 - #15 Nizovi
+INFO  20:30:57,256 - #3 {
+INFO  20:30:57,256 - #15 int
+INFO  20:30:57,256 - #15 niz
+INFO  20:30:57,256 - #32 [
+INFO  20:30:57,256 - #33 ]
+INFO  20:30:57,256 - #5 ;
+INFO  20:30:57,271 - #15 char
+INFO  20:30:57,272 - #15 nizch
+INFO  20:30:57,272 - #32 [
+INFO  20:30:57,273 - #33 ]
+INFO  20:30:57,273 - #5 ;
+INFO  20:30:57,273 - #3 {
+INFO  20:30:57,275 - #4 }
+INFO  20:30:57,275 - #4 }
+INFO  20:30:57,277 - #15 int
+INFO  20:30:57,277 - #15 a
+INFO  20:30:57,278 - #5 ;
+INFO  20:30:57,283 - #3 {
+INFO  20:30:57,283 - #13 void
+INFO  20:30:57,284 - #15 main
+INFO  20:30:57,285 - #6 (
+INFO  20:30:57,285 - #7 )
+INFO  20:30:57,286 - #15 int
+INFO  20:30:57,286 - #15 bodovi
+INFO  20:30:57,286 - #5 ;
+INFO  20:30:57,288 - #15 bool
+INFO  20:30:57,288 - #15 bt
+INFO  20:30:57,288 - #5 ;
+INFO  20:30:57,288 - #3 {
+INFO  20:30:57,288 - #15 bodovi
+INFO  20:30:57,292 - #8 =
+INFO  20:30:57,295 - #14 0
+INFO  20:30:57,300 - #5 ;
+INFO  20:30:57,301 - #15 bodovi
+INFO  20:30:57,301 - #38 ++
+INFO  20:30:57,308 - #5 ;
+INFO  20:30:57,310 - #15 bodovi
+INFO  20:30:57,311 - #8 =
+INFO  20:30:57,312 - #15 bodovi
+INFO  20:30:57,312 - #10 +
+INFO  20:30:57,312 - #15 Konstante
+INFO  20:30:57,315 - #18 :
+INFO  20:30:57,317 - #18 :
+INFO  20:30:57,317 - #15 jedan
+INFO  20:30:57,317 - #5 ;
+INFO  20:30:57,317 - #15 bodovi
+INFO  20:30:57,318 - #8 =
+INFO  20:30:57,318 - #15 bodovi
+INFO  20:30:57,318 - #35 *
+INFO  20:30:57,318 - #15 Konstante
+INFO  20:30:57,321 - #18 :
+INFO  20:30:57,322 - #18 :
+INFO  20:30:57,323 - #15 pet
+INFO  20:30:57,326 - #5 ;
+INFO  20:30:57,326 - #15 bodovi
+INFO  20:30:57,326 - #39 --
+INFO  20:30:57,328 - #5 ;
+INFO  20:30:57,328 - #12 print
+INFO  20:30:57,328 - #6 (
+INFO  20:30:57,328 - #15 bodovi
+INFO  20:30:57,329 - #7 )
+INFO  20:30:57,330 - #5 ;
+INFO  20:30:57,332 - #15 Nizovi
+INFO  20:30:57,332 - #18 :
+INFO  20:30:57,334 - #18 :
+INFO  20:30:57,334 - #15 niz
+INFO  20:30:57,334 - #8 =
+INFO  20:30:57,335 - #22 new
+INFO  20:30:57,335 - #15 int
+INFO  20:30:57,335 - #32 [
+INFO  20:30:57,336 - #14 3
+INFO  20:30:57,337 - #33 ]
+INFO  20:30:57,337 - #5 ;
+INFO  20:30:57,339 - #15 Nizovi
+INFO  20:30:57,339 - #18 :
+INFO  20:30:57,339 - #18 :
+INFO  20:30:57,339 - #15 niz
+INFO  20:30:57,339 - #32 [
+INFO  20:30:57,339 - #15 Konstante
+INFO  20:30:57,355 - #18 :
+INFO  20:30:57,359 - #18 :
+INFO  20:30:57,360 - #15 nula
+INFO  20:30:57,360 - #33 ]
+INFO  20:30:57,362 - #8 =
+INFO  20:30:57,368 - #15 Konstante
+INFO  20:30:57,369 - #18 :
+INFO  20:30:57,370 - #18 :
+INFO  20:30:57,371 - #15 jedan
+INFO  20:30:57,371 - #5 ;
+INFO  20:30:57,371 - #15 Nizovi
+INFO  20:30:57,371 - #18 :
+INFO  20:30:57,372 - #18 :
+INFO  20:30:57,449 - #15 niz
+INFO  20:30:57,453 - #32 [
+INFO  20:30:57,455 - #14 1
+INFO  20:30:57,459 - #33 ]
+INFO  20:30:57,462 - #8 =
+INFO  20:30:57,465 - #14 2
+INFO  20:30:57,471 - #5 ;
+INFO  20:30:57,475 - #15 Nizovi
+INFO  20:30:57,476 - #18 :
+INFO  20:30:57,476 - #18 :
+INFO  20:30:57,476 - #15 niz
+INFO  20:30:57,477 - #32 [
+INFO  20:30:57,477 - #15 Nizovi
+INFO  20:30:57,477 - #18 :
+INFO  20:30:57,477 - #18 :
+INFO  20:30:57,477 - #15 niz
+INFO  20:30:57,477 - #32 [
+INFO  20:30:57,478 - #15 Konstante
+INFO  20:30:57,478 - #18 :
+INFO  20:30:57,478 - #18 :
+INFO  20:30:57,478 - #15 jedan
+INFO  20:30:57,478 - #33 ]
+INFO  20:30:57,488 - #33 ]
+INFO  20:30:57,488 - #8 =
+INFO  20:30:57,488 - #15 Nizovi
+INFO  20:30:57,488 - #18 :
+INFO  20:30:57,488 - #18 :
+INFO  20:30:57,488 - #15 niz
+INFO  20:30:57,488 - #32 [
+INFO  20:30:57,488 - #15 Nizovi
+INFO  20:30:57,488 - #18 :
+INFO  20:30:57,488 - #18 :
+INFO  20:30:57,488 - #15 niz
+INFO  20:30:57,488 - #32 [
+INFO  20:30:57,488 - #14 0
+INFO  20:30:57,491 - #33 ]
+INFO  20:30:57,492 - #33 ]
+INFO  20:30:57,493 - #35 *
+INFO  20:30:57,493 - #14 3
+INFO  20:30:57,493 - #5 ;
+INFO  20:30:57,493 - #15 bodovi
+INFO  20:30:57,494 - #8 =
+INFO  20:30:57,494 - #15 Nizovi
+INFO  20:30:57,494 - #18 :
+INFO  20:30:57,494 - #18 :
+INFO  20:30:57,494 - #15 niz
+INFO  20:30:57,494 - #32 [
+INFO  20:30:57,494 - #14 2
+INFO  20:30:57,494 - #33 ]
+INFO  20:30:57,495 - #27 /
+INFO  20:30:57,496 - #15 Nizovi
+INFO  20:30:57,497 - #18 :
+INFO  20:30:57,497 - #18 :
+INFO  20:30:57,497 - #15 niz
+INFO  20:30:57,497 - #32 [
+INFO  20:30:57,497 - #14 0
+INFO  20:30:57,497 - #33 ]
+INFO  20:30:57,497 - #5 ;
+INFO  20:30:57,498 - #12 print
+INFO  20:30:57,498 - #6 (
+INFO  20:30:57,498 - #15 bodovi
+INFO  20:30:57,498 - #7 )
+INFO  20:30:57,499 - #5 ;
+INFO  20:30:57,499 - #12 print
+INFO  20:30:57,499 - #6 (
+INFO  20:30:57,499 - #15 Nizovi
+INFO  20:30:57,499 - #18 :
+INFO  20:30:57,499 - #18 :
+INFO  20:30:57,500 - #15 niz
+INFO  20:30:57,500 - #32 [
+INFO  20:30:57,504 - #14 2
+INFO  20:30:57,522 - #33 ]
+INFO  20:30:57,522 - #7 )
+INFO  20:30:57,522 - #5 ;
+INFO  20:30:57,522 - #15 Nizovi
+INFO  20:30:57,522 - #18 :
+INFO  20:30:57,522 - #18 :
+INFO  20:30:57,522 - #15 nizch
+INFO  20:30:57,522 - #8 =
+INFO  20:30:57,522 - #22 new
+INFO  20:30:57,522 - #15 char
+INFO  20:30:57,522 - #32 [
+INFO  20:30:57,522 - #14 3
+INFO  20:30:57,522 - #33 ]
+INFO  20:30:57,526 - #5 ;
+INFO  20:30:57,526 - #15 Nizovi
+INFO  20:30:57,526 - #18 :
+INFO  20:30:57,526 - #18 :
+INFO  20:30:57,526 - #15 nizch
+INFO  20:30:57,526 - #32 [
+INFO  20:30:57,526 - #14 0
+INFO  20:30:57,526 - #33 ]
+INFO  20:30:57,526 - #8 =
+INFO  20:30:57,526 - #17 a
+INFO  20:30:57,526 - #5 ;
+INFO  20:30:57,528 - #15 Nizovi
+INFO  20:30:57,528 - #18 :
+INFO  20:30:57,528 - #18 :
+INFO  20:30:57,529 - #15 nizch
+INFO  20:30:57,529 - #32 [
+INFO  20:30:57,529 - #15 Konstante
+INFO  20:30:57,529 - #18 :
+INFO  20:30:57,529 - #18 :
+INFO  20:30:57,529 - #15 jedan
+INFO  20:30:57,529 - #33 ]
+INFO  20:30:57,529 - #8 =
+INFO  20:30:57,529 - #17 b
+INFO  20:30:57,529 - #5 ;
+INFO  20:30:57,530 - #15 Nizovi
+INFO  20:30:57,530 - #18 :
+INFO  20:30:57,530 - #18 :
+INFO  20:30:57,530 - #15 nizch
+INFO  20:30:57,530 - #32 [
+INFO  20:30:57,530 - #15 Konstante
+INFO  20:30:57,530 - #18 :
+INFO  20:30:57,530 - #18 :
+INFO  20:30:57,531 - #15 pet
+INFO  20:30:57,531 - #28 -
+INFO  20:30:57,531 - #14 3
+INFO  20:30:57,532 - #33 ]
+INFO  20:30:57,533 - #8 =
+INFO  20:30:57,533 - #17 c
+INFO  20:30:57,533 - #5 ;
+INFO  20:30:57,533 - #12 print
+INFO  20:30:57,533 - #6 (
+INFO  20:30:57,533 - #15 Nizovi
+INFO  20:30:57,533 - #18 :
+INFO  20:30:57,533 - #18 :
+INFO  20:30:57,533 - #15 nizch
+INFO  20:30:57,533 - #32 [
+INFO  20:30:57,533 - #14 1
+INFO  20:30:57,533 - #33 ]
+INFO  20:30:57,537 - #7 )
+INFO  20:30:57,537 - #5 ;
+INFO  20:30:57,539 - #12 print
+INFO  20:30:57,540 - #6 (
+INFO  20:30:57,541 - #15 Nizovi
+INFO  20:30:57,542 - #18 :
+INFO  20:30:57,542 - #18 :
+INFO  20:30:57,542 - #15 nizch
+INFO  20:30:57,542 - #32 [
+INFO  20:30:57,542 - #15 Konstante
+INFO  20:30:57,542 - #18 :
+INFO  20:30:57,542 - #18 :
+INFO  20:30:57,542 - #15 jedan
+INFO  20:30:57,542 - #35 *
+INFO  20:30:57,542 - #14 2
+INFO  20:30:57,542 - #33 ]
+INFO  20:30:57,543 - #7 )
+INFO  20:30:57,543 - #5 ;
+INFO  20:30:57,543 - #15 a
+INFO  20:30:57,543 - #8 =
+INFO  20:30:57,544 - #14 1
+INFO  20:30:57,544 - #5 ;
+INFO  20:30:57,544 - #47 read
+INFO  20:30:57,544 - #6 (
+INFO  20:30:57,544 - #15 bodovi
+INFO  20:30:57,544 - #7 )
+INFO  20:30:57,544 - #5 ;
+INFO  20:30:57,544 - #15 bodovi
+INFO  20:30:57,545 - #8 =
+INFO  20:30:57,546 - #28 -
+INFO  20:30:57,546 - #15 bodovi
+INFO  20:30:57,546 - #10 +
+INFO  20:30:57,546 - #6 (
+INFO  20:30:57,546 - #15 Konstante
+INFO  20:30:57,546 - #18 :
+INFO  20:30:57,546 - #18 :
+INFO  20:30:57,546 - #15 pet
+INFO  20:30:57,546 - #35 *
+INFO  20:30:57,546 - #15 a
+INFO  20:30:57,546 - #27 /
+INFO  20:30:57,548 - #14 2
+INFO  20:30:57,548 - #28 -
+INFO  20:30:57,548 - #15 Konstante
+INFO  20:30:57,549 - #18 :
+INFO  20:30:57,549 - #18 :
+INFO  20:30:57,549 - #15 jedan
+INFO  20:30:57,549 - #7 )
+INFO  20:30:57,549 - #35 *
+INFO  20:30:57,549 - #15 bodovi
+INFO  20:30:57,549 - #28 -
+INFO  20:30:57,550 - #6 (
+INFO  20:30:57,550 - #14 3
+INFO  20:30:57,550 - #34 %
+INFO  20:30:57,550 - #14 2
+INFO  20:30:57,551 - #10 +
+INFO  20:30:57,551 - #14 3
+INFO  20:30:57,551 - #35 *
+INFO  20:30:57,551 - #14 2
+INFO  20:30:57,551 - #28 -
+INFO  20:30:57,551 - #14 3
+INFO  20:30:57,551 - #7 )
+INFO  20:30:57,552 - #5 ;
+INFO  20:30:57,552 - #12 print
+INFO  20:30:57,552 - #6 (
+INFO  20:30:57,552 - #15 bodovi
+INFO  20:30:57,552 - #7 )
+INFO  20:30:57,552 - #5 ;
+INFO  20:30:57,552 - #4 }
+INFO  20:30:57,552 - #4 }
+INFO  20:30:57,567 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespace(
+    MybNamespace(
+      MybNamespacesDerived1(
+      ) [MybNamespacesDerived1]
+      Namespace(
+        NamespaceHeader(
+         Konstante
+        ) [NamespaceHeader]
+        GlobalConstants(
+          GlobalConstants(
+            GlobalConstants(
+              NoGlobals(
+              ) [NoGlobals]
+              Constants(
+                Type(
+                 int
+                ) [Type]
+                IntConst(
+                 nula
+                 0
+                ) [IntConst]
+                NoConsts(
+                ) [NoConsts]
+              ) [Constants]
+            ) [GlobalConstants]
+            Constants(
+              Type(
+               int
+              ) [Type]
+              IntConst(
+               jedan
+               1
+              ) [IntConst]
+              NoConsts(
+              ) [NoConsts]
+            ) [Constants]
+          ) [GlobalConstants]
+          Constants(
+            Type(
+             int
+            ) [Type]
+            IntConst(
+             pet
+             5
+            ) [IntConst]
+            NoConsts(
+            ) [NoConsts]
+          ) [Constants]
+        ) [GlobalConstants]
+        NoMethod(
+        ) [NoMethod]
+      ) [Namespace]
+    ) [MybNamespace]
+    Namespace(
+      NamespaceHeader(
+       Nizovi
+      ) [NamespaceHeader]
+      GlobalVars(
+        GlobalVars(
+          NoGlobals(
+          ) [NoGlobals]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             niz
+              Array(
+              ) [Array]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [GlobalVars]
+        Variables(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+           nizch
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [GlobalVars]
+      NoMethod(
+      ) [NoMethod]
+    ) [Namespace]
+  ) [MybNamespace]
+  GlobalVars(
+    NoGlobals(
+    ) [NoGlobals]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       a
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        LocalVars1(
+          NoLocalVars(
+          ) [NoLocalVars]
+          Variables(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+             bodovi
+              NotArray(
+              ) [NotArray]
+            ) [SingleVar]
+            NoVars(
+            ) [NoVars]
+          ) [Variables]
+        ) [LocalVars1]
+        Variables(
+          Type(
+           bool
+          ) [Type]
+          SingleVar(
+           bt
+            NotArray(
+            ) [NotArray]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            Statements(
+                                              Statements(
+                                                Statements(
+                                                  Statements(
+                                                    SingleStatement(
+                                                    ) [SingleStatement]
+                                                    DesignatorStmt(
+                                                      DesignatorAssign(
+                                                        AssignOperation(
+                                                          Designator(
+                                                            DesignatorSingle(
+                                                             bodovi
+                                                            ) [DesignatorSingle]
+                                                            MybArrayPositionDerived1(
+                                                            ) [MybArrayPositionDerived1]
+                                                          ) [Designator]
+                                                          ExprTerm(
+                                                            FinalTerm(
+                                                              FactorNumber(
+                                                               0
+                                                              ) [FactorNumber]
+                                                            ) [FinalTerm]
+                                                          ) [ExprTerm]
+                                                        ) [AssignOperation]
+                                                      ) [DesignatorAssign]
+                                                    ) [DesignatorStmt]
+                                                  ) [Statements]
+                                                  DesignatorStmt(
+                                                    DesignatorIncrement(
+                                                      Designator(
+                                                        DesignatorSingle(
+                                                         bodovi
+                                                        ) [DesignatorSingle]
+                                                        MybArrayPositionDerived1(
+                                                        ) [MybArrayPositionDerived1]
+                                                      ) [Designator]
+                                                    ) [DesignatorIncrement]
+                                                  ) [DesignatorStmt]
+                                                ) [Statements]
+                                                DesignatorStmt(
+                                                  DesignatorAssign(
+                                                    AssignOperation(
+                                                      Designator(
+                                                        DesignatorSingle(
+                                                         bodovi
+                                                        ) [DesignatorSingle]
+                                                        MybArrayPositionDerived1(
+                                                        ) [MybArrayPositionDerived1]
+                                                      ) [Designator]
+                                                      AddopExpr(
+                                                        ExprTerm(
+                                                          FinalTerm(
+                                                            FactorDesignator(
+                                                              Designator(
+                                                                DesignatorSingle(
+                                                                 bodovi
+                                                                ) [DesignatorSingle]
+                                                                MybArrayPositionDerived1(
+                                                                ) [MybArrayPositionDerived1]
+                                                              ) [Designator]
+                                                            ) [FactorDesignator]
+                                                          ) [FinalTerm]
+                                                        ) [ExprTerm]
+                                                        AddopDerived1(
+                                                        ) [AddopDerived1]
+                                                        FinalTerm(
+                                                          FactorDesignator(
+                                                            Designator(
+                                                              DesignatorNamespace(
+                                                               Konstante
+                                                               jedan
+                                                              ) [DesignatorNamespace]
+                                                              MybArrayPositionDerived1(
+                                                              ) [MybArrayPositionDerived1]
+                                                            ) [Designator]
+                                                          ) [FactorDesignator]
+                                                        ) [FinalTerm]
+                                                      ) [AddopExpr]
+                                                    ) [AssignOperation]
+                                                  ) [DesignatorAssign]
+                                                ) [DesignatorStmt]
+                                              ) [Statements]
+                                              DesignatorStmt(
+                                                DesignatorAssign(
+                                                  AssignOperation(
+                                                    Designator(
+                                                      DesignatorSingle(
+                                                       bodovi
+                                                      ) [DesignatorSingle]
+                                                      MybArrayPositionDerived1(
+                                                      ) [MybArrayPositionDerived1]
+                                                    ) [Designator]
+                                                    ExprTerm(
+                                                      MulTerm(
+                                                        FinalTerm(
+                                                          FactorDesignator(
+                                                            Designator(
+                                                              DesignatorSingle(
+                                                               bodovi
+                                                              ) [DesignatorSingle]
+                                                              MybArrayPositionDerived1(
+                                                              ) [MybArrayPositionDerived1]
+                                                            ) [Designator]
+                                                          ) [FactorDesignator]
+                                                        ) [FinalTerm]
+                                                        MulopDerived1(
+                                                        ) [MulopDerived1]
+                                                        FactorDesignator(
+                                                          Designator(
+                                                            DesignatorNamespace(
+                                                             Konstante
+                                                             pet
+                                                            ) [DesignatorNamespace]
+                                                            MybArrayPositionDerived1(
+                                                            ) [MybArrayPositionDerived1]
+                                                          ) [Designator]
+                                                        ) [FactorDesignator]
+                                                      ) [MulTerm]
+                                                    ) [ExprTerm]
+                                                  ) [AssignOperation]
+                                                ) [DesignatorAssign]
+                                              ) [DesignatorStmt]
+                                            ) [Statements]
+                                            DesignatorStmt(
+                                              DesignatorDecrement(
+                                                Designator(
+                                                  DesignatorSingle(
+                                                   bodovi
+                                                  ) [DesignatorSingle]
+                                                  MybArrayPositionDerived1(
+                                                  ) [MybArrayPositionDerived1]
+                                                ) [Designator]
+                                              ) [DesignatorDecrement]
+                                            ) [DesignatorStmt]
+                                          ) [Statements]
+                                          PrintStatement(
+                                            ExprTerm(
+                                              FinalTerm(
+                                                FactorDesignator(
+                                                  Designator(
+                                                    DesignatorSingle(
+                                                     bodovi
+                                                    ) [DesignatorSingle]
+                                                    MybArrayPositionDerived1(
+                                                    ) [MybArrayPositionDerived1]
+                                                  ) [Designator]
+                                                ) [FactorDesignator]
+                                              ) [FinalTerm]
+                                            ) [ExprTerm]
+                                            NoPrintAmmount(
+                                            ) [NoPrintAmmount]
+                                          ) [PrintStatement]
+                                        ) [Statements]
+                                        DesignatorStmt(
+                                          DesignatorAssign(
+                                            AssignOperation(
+                                              Designator(
+                                                DesignatorNamespace(
+                                                 Nizovi
+                                                 niz
+                                                ) [DesignatorNamespace]
+                                                MybArrayPositionDerived1(
+                                                ) [MybArrayPositionDerived1]
+                                              ) [Designator]
+                                              ExprTerm(
+                                                FinalTerm(
+                                                  FactorNew(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    ArrayPosition(
+                                                      ExprTerm(
+                                                        FinalTerm(
+                                                          FactorNumber(
+                                                           3
+                                                          ) [FactorNumber]
+                                                        ) [FinalTerm]
+                                                      ) [ExprTerm]
+                                                    ) [ArrayPosition]
+                                                  ) [FactorNew]
+                                                ) [FinalTerm]
+                                              ) [ExprTerm]
+                                            ) [AssignOperation]
+                                          ) [DesignatorAssign]
+                                        ) [DesignatorStmt]
+                                      ) [Statements]
+                                      DesignatorStmt(
+                                        DesignatorAssign(
+                                          AssignOperation(
+                                            Designator(
+                                              DesignatorNamespace(
+                                               Nizovi
+                                               niz
+                                              ) [DesignatorNamespace]
+                                              IsArray(
+                                                ExprTerm(
+                                                  FinalTerm(
+                                                    FactorDesignator(
+                                                      Designator(
+                                                        DesignatorNamespace(
+                                                         Konstante
+                                                         nula
+                                                        ) [DesignatorNamespace]
+                                                        MybArrayPositionDerived1(
+                                                        ) [MybArrayPositionDerived1]
+                                                      ) [Designator]
+                                                    ) [FactorDesignator]
+                                                  ) [FinalTerm]
+                                                ) [ExprTerm]
+                                              ) [IsArray]
+                                            ) [Designator]
+                                            ExprTerm(
+                                              FinalTerm(
+                                                FactorDesignator(
+                                                  Designator(
+                                                    DesignatorNamespace(
+                                                     Konstante
+                                                     jedan
+                                                    ) [DesignatorNamespace]
+                                                    MybArrayPositionDerived1(
+                                                    ) [MybArrayPositionDerived1]
+                                                  ) [Designator]
+                                                ) [FactorDesignator]
+                                              ) [FinalTerm]
+                                            ) [ExprTerm]
+                                          ) [AssignOperation]
+                                        ) [DesignatorAssign]
+                                      ) [DesignatorStmt]
+                                    ) [Statements]
+                                    DesignatorStmt(
+                                      DesignatorAssign(
+                                        AssignOperation(
+                                          Designator(
+                                            DesignatorNamespace(
+                                             Nizovi
+                                             niz
+                                            ) [DesignatorNamespace]
+                                            IsArray(
+                                              ExprTerm(
+                                                FinalTerm(
+                                                  FactorNumber(
+                                                   1
+                                                  ) [FactorNumber]
+                                                ) [FinalTerm]
+                                              ) [ExprTerm]
+                                            ) [IsArray]
+                                          ) [Designator]
+                                          ExprTerm(
+                                            FinalTerm(
+                                              FactorNumber(
+                                               2
+                                              ) [FactorNumber]
+                                            ) [FinalTerm]
+                                          ) [ExprTerm]
+                                        ) [AssignOperation]
+                                      ) [DesignatorAssign]
+                                    ) [DesignatorStmt]
+                                  ) [Statements]
+                                  DesignatorStmt(
+                                    DesignatorAssign(
+                                      AssignOperation(
+                                        Designator(
+                                          DesignatorNamespace(
+                                           Nizovi
+                                           niz
+                                          ) [DesignatorNamespace]
+                                          IsArray(
+                                            ExprTerm(
+                                              FinalTerm(
+                                                FactorDesignator(
+                                                  Designator(
+                                                    DesignatorNamespace(
+                                                     Nizovi
+                                                     niz
+                                                    ) [DesignatorNamespace]
+                                                    IsArray(
+                                                      ExprTerm(
+                                                        FinalTerm(
+                                                          FactorDesignator(
+                                                            Designator(
+                                                              DesignatorNamespace(
+                                                               Konstante
+                                                               jedan
+                                                              ) [DesignatorNamespace]
+                                                              MybArrayPositionDerived1(
+                                                              ) [MybArrayPositionDerived1]
+                                                            ) [Designator]
+                                                          ) [FactorDesignator]
+                                                        ) [FinalTerm]
+                                                      ) [ExprTerm]
+                                                    ) [IsArray]
+                                                  ) [Designator]
+                                                ) [FactorDesignator]
+                                              ) [FinalTerm]
+                                            ) [ExprTerm]
+                                          ) [IsArray]
+                                        ) [Designator]
+                                        ExprTerm(
+                                          MulTerm(
+                                            FinalTerm(
+                                              FactorDesignator(
+                                                Designator(
+                                                  DesignatorNamespace(
+                                                   Nizovi
+                                                   niz
+                                                  ) [DesignatorNamespace]
+                                                  IsArray(
+                                                    ExprTerm(
+                                                      FinalTerm(
+                                                        FactorDesignator(
+                                                          Designator(
+                                                            DesignatorNamespace(
+                                                             Nizovi
+                                                             niz
+                                                            ) [DesignatorNamespace]
+                                                            IsArray(
+                                                              ExprTerm(
+                                                                FinalTerm(
+                                                                  FactorNumber(
+                                                                   0
+                                                                  ) [FactorNumber]
+                                                                ) [FinalTerm]
+                                                              ) [ExprTerm]
+                                                            ) [IsArray]
+                                                          ) [Designator]
+                                                        ) [FactorDesignator]
+                                                      ) [FinalTerm]
+                                                    ) [ExprTerm]
+                                                  ) [IsArray]
+                                                ) [Designator]
+                                              ) [FactorDesignator]
+                                            ) [FinalTerm]
+                                            MulopDerived1(
+                                            ) [MulopDerived1]
+                                            FactorNumber(
+                                             3
+                                            ) [FactorNumber]
+                                          ) [MulTerm]
+                                        ) [ExprTerm]
+                                      ) [AssignOperation]
+                                    ) [DesignatorAssign]
+                                  ) [DesignatorStmt]
+                                ) [Statements]
+                                DesignatorStmt(
+                                  DesignatorAssign(
+                                    AssignOperation(
+                                      Designator(
+                                        DesignatorSingle(
+                                         bodovi
+                                        ) [DesignatorSingle]
+                                        MybArrayPositionDerived1(
+                                        ) [MybArrayPositionDerived1]
+                                      ) [Designator]
+                                      ExprTerm(
+                                        MulTerm(
+                                          FinalTerm(
+                                            FactorDesignator(
+                                              Designator(
+                                                DesignatorNamespace(
+                                                 Nizovi
+                                                 niz
+                                                ) [DesignatorNamespace]
+                                                IsArray(
+                                                  ExprTerm(
+                                                    FinalTerm(
+                                                      FactorNumber(
+                                                       2
+                                                      ) [FactorNumber]
+                                                    ) [FinalTerm]
+                                                  ) [ExprTerm]
+                                                ) [IsArray]
+                                              ) [Designator]
+                                            ) [FactorDesignator]
+                                          ) [FinalTerm]
+                                          MulopDerived2(
+                                          ) [MulopDerived2]
+                                          FactorDesignator(
+                                            Designator(
+                                              DesignatorNamespace(
+                                               Nizovi
+                                               niz
+                                              ) [DesignatorNamespace]
+                                              IsArray(
+                                                ExprTerm(
+                                                  FinalTerm(
+                                                    FactorNumber(
+                                                     0
+                                                    ) [FactorNumber]
+                                                  ) [FinalTerm]
+                                                ) [ExprTerm]
+                                              ) [IsArray]
+                                            ) [Designator]
+                                          ) [FactorDesignator]
+                                        ) [MulTerm]
+                                      ) [ExprTerm]
+                                    ) [AssignOperation]
+                                  ) [DesignatorAssign]
+                                ) [DesignatorStmt]
+                              ) [Statements]
+                              PrintStatement(
+                                ExprTerm(
+                                  FinalTerm(
+                                    FactorDesignator(
+                                      Designator(
+                                        DesignatorSingle(
+                                         bodovi
+                                        ) [DesignatorSingle]
+                                        MybArrayPositionDerived1(
+                                        ) [MybArrayPositionDerived1]
+                                      ) [Designator]
+                                    ) [FactorDesignator]
+                                  ) [FinalTerm]
+                                ) [ExprTerm]
+                                NoPrintAmmount(
+                                ) [NoPrintAmmount]
+                              ) [PrintStatement]
+                            ) [Statements]
+                            PrintStatement(
+                              ExprTerm(
+                                FinalTerm(
+                                  FactorDesignator(
+                                    Designator(
+                                      DesignatorNamespace(
+                                       Nizovi
+                                       niz
+                                      ) [DesignatorNamespace]
+                                      IsArray(
+                                        ExprTerm(
+                                          FinalTerm(
+                                            FactorNumber(
+                                             2
+                                            ) [FactorNumber]
+                                          ) [FinalTerm]
+                                        ) [ExprTerm]
+                                      ) [IsArray]
+                                    ) [Designator]
+                                  ) [FactorDesignator]
+                                ) [FinalTerm]
+                              ) [ExprTerm]
+                              NoPrintAmmount(
+                              ) [NoPrintAmmount]
+                            ) [PrintStatement]
+                          ) [Statements]
+                          DesignatorStmt(
+                            DesignatorAssign(
+                              AssignOperation(
+                                Designator(
+                                  DesignatorNamespace(
+                                   Nizovi
+                                   nizch
+                                  ) [DesignatorNamespace]
+                                  MybArrayPositionDerived1(
+                                  ) [MybArrayPositionDerived1]
+                                ) [Designator]
+                                ExprTerm(
+                                  FinalTerm(
+                                    FactorNew(
+                                      Type(
+                                       char
+                                      ) [Type]
+                                      ArrayPosition(
+                                        ExprTerm(
+                                          FinalTerm(
+                                            FactorNumber(
+                                             3
+                                            ) [FactorNumber]
+                                          ) [FinalTerm]
+                                        ) [ExprTerm]
+                                      ) [ArrayPosition]
+                                    ) [FactorNew]
+                                  ) [FinalTerm]
+                                ) [ExprTerm]
+                              ) [AssignOperation]
+                            ) [DesignatorAssign]
+                          ) [DesignatorStmt]
+                        ) [Statements]
+                        DesignatorStmt(
+                          DesignatorAssign(
+                            AssignOperation(
+                              Designator(
+                                DesignatorNamespace(
+                                 Nizovi
+                                 nizch
+                                ) [DesignatorNamespace]
+                                IsArray(
+                                  ExprTerm(
+                                    FinalTerm(
+                                      FactorNumber(
+                                       0
+                                      ) [FactorNumber]
+                                    ) [FinalTerm]
+                                  ) [ExprTerm]
+                                ) [IsArray]
+                              ) [Designator]
+                              ExprTerm(
+                                FinalTerm(
+                                  FactorChar(
+                                   a
+                                  ) [FactorChar]
+                                ) [FinalTerm]
+                              ) [ExprTerm]
+                            ) [AssignOperation]
+                          ) [DesignatorAssign]
+                        ) [DesignatorStmt]
+                      ) [Statements]
+                      DesignatorStmt(
+                        DesignatorAssign(
+                          AssignOperation(
+                            Designator(
+                              DesignatorNamespace(
+                               Nizovi
+                               nizch
+                              ) [DesignatorNamespace]
+                              IsArray(
+                                ExprTerm(
+                                  FinalTerm(
+                                    FactorDesignator(
+                                      Designator(
+                                        DesignatorNamespace(
+                                         Konstante
+                                         jedan
+                                        ) [DesignatorNamespace]
+                                        MybArrayPositionDerived1(
+                                        ) [MybArrayPositionDerived1]
+                                      ) [Designator]
+                                    ) [FactorDesignator]
+                                  ) [FinalTerm]
+                                ) [ExprTerm]
+                              ) [IsArray]
+                            ) [Designator]
+                            ExprTerm(
+                              FinalTerm(
+                                FactorChar(
+                                 b
+                                ) [FactorChar]
+                              ) [FinalTerm]
+                            ) [ExprTerm]
+                          ) [AssignOperation]
+                        ) [DesignatorAssign]
+                      ) [DesignatorStmt]
+                    ) [Statements]
+                    DesignatorStmt(
+                      DesignatorAssign(
+                        AssignOperation(
+                          Designator(
+                            DesignatorNamespace(
+                             Nizovi
+                             nizch
+                            ) [DesignatorNamespace]
+                            IsArray(
+                              AddopExpr(
+                                ExprTerm(
+                                  FinalTerm(
+                                    FactorDesignator(
+                                      Designator(
+                                        DesignatorNamespace(
+                                         Konstante
+                                         pet
+                                        ) [DesignatorNamespace]
+                                        MybArrayPositionDerived1(
+                                        ) [MybArrayPositionDerived1]
+                                      ) [Designator]
+                                    ) [FactorDesignator]
+                                  ) [FinalTerm]
+                                ) [ExprTerm]
+                                AddopDerived2(
+                                ) [AddopDerived2]
+                                FinalTerm(
+                                  FactorNumber(
+                                   3
+                                  ) [FactorNumber]
+                                ) [FinalTerm]
+                              ) [AddopExpr]
+                            ) [IsArray]
+                          ) [Designator]
+                          ExprTerm(
+                            FinalTerm(
+                              FactorChar(
+                               c
+                              ) [FactorChar]
+                            ) [FinalTerm]
+                          ) [ExprTerm]
+                        ) [AssignOperation]
+                      ) [DesignatorAssign]
+                    ) [DesignatorStmt]
+                  ) [Statements]
+                  PrintStatement(
+                    ExprTerm(
+                      FinalTerm(
+                        FactorDesignator(
+                          Designator(
+                            DesignatorNamespace(
+                             Nizovi
+                             nizch
+                            ) [DesignatorNamespace]
+                            IsArray(
+                              ExprTerm(
+                                FinalTerm(
+                                  FactorNumber(
+                                   1
+                                  ) [FactorNumber]
+                                ) [FinalTerm]
+                              ) [ExprTerm]
+                            ) [IsArray]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                    NoPrintAmmount(
+                    ) [NoPrintAmmount]
+                  ) [PrintStatement]
+                ) [Statements]
+                PrintStatement(
+                  ExprTerm(
+                    FinalTerm(
+                      FactorDesignator(
+                        Designator(
+                          DesignatorNamespace(
+                           Nizovi
+                           nizch
+                          ) [DesignatorNamespace]
+                          IsArray(
+                            ExprTerm(
+                              MulTerm(
+                                FinalTerm(
+                                  FactorDesignator(
+                                    Designator(
+                                      DesignatorNamespace(
+                                       Konstante
+                                       jedan
+                                      ) [DesignatorNamespace]
+                                      MybArrayPositionDerived1(
+                                      ) [MybArrayPositionDerived1]
+                                    ) [Designator]
+                                  ) [FactorDesignator]
+                                ) [FinalTerm]
+                                MulopDerived1(
+                                ) [MulopDerived1]
+                                FactorNumber(
+                                 2
+                                ) [FactorNumber]
+                              ) [MulTerm]
+                            ) [ExprTerm]
+                          ) [IsArray]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                  NoPrintAmmount(
+                  ) [NoPrintAmmount]
+                ) [PrintStatement]
+              ) [Statements]
+              DesignatorStmt(
+                DesignatorAssign(
+                  AssignOperation(
+                    Designator(
+                      DesignatorSingle(
+                       a
+                      ) [DesignatorSingle]
+                      MybArrayPositionDerived1(
+                      ) [MybArrayPositionDerived1]
+                    ) [Designator]
+                    ExprTerm(
+                      FinalTerm(
+                        FactorNumber(
+                         1
+                        ) [FactorNumber]
+                      ) [FinalTerm]
+                    ) [ExprTerm]
+                  ) [AssignOperation]
+                ) [DesignatorAssign]
+              ) [DesignatorStmt]
+            ) [Statements]
+            ReadStatement(
+              Designator(
+                DesignatorSingle(
+                 bodovi
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+            ) [ReadStatement]
+          ) [Statements]
+          DesignatorStmt(
+            DesignatorAssign(
+              AssignOperation(
+                Designator(
+                  DesignatorSingle(
+                   bodovi
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+                AddopExpr(
+                  AddopExpr(
+                    NegativeTerm(
+                      FinalTerm(
+                        FactorDesignator(
+                          Designator(
+                            DesignatorSingle(
+                             bodovi
+                            ) [DesignatorSingle]
+                            MybArrayPositionDerived1(
+                            ) [MybArrayPositionDerived1]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                      ) [FinalTerm]
+                    ) [NegativeTerm]
+                    AddopDerived1(
+                    ) [AddopDerived1]
+                    MulTerm(
+                      FinalTerm(
+                        FactorExpr(
+                          AddopExpr(
+                            ExprTerm(
+                              MulTerm(
+                                MulTerm(
+                                  FinalTerm(
+                                    FactorDesignator(
+                                      Designator(
+                                        DesignatorNamespace(
+                                         Konstante
+                                         pet
+                                        ) [DesignatorNamespace]
+                                        MybArrayPositionDerived1(
+                                        ) [MybArrayPositionDerived1]
+                                      ) [Designator]
+                                    ) [FactorDesignator]
+                                  ) [FinalTerm]
+                                  MulopDerived1(
+                                  ) [MulopDerived1]
+                                  FactorDesignator(
+                                    Designator(
+                                      DesignatorSingle(
+                                       a
+                                      ) [DesignatorSingle]
+                                      MybArrayPositionDerived1(
+                                      ) [MybArrayPositionDerived1]
+                                    ) [Designator]
+                                  ) [FactorDesignator]
+                                ) [MulTerm]
+                                MulopDerived2(
+                                ) [MulopDerived2]
+                                FactorNumber(
+                                 2
+                                ) [FactorNumber]
+                              ) [MulTerm]
+                            ) [ExprTerm]
+                            AddopDerived2(
+                            ) [AddopDerived2]
+                            FinalTerm(
+                              FactorDesignator(
+                                Designator(
+                                  DesignatorNamespace(
+                                   Konstante
+                                   jedan
+                                  ) [DesignatorNamespace]
+                                  MybArrayPositionDerived1(
+                                  ) [MybArrayPositionDerived1]
+                                ) [Designator]
+                              ) [FactorDesignator]
+                            ) [FinalTerm]
+                          ) [AddopExpr]
+                        ) [FactorExpr]
+                      ) [FinalTerm]
+                      MulopDerived1(
+                      ) [MulopDerived1]
+                      FactorDesignator(
+                        Designator(
+                          DesignatorSingle(
+                           bodovi
+                          ) [DesignatorSingle]
+                          MybArrayPositionDerived1(
+                          ) [MybArrayPositionDerived1]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                    ) [MulTerm]
+                  ) [AddopExpr]
+                  AddopDerived2(
+                  ) [AddopDerived2]
+                  FinalTerm(
+                    FactorExpr(
+                      AddopExpr(
+                        AddopExpr(
+                          ExprTerm(
+                            MulTerm(
+                              FinalTerm(
+                                FactorNumber(
+                                 3
+                                ) [FactorNumber]
+                              ) [FinalTerm]
+                              MulopDerived3(
+                              ) [MulopDerived3]
+                              FactorNumber(
+                               2
+                              ) [FactorNumber]
+                            ) [MulTerm]
+                          ) [ExprTerm]
+                          AddopDerived1(
+                          ) [AddopDerived1]
+                          MulTerm(
+                            FinalTerm(
+                              FactorNumber(
+                               3
+                              ) [FactorNumber]
+                            ) [FinalTerm]
+                            MulopDerived1(
+                            ) [MulopDerived1]
+                            FactorNumber(
+                             2
+                            ) [FactorNumber]
+                          ) [MulTerm]
+                        ) [AddopExpr]
+                        AddopDerived2(
+                        ) [AddopDerived2]
+                        FinalTerm(
+                          FactorNumber(
+                           3
+                          ) [FactorNumber]
+                        ) [FinalTerm]
+                      ) [AddopExpr]
+                    ) [FactorExpr]
+                  ) [FinalTerm]
+                ) [AddopExpr]
+              ) [AssignOperation]
+            ) [DesignatorAssign]
+          ) [DesignatorStmt]
+        ) [Statements]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                Designator(
+                  DesignatorSingle(
+                   bodovi
+                  ) [DesignatorSingle]
+                  MybArrayPositionDerived1(
+                  ) [MybArrayPositionDerived1]
+                ) [Designator]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  20:30:57,623 - ===================================
+INFO  20:30:57,629 - ===================================

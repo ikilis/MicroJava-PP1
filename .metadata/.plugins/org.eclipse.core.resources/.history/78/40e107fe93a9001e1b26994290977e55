@@ -1,7 +1,0 @@
-program test301
-{
-	void funkcija () int i; {
-	
-		return 8*8*-8*96+2;
-	}
-}

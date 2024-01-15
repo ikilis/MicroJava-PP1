@@ -1,0 +1,26 @@
+// Test301
+
+program MJTest
+
+namespace Konstante{
+
+{}
+}
+	int bodovi;
+	
+{
+	void main()	
+	{
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + Konstante::jedan;
+		//bodovi = bodovi * Konstante::pet;
+		//bodovi--;
+		print(bodovi);
+		
+		
+			
+	}
+}
+
+

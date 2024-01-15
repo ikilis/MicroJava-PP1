@@ -1,0 +1,115 @@
+INFO  12:21:27,769 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  12:21:28,547 - #2 program
+INFO  12:21:28,548 - #15 test301
+INFO  12:21:28,549 - #15 char
+INFO  12:21:28,584 - #15 x
+INFO  12:21:28,592 - #32 [
+INFO  12:21:28,593 - #33 ]
+INFO  12:21:28,594 - #5 ;
+INFO  12:21:28,633 - #15 int
+INFO  12:21:28,634 - #15 i
+INFO  12:21:28,634 - #5 ;
+INFO  12:21:28,646 - #3 {
+INFO  12:21:28,646 - #13 void
+INFO  12:21:28,672 - #15 main
+INFO  12:21:28,673 - #6 (
+INFO  12:21:28,673 - #7 )
+INFO  12:21:28,688 - #3 {
+INFO  12:21:28,702 - #15 x
+INFO  12:21:28,722 - #8 =
+INFO  12:21:28,760 - #22 new
+INFO  12:21:28,761 - #15 char
+INFO  12:21:28,763 - #32 [
+INFO  12:21:28,763 - #14 15
+INFO  12:21:28,764 - #33 ]
+INFO  12:21:28,764 - #5 ;
+INFO  12:21:28,796 - #4 }
+INFO  12:21:28,798 - #4 }
+INFO  12:21:28,852 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         char
+        ) [Type]
+        SingleVar(
+         x
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        DesignatorStmt(
+          DesignatorAssign(
+            AssignOperation(
+              Designator(
+                DesignatorSingle(
+                 x
+                ) [DesignatorSingle]
+                MybArrayPositionDerived1(
+                ) [MybArrayPositionDerived1]
+              ) [Designator]
+              ExprTerm(
+                FinalTerm(
+                  FactorNew(
+                    Type(
+                     char
+                    ) [Type]
+                    ArrayPosition(
+                      ExprTerm(
+                        FinalTerm(
+                          FactorNumber(
+                           15
+                          ) [FactorNumber]
+                        ) [FinalTerm]
+                      ) [ExprTerm]
+                    ) [ArrayPosition]
+                  ) [FactorNew]
+                ) [FinalTerm]
+              ) [ExprTerm]
+            ) [AssignOperation]
+          ) [DesignatorAssign]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  12:21:28,856 - ===================================
+INFO  12:21:28,885 - ===================================
+INFO  12:21:28,890 - Uspesno parsiranje

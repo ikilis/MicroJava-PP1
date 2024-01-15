@@ -1,0 +1,41 @@
+// Test301
+
+program MJTest
+
+
+namespace Nizovi{
+	int niz[];
+	char nizch[];
+	
+	{}
+}
+
+namespace Konstante{
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+{}
+}
+	
+	int bodovi;
+{
+	void main()	
+	{
+//		bodovi = 0;
+//		bodovi++;
+//		bodovi = bodovi + Konstante::jedan;
+//		bodovi = bodovi * Konstante::pet;
+//		bodovi--;
+//		print(bodovi);
+		
+		Nizovi::niz = new int[3];
+		Nizovi::niz[Konstante::nula] = Konstante::jedan;
+		Nizovi::niz[1] = 2;
+//		Nizovi::niz[Nizovi::niz[Konstante::jedan]] = Nizovi::niz[Nizovi::niz[0]] * 3;
+		
+		print(Nizovi::niz[0]);
+			
+	}
+}
+
+

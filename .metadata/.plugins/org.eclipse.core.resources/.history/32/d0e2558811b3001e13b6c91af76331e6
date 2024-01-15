@@ -1,0 +1,106 @@
+INFO  19:39:33,568 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:39:33,660 - #2 program
+INFO  19:39:33,661 - #15 test301
+INFO  19:39:33,662 - #15 int
+INFO  19:39:33,665 - #15 niz
+INFO  19:39:33,666 - #32 [
+INFO  19:39:33,667 - #33 ]
+INFO  19:39:33,667 - #5 ;
+INFO  19:39:33,671 - #15 int
+INFO  19:39:33,672 - #15 i
+INFO  19:39:33,672 - #5 ;
+INFO  19:39:33,674 - #3 {
+INFO  19:39:33,674 - #13 void
+INFO  19:39:33,678 - #15 main
+INFO  19:39:33,680 - #6 (
+INFO  19:39:33,680 - #7 )
+INFO  19:39:33,680 - #3 {
+INFO  19:39:33,682 - #12 print
+INFO  19:39:33,683 - #6 (
+INFO  19:39:33,683 - #15 niz
+INFO  19:39:33,683 - #32 [
+INFO  19:39:33,683 - #14 1
+INFO  19:39:33,683 - #33 ]
+INFO  19:39:33,689 - #7 )
+INFO  19:39:33,696 - #5 ;
+INFO  19:39:33,696 - #4 }
+INFO  19:39:33,696 - #4 }
+INFO  19:39:33,720 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  GlobalVars(
+    GlobalVars(
+      NoGlobals(
+      ) [NoGlobals]
+      Variables(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+         niz
+          Array(
+          ) [Array]
+        ) [SingleVar]
+        NoVars(
+        ) [NoVars]
+      ) [Variables]
+    ) [GlobalVars]
+    Variables(
+      Type(
+       int
+      ) [Type]
+      SingleVar(
+       i
+        NotArray(
+        ) [NotArray]
+      ) [SingleVar]
+      NoVars(
+      ) [NoVars]
+    ) [Variables]
+  ) [GlobalVars]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnVoid(
+       main
+      ) [ReturnVoid]
+      NoPars(
+      ) [NoPars]
+      NoLocalVars(
+      ) [NoLocalVars]
+      Statements(
+        SingleStatement(
+        ) [SingleStatement]
+        PrintStatement(
+          ExprTerm(
+            FinalTerm(
+              FactorDesignator(
+                DesignatorIndex(
+                  DesignatorIdent(
+                   niz
+                  ) [DesignatorIdent]
+                  ExprTerm(
+                    FinalTerm(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [FinalTerm]
+                  ) [ExprTerm]
+                ) [DesignatorIndex]
+              ) [FactorDesignator]
+            ) [FinalTerm]
+          ) [ExprTerm]
+          NoPrintAmmount(
+          ) [NoPrintAmmount]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:39:33,722 - ===================================
+INFO  19:39:33,726 - ===================================
+INFO  19:39:33,730 - Uspesno parsiranje

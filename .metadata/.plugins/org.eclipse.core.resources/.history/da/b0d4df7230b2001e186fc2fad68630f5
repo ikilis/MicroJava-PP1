@@ -1,0 +1,99 @@
+INFO  19:54:21,237 - Compiling source file: C:\Users\ivant\Desktop\PP1\MicroJava-PP1\MJCompiler\test\program.mj
+INFO  19:54:21,296 - #2 program
+INFO  19:54:21,298 - #15 test301
+INFO  19:54:21,299 - #3 {
+INFO  19:54:21,301 - #15 int
+INFO  19:54:21,302 - #15 main
+INFO  19:54:21,303 - #6 (
+INFO  19:54:21,305 - #7 )
+INFO  19:54:21,305 - #15 int
+INFO  19:54:21,306 - #15 niz
+INFO  19:54:21,306 - #32 [
+INFO  19:54:21,306 - #33 ]
+INFO  19:54:21,307 - #5 ;
+INFO  19:54:21,312 - #3 {
+INFO  19:54:21,313 - #12 print
+INFO  19:54:21,323 - #6 (
+INFO  19:54:21,324 - #15 niz
+INFO  19:54:21,324 - #11 ,
+INFO  19:54:21,327 - #14 1
+INFO  19:54:21,327 - #7 )
+INFO  19:54:21,328 - #5 ;
+INFO  19:54:21,333 - #9 return
+INFO  19:54:21,335 - #14 1
+INFO  19:54:21,337 - #5 ;
+INFO  19:54:21,337 - #4 }
+INFO  19:54:21,337 - #4 }
+INFO  19:54:21,361 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  MybNamespacesDerived1(
+  ) [MybNamespacesDerived1]
+  NoGlobals(
+  ) [NoGlobals]
+  Methods(
+    NoMethod(
+    ) [NoMethod]
+    SingleMethodDecl(
+      ReturnSmt(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnSmt]
+      NoPars(
+      ) [NoPars]
+      LocalVars1(
+        Variables(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+           niz
+            Array(
+            ) [Array]
+          ) [SingleVar]
+          NoVars(
+          ) [NoVars]
+        ) [Variables]
+      ) [LocalVars1]
+      Statements(
+        Statements(
+          SingleStatement(
+          ) [SingleStatement]
+          PrintStatement(
+            ExprTerm(
+              FinalTerm(
+                FactorDesignator(
+                  Designator(
+                    DesignatorSingle(
+                     niz
+                    ) [DesignatorSingle]
+                    MybArrayPositionDerived1(
+                    ) [MybArrayPositionDerived1]
+                  ) [Designator]
+                ) [FactorDesignator]
+              ) [FinalTerm]
+            ) [ExprTerm]
+            HasPrintAmmount(
+             1
+            ) [HasPrintAmmount]
+          ) [PrintStatement]
+        ) [Statements]
+        ReturnSomething(
+          ExprTerm(
+            FinalTerm(
+              FactorNumber(
+               1
+              ) [FactorNumber]
+            ) [FinalTerm]
+          ) [ExprTerm]
+        ) [ReturnSomething]
+      ) [Statements]
+    ) [SingleMethodDecl]
+  ) [Methods]
+) [Program]
+INFO  19:54:21,364 - ===================================
+ERROR 19:54:21,371 - You can only use read on CHAR, INT or BOOL
+INFO  19:54:21,372 - ===================================

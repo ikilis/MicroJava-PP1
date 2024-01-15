@@ -1,7 +1,0 @@
-program test301
-{
-	void funkcija () int i; {
-	
-		read(nmsp::i[1389%3]);
-	}
-}
